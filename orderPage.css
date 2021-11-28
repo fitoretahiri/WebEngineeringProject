@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-div{
+    padding-top: 20px;
+    height: 200px;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.nav-list ul li{
+   margin-left: 25px;
+}
+
+.nav-list button{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 80%;
+}
+
+.logo-div{
+    position: absolute;
+    padding-left: 20px;
+}
+
+.search-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+  
+}
+
+.search-div input{
+    border-radius: 20px;
+    text-align: center;
+}
+
+.saleBrandsFilter-div{
+    padding-top: 20px;
+}
+
+.saleBrands-div{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  padding-left: 20px;
+}
+
+.saleBrands-div button{
+   margin-right: 15px;
+}
+
+.filter-div{
+  position: absolute;
+    left:80%;
+}
+
+.produktet1-2-3-4-div{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.produktet1-2-3-4-div div{
+    padding-left: 50px;
+}
