@@ -120,7 +120,11 @@ padding-left: 50px;
     position: absolute;
     left: 80%;
 } 
+#quote{
+    font-size: 1.5vw;
+    position: absolute;
 
+}
 
 
 
