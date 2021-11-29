@@ -5,7 +5,7 @@
 
 .header-div{
     padding-top: 20px;
-    height: 200px;
+    height: 180px;
 }
 
 .nav-list ul {
@@ -45,6 +45,10 @@
     text-align: center;
 }
 
+.body-div{
+    height: 500px;
+}
+
 .saleBrandsFilter-div{
     padding-top: 20px;
 }
@@ -70,8 +74,54 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    
 }
 
 .produktet1-2-3-4-div div{
     padding-left: 50px;
+    padding-top: 15px;
 }
+
+.footer-div{
+    color: white;
+    height: 200px; 
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-div2 img {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+.logo-div2 p{
+padding-left: 50px;
+}
+
+.nav-list2 ul{
+    position: absolute;
+    left: 45%;
+}
+
+.nav-list2 li{
+    list-style: none;
+}
+
+.nav-list2 li a{
+    color: white;
+}
+
+.email-div{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 80%;
+} 
+
+
+
+
+
