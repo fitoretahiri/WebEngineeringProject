@@ -5,7 +5,7 @@
 
 .header-div{
     padding-top: 20px;
-    height: 180px;
+    height: 300px;
 }
 
 .nav-list ul {
@@ -32,59 +32,82 @@
     padding-left: 20px;
 }
 
-.search-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 30px;
-  
-}
-
-.search-div input{
-    border-radius: 20px;
+.reachUs-div{
+    padding-top: 120px;
     text-align: center;
 }
 
-.body-div{
-    height: 500px;
+.contactBody-div{
+   margin:auto;
+   margin-left: 8%;
+   margin-right: 8%;
+   height:900px;
+
 }
 
-.saleBrandsFilter-div{
+.usersAndOurInfo-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.usersInfo-div{
+    margin-right: 15%;
+}
+
+.ourInfo-div{
+    height: 360px;
+    width: 400px;
+    background-color: rgb(238, 233, 211);
+    text-align: center;
+   
+}
+
+.ourInfo-div div{
+    padding-left: 15px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.locationIcon-div{
+    display: flex;
+}
+
+.emailIcon-div{
+    display: flex;
+}
+
+.phoneIcon-div{
+    display: flex;
+}
+
+.usersNameEmail-div{
     padding-top: 20px;
-}
-
-.saleBrands-div{
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  padding-left: 20px;
-}
-
-.saleBrands-div button{
-   margin-right: 15px;
-}
-
-.filter-div{
-  position: absolute;
-    left:80%;
-}
-
-.produktet1-2-3-4-div{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    
+    padding-bottom: 20px;
 }
 
-.produktet1-2-3-4-div div{
-    padding-left: 50px;
-    padding-top: 15px;
+.usersNameEmail-div div{
+    padding-right: 150px;
+}
+
+.usersPhoneOrganization-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.usersPhoneOrganization-div div{
+    padding-right: 150px;
+}
+
+.comment-div{
+    padding-top: 20px;
+    padding-bottom:20px ;
 }
 
 .footer-div{
     color: white;
-    height: 200px; 
+    height: 250px; 
     background-color: black;
     padding-top: 20px;
     display: flex;
@@ -102,8 +125,6 @@
     position: absolute;
     left:10%;
 }
-
-
 
 .nav-list2 ul{
     position: absolute;
@@ -125,7 +146,10 @@
     left: 80%;
 } 
 
-
-
+.socials-div{
+  position: absolute;
+  margin-top: 100px;
+  left: 89%;
+}
 
 
