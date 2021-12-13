@@ -54,9 +54,54 @@
     margin-right: 15%;
 }
 
+input.invalid{
+    border: 1px solid red;
+}
+
+.error-hint{
+    color: red;
+    font-size: 13px;
+}
+
+.thankU-div{
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+hr{
+  height: 1px;
+  background-color:green;  
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.submitButton-div button{
+    padding: 7px;
+    font-size: 15px;
+    background-color: none;
+    border: 1px solid green ;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:green ;
+    border:black;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
 .ourInfo-div{
     height: 360px;
     width: 400px;
+    margin: auto;
+    left: 15%;
     background-color: rgb(238, 233, 211);
     text-align: center;
    
@@ -88,7 +133,7 @@
 }
 
 .usersNameEmail-div div{
-    padding-right: 150px;
+    padding-right: 20px;
 }
 
 .usersPhoneOrganization-div{
@@ -97,7 +142,7 @@
 }
 
 .usersPhoneOrganization-div div{
-    padding-right: 150px;
+    padding-right: 20px;
 }
 
 .comment-div{
