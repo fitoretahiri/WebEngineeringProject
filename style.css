@@ -4,10 +4,14 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: rgb(252, 241, 227);
+}
+#logo{
+    width: 100px;
+    height: 100px;
 }
 .nav-bar{
-    padding-top: 20px;
+    
     height: 180px;
 }
 .nav-list ul {
@@ -39,7 +43,7 @@ body{
     flex-wrap: wrap;
     padding-top: 120px;
     padding-bottom: 120px;
-    color: aliceblue;
+    color: black;
 }
 
 .foto{
@@ -77,4 +81,96 @@ body{
 .div-circle{
     display: flex;
     
+}
+
+.last-div{
+    justify-content: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.order{
+    margin-left: 40%;
+}
+
+.footer-div{
+    color: white;
+    height: 250px; 
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-div2 img{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    word-wrap: break-word;
+}
+
+.logo-div2 p{
+    position: absolute;
+    left:10%;
+}
+
+.nav-list2 ul{
+    position: absolute;
+    left: 45%;
+}
+
+.nav-list2 li{
+    list-style: none;
+}
+
+.nav-list2 li a{
+    color: white;
+}
+
+.email-div{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 80%;
+} 
+
+
+
+.fab:hover {
+    color: blue;
+}
+.far:hover {
+    color: blue;
+}
+.fa-facebook-f {
+    color: white;
+    background-color: #000000;
+}
+.fa-twitter{
+    color: white;
+    background-color: #000000;
+}
+.fa-envelope{
+    color: white;
+    background-color: #000000;
+}
+.fa-linkedin-in{
+    color: white;
+    background-color: #000000;
+}
+i.fab{
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+}
+i.far{
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+}
+
+.icons{
+    margin-top: 9%;
+    justify-content: center;
+    margin-left: 80%;
 }
