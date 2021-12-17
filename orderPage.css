@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(252, 241, 227);
+}
+
 .header-div{
     padding-top: 20px;
     height: 180px;
@@ -46,7 +50,7 @@
 }
 
 .body-div{
-    height: 500px;
+    height: 900px;
 }
 
 .saleBrandsFilter-div{
@@ -127,9 +131,29 @@
 #quote{
     font-size: 1.5vw;
     position: absolute;
+}
 
+button{
+background-color: rgba(211, 149, 149, 0.479);
+border: 1px solid rgba(226, 86, 86, 0.479);
+transition: all 1s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgba(184, 52, 52, 0.945) ;
+    border:black;
+    color: white;
 }
 
 
+@media only screen and(max-width: 375px){
+    .nav-list ul li{
+        flex-direction: column;
+    }
 
-
+    /*te gjithe "femijet" e div-1 kan me e marr kete veti*/
+    .div-1 > *{
+        flex-basis: 100%;
+    }
+    }

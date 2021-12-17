@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body{
+    background-color: rgb(252, 241, 227);
+}
+
+
 .header-div{
     padding-top: 20px;
     height: 300px;
@@ -39,9 +44,9 @@
 
 .contactBody-div{
    margin:auto;
-   margin-left: 8%;
-   margin-right: 8%;
-   height:900px;
+   margin-left: 20%;
+   margin-right: 20%;
+   height:1300px;
 
 }
 
@@ -51,7 +56,7 @@
 }
 
 .usersInfo-div{
-    margin-right: 15%;
+    margin-bottom: 8%;
 }
 
 input.invalid{
@@ -71,7 +76,7 @@ input.invalid{
 
 hr{
   height: 1px;
-  background-color:green;  
+  background-color:rgba(184, 52, 52, 0.945) ;  
   border: none;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -80,15 +85,22 @@ hr{
 .submitButton-div button{
     padding: 7px;
     font-size: 15px;
-    background-color: none;
-    border: 1px solid green ;
+    background-color: rgba(211, 149, 149, 0.479);
+    border: 1px solid rgba(226, 86, 86, 0.479);
     border-radius: 10px;
     transition: all 1s;
     cursor: pointer;
 }
 
+button{
+    transition: all 1s;
+    cursor: pointer;
+    background-color: rgba(211, 149, 149, 0.479);
+    border: 1px solid rgba(226, 86, 86, 0.479);
+}
+
 button:hover{
-    background-color:green ;
+    background-color:rgba(184, 52, 52, 0.945) ; 
     border:black;
     color: white;
 }
@@ -101,10 +113,10 @@ button:hover{
     height: 360px;
     width: 400px;
     margin: auto;
-    left: 15%;
-    background-color: rgb(238, 233, 211);
+    background-color: rgba(211, 149, 149, 0.479);
+    border: 3px solid rgba(226, 86, 86, 0.479);
     text-align: center;
-   
+    margin-bottom: 8%;
 }
 
 .ourInfo-div div{
@@ -157,6 +169,7 @@ button:hover{
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10%;
 }
 
 .logo-div2 img{
@@ -197,4 +210,25 @@ button:hover{
   left: 89%;
 }
 
+.map-div {
+   border: 2px rgba(226, 86, 86, 0.479);
+   display: flex;
+   flex-wrap: wrap;
+}
 
+.googleMap{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+@media only screen and(max-width: 375px){
+    .div-1{
+        flex-direction: row;
+    }
+
+    /*te gjithe "femijet" e div-1 kan me e marr kete veti*/
+    .div-1 > *{
+        flex-basis: 100%;
+    }
+    }
