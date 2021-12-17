@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(252, 241, 227);
+    background: url(HomePics/bcg.jpg);
 }
 #logo{
     width: 100px;
@@ -33,10 +33,10 @@ body{
     left: 80%;
 }
 
-.carousel{
+/*.carousel{
     background: url('HomePics/funiture.jpg');
     background-size: 100% 500px;   
-}
+}*/
 
 .inside-carousel{
     display: flex;
@@ -44,6 +44,25 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
     color: black;
+}
+#first{
+    background: url('HomePics/funiture.jpg');
+    background-size: 100% 500px; 
+}
+#second{
+    background: url('HomePics/hLamp.jpg');
+    background-size: 100% 500px; 
+}
+#third{
+    background: url('HomePics/table.jpg');
+    background-size: 100% 500px; 
+}
+
+.show-content{
+    display: block;
+}
+.hidden-content{
+    display: none;
 }
 
 .foto{
@@ -95,7 +114,6 @@ body{
 
 .footer-div{
     color: white;
-    height: 250px; 
     background-color: black;
     padding-top: 20px;
     display: flex;
