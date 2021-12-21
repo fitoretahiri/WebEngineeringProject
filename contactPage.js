@@ -84,5 +84,19 @@
 
       //mos me qit te kuqe kur shkrujme emrin
       inputs.forEach((input) => input.addEventListener("input", validoInputin));
+      
+      document.getElementById("myButton").onclick=function(){
+        var name= document.getElementById("name").value;
+        var email= document.getElementById("email").value;
+        var tel= document.getElementById("tel").value;
+        var organization= document.getElementById("organization").value;
+        var comment= document.getElementById("comments").value;
+
+        console.log("Name:",name);
+        console.log("Email:",email);
+        console.log("Tel:",tel);
+        console.log("Organization:",organization);
+        console.log("Comment:",comment);
+      }
 
 
