@@ -4,32 +4,46 @@
 }
 
 body{
-    background: url(HomePics/bcg.jpg);
+    background-image: url('HomePics/goldBckg.jpg');
 }
 
 .header-div{
+    height: 280px;
+}
+
+.logoNavlist-div{
+    background-image: url('HomePics/goldFloralBckg.jpg');
+}
+
+.fa-heart:hover{
+    color: red;
+}
+.nav-bar{
     padding-top: 20px;
     height: 180px;
 }
-
 .nav-list ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
     justify-content: center;
+    padding-top: 1%;
 }
 
-.nav-list ul li{
-   margin-left: 25px;
+.nav-list ul li a{
+   margin-left: 70px;
+   text-decoration: none;
+   font-size: 25px;
+   color: black;
+}
+ul li a:hover{
+    text-decoration: underline red;
 }
 
-.nav-list button{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 80%;
-}
+/*.cartWishlist-div{
+    padding-left: 80px;
+}*/
 
 .logo-div{
     position: absolute;
@@ -40,17 +54,19 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 30px;
-  
+    padding-top: 60px;
 }
 
 .search-div input{
-    border-radius: 20px;
+    border-radius: 40px;
     text-align: center;
+     height: 40px;
+     background-image: url('HomePics/goldFloralBckg.jpg');
+     border-image: url('HomePics/patternGreenGold.jpg');
 }
 
 .body-div{
-    height: 900px;
+    height: 3100px;
 }
 
 .saleBrandsFilter-div{
@@ -66,6 +82,11 @@ body{
 
 .saleBrands-div button{
    margin-right: 15px;
+   height: 30px;
+   width: 50px;
+   border-radius: 30%;
+   background-image: url('HomePics/goldFloralBckg.jpg');
+   border-image: url('HomePics/patternGreenGold.jpg');
 }
 
 .filter-div{
@@ -73,7 +94,49 @@ body{
     left:80%;
 }
 
-.produktet1-2-3-4-div{
+.saleBrands-div select{
+    background-image: url('HomePics/goldFloralBckg.jpg');
+    border-image: url('HomePics/patternGreenGold.jpg');
+}
+
+.filter-div select {
+    height: 30px;
+    background-image: url('HomePics/goldFloralBckg.jpg');
+    border-image: url('HomePics/patternGreenGold.jpg');
+}
+
+.body-div img{
+    border-image: url('HomePics/patternGreenGold.jpg');
+}
+
+.produktet1-2-3-div{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+
+.produktet1-2-3-div div{
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.produktet4-5-6-div{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+
+.produktet4-5-6-div div{
+    padding-left: 50px;
+    padding-top: 15px;
+}
+.produktet7-8-9-div{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -81,7 +144,7 @@ body{
     
 }
 
-.produktet1-2-3-4-div div{
+.produktet7-8-9-div div{
     padding-left: 50px;
     padding-top: 15px;
 }
@@ -89,7 +152,7 @@ body{
 .footer-div{
     color: white;
     height: 200px; 
-    background-color: black;
+    background-image: url('HomePics/goldFloralBckg.jpg');
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +180,7 @@ body{
 }
 
 .nav-list2 li a{
-    color: white;
+    color: black
 }
 
 .email-div{
@@ -186,13 +249,31 @@ button:hover{
 }
 
 
-@media only screen and(max-width: 375px){
-    .nav-list ul li{
-        flex-direction: column;
-    }
+ /*   @media only screen and (min-width:375px){
+        .logoNavlist-div{
+           height: 200px;
+        }
+        .nav-list ul{
+            width: 100%;
+            position: absolute;
+            top: 75px;
+            right: 0;
+            z-index: 2;
+             
+        }
+        .nav-list ul li{
+            display:block;
+            
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .nav-list ul li a{
+         
+        }
 
-    /*te gjithe "femijet" e div-1 kan me e marr kete veti*/
-    .div-1 > *{
-        flex-basis: 100%;
-    }
+        
+
+    
+
+
     }
