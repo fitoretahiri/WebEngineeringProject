@@ -243,24 +243,34 @@ i.far{
   left: 89%;
 }
 
-.map-div {
-   display: flex;
-   flex-wrap: wrap;
-}
 
-.googleMap{
-    display: flex;
-    flex-wrap: wrap;
-  
-}
-
-@media only screen and(max-width: 375px){
-    .div-1{
-        flex-direction: row;
+/*@media only screen and (min-width:375px){
+    
+    .usersAndOurInfo-div{
+        margin-left:20% ;
+        margin-right:20% ;
     }
+    .usersNameEmail-div{
+        display: flex;
+        flex-direction: column;
+        font-size: 20pt;
+    }
+
+
+    
+    
+    .ourInfo-div {
+        height: 400px;
+        width: 200px;
+        margin: auto;
+        background-color: rgba(212, 223, 211, 0.658);
+        
+    }
+}
 
     /*te gjithe "femijet" e div-1 kan me e marr kete veti*/
-    .div-1 > *{
+    /*.div-1 > *{
         flex-basis: 100%;
     }
-    }
+    }*/
+    
