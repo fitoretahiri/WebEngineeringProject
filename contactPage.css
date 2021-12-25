@@ -162,6 +162,10 @@ button:hover{
     padding-bottom:20px ;
 }
 
+.googleMap{
+    max-width: 100%;
+}
+
 .footer-div{
     color: white;
     height: 250px; 
