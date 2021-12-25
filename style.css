@@ -24,7 +24,7 @@ body {
     font-family: fantasy;
 }
 
-.fa-heart:hover{
+.heart a i:hover{
     color: red;
 }
 .nav-bar{
@@ -48,6 +48,7 @@ body {
 }
 ul li a:hover{
     text-decoration: underline red;
+    color: gray;
 }
 
 
@@ -113,6 +114,10 @@ ul li a:hover{
 .others-say{
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
+}
+.div-holder{
+    max-width: 100%;
 }
 
 .div-most-liked{
@@ -130,11 +135,18 @@ ul li a:hover{
     height: 300px;    
 }
 
+.div-circle{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #paragrafi-iPari{
     max-width: 300px;
     position: absolute;
     left: 45%;
     margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #paragrafi-iDyti{
@@ -218,12 +230,12 @@ ul li a:hover{
 
 
 
-/*.fab:hover {
-    color: rgb(255, 0, 0);
+.fab:hover {
+    color: blue;
 }
 .far:hover {
-    color: rgb(255, 0, 0);
-}*/
+    color: blue;
+}
 .fa-facebook-f {
     color: white;
     background-color: #000000;
