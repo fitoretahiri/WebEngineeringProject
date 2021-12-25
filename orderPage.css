@@ -4,15 +4,44 @@
 }
 
 body{
-    background-image: url('HomePics/goldBckg.jpg');
+    background-image: url('HomePics/silvery.jpg');
 }
 
 .header-div{
     height: 280px;
 }
 
+.cartWishlist-div  li a i{
+    color: rgba(170, 167, 167, 0.959);
+}
+
+.cartWishlist-div{
+    padding-left: 70%;
+}
+
+.nav-list ul li a{
+    color: rgba(170, 167, 167, 0.959);
+}
+
+.nav-list2 ul li a{
+    color: rgba(170, 167, 167, 0.959);
+}
+
+.footer-div input{
+    border: 3px solid rgba(170, 167, 167, 0.959);
+}
+
 .logoNavlist-div{
-    background-image: url('HomePics/goldFloralBckg.jpg');
+    background-image: url('HomePics/mandalaa.jpg');
+    border: 5px solid rgba(170, 167, 167, 0.959);
+}
+
+.logoNavlist-div ul li{
+       color: rgba(170, 167, 167, 0.959);
+}
+
+.body-div a{
+    color: rgba(7, 73, 7, 0.801);
 }
 
 .fa-heart:hover{
@@ -61,8 +90,9 @@ ul li a:hover{
     border-radius: 40px;
     text-align: center;
      height: 40px;
-     background-image: url('HomePics/goldFloralBckg.jpg');
-     border-image: url('HomePics/patternGreenGold.jpg');
+     background-image: url('HomePics/mandalaa.jpg');
+   color: rgba(170, 167, 167, 0.959);
+     border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .body-div{
@@ -85,8 +115,9 @@ ul li a:hover{
    height: 30px;
    width: 50px;
    border-radius: 30%;
-   background-image: url('HomePics/goldFloralBckg.jpg');
-   border-image: url('HomePics/patternGreenGold.jpg');
+   background-image: url('HomePics/mandalaa.jpg');
+   color: rgba(170, 167, 167, 0.959);
+     border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .filter-div{
@@ -95,18 +126,20 @@ ul li a:hover{
 }
 
 .saleBrands-div select{
-    background-image: url('HomePics/goldFloralBckg.jpg');
-    border-image: url('HomePics/patternGreenGold.jpg');
+    background-image: url('HomePics/mandalaa.jpg');
+    color: rgba(170, 167, 167, 0.959);
+      border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .filter-div select {
     height: 30px;
-    background-image: url('HomePics/goldFloralBckg.jpg');
-    border-image: url('HomePics/patternGreenGold.jpg');
+    background-image: url('HomePics/mandalaa.jpg');
+    color: rgba(170, 167, 167, 0.959);
+      border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .body-div img{
-    border-image: url('HomePics/patternGreenGold.jpg');
+    border: 5px solid rgba(170, 167, 167, 0.959);
 }
 
 .produktet1-2-3-div{
@@ -151,8 +184,9 @@ ul li a:hover{
 
 .footer-div{
     color: white;
-    height: 200px; 
-    background-image: url('HomePics/goldFloralBckg.jpg');
+    height: 250px; 
+    background-image: url('HomePics/mandala.jpg');
+    color: rgba(170, 167, 167, 0.959);
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -190,6 +224,11 @@ ul li a:hover{
     left: 80%;
 } 
 
+.email-div input{
+    background-color: rgb(194, 193, 193);
+    border: 3px solid rgba(170, 167, 167, 0.959);
+}
+
 #quote{
     font-size: 1.5vw;
     position: absolute;
@@ -197,10 +236,10 @@ ul li a:hover{
 
 
 .fab:hover {
-    color: blue;
+    color:rgba(170, 167, 167, 0.959);
 }
 .far:hover {
-    color: blue;
+    color:rgba(170, 167, 167, 0.959);
 }
 .fa-facebook-f {
     color: white;

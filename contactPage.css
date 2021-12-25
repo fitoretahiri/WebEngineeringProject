@@ -4,15 +4,33 @@
 }
 
 body{
-    background: rgba(250, 244, 218, 0.938);
+    background-image: url('HomePics/silvery.jpg');
 }
 
-
 .header-div{
-    padding-top: 20px;
     height: 100px;
 }
 
+.nav-list ul li a{
+    color: rgba(170, 167, 167, 0.959);
+}
+
+.logoNavlist-div{
+    background-image: url('HomePics/mandalaa.jpg');
+    border: 5px solid rgba(170, 167, 167, 0.959);
+}
+
+.cartWishlist-div{
+    padding-left: 70%;
+}
+
+.cartWishlist-div  li a i{
+    color: rgba(170, 167, 167, 0.959);
+}
+
+.logoNavlist-div ul li{
+    color: rgba(170, 167, 167, 0.959);
+}
 
 .fa-heart:hover{
     color: red;
@@ -58,6 +76,14 @@ ul li a:hover{
 
 }
 
+.contactBody-div input{
+    border: 3px solid rgba(170, 167, 167, 0.959);
+}
+
+.contactBody-div textarea{
+    border: 3px solid rgba(170, 167, 167, 0.959);
+}
+
 .usersAndOurInfo-div{
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +110,7 @@ input.invalid{
 
 hr{
   height: 1px;
-  background-color:rgba(0, 0, 0, 0.616); 
+  background-color:rgba(7, 73, 7, 0.801); 
   border: none;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -93,8 +119,9 @@ hr{
 .submitButton-div button{
     padding: 7px;
     font-size: 15px;
-    background-color: rgba(235, 225, 180, 0.726);
-    border: 1px solid rgba(0, 0, 0, 0.616);
+    background-color: rgba(7, 73, 7, 0.849);
+    border: 5px solid rgb(124, 121, 121);
+    color: whitesmoke;
     border-radius: 10px;
     transition: all 1s;
     cursor: pointer;
@@ -121,8 +148,8 @@ button:hover{
     height: 360px;
     width: 400px;
     margin: auto;
-    background-color: rgba(235, 225, 180, 0.726);
-    border: 2px solid rgba(0, 0, 0, 0.616);
+    background-color:rgba(6, 90, 6, 0.349);
+    border: 3px solid rgba(170, 167, 167, 0.959);
     text-align: center;
     margin-bottom: 8%;
 }
@@ -171,13 +198,14 @@ button:hover{
 }
 
 .footer-div{
-    color: white;
     height: 250px; 
     background-color: black;
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
+    background-image: url('HomePics/mandala.jpg');
+    color: rgba(170, 167, 167, 0.959);
 }
 
 .logo-div2 img{
@@ -202,7 +230,7 @@ button:hover{
 }
 
 .nav-list2 li a{
-    color: white;
+    color: rgba(170, 167, 167, 0.959);
 }
 
 .email-div{
@@ -212,11 +240,16 @@ button:hover{
     left: 80%;
 } 
 
+.email-div input{
+   background-color: rgb(194, 193, 193);
+   border: 3px solid rgba(170, 167, 167, 0.959);
+}
+
 .fab:hover {
-    color: blue;
+    color:rgba(170, 167, 167, 0.959);
 }
 .far:hover {
-    color: blue;
+    color:rgba(170, 167, 167, 0.959);
 }
 .fa-facebook-f {
     color: white;
