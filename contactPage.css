@@ -11,9 +11,6 @@ body{
     height: 100px;
 }
 
-.nav-list ul li a{
-    color: rgba(170, 167, 167, 0.959);
-}
 
 .logoNavlist-div{
     background-image: url('HomePics/mandalaa.jpg');
@@ -52,7 +49,7 @@ body{
    margin-left: 70px;
    text-decoration: none;
    font-size: 25px;
-   color: black;
+   color: rgba(170, 167, 167, 0.959);
 }
 ul li a:hover{
     text-decoration: underline red;
