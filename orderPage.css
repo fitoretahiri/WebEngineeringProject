@@ -191,6 +191,7 @@ ul li a:hover{
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    margin-left: 1.5%;
 }
 
 .footer-div{
@@ -278,11 +279,13 @@ i.fab{
     display: inline-block;
     border-radius: 60px;
     padding: 0.5em 0.6em;
+    cursor: pointer;
 }
 i.far{
     display: inline-block;
     border-radius: 60px;
     padding: 0.5em 0.6em;
+    cursor: pointer;
 }
 
 .icons{

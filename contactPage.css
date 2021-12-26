@@ -287,11 +287,13 @@ i.fab{
     display: inline-block;
     border-radius: 60px;
     padding: 0.5em 0.6em;
+    cursor: pointer;
 }
 i.far{
     display: inline-block;
     border-radius: 60px;
     padding: 0.5em 0.6em;
+    cursor: pointer;
 }
 
 .icons{
