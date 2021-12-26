@@ -25,7 +25,20 @@ body {
     color: white;
 }
 
+label #btn,
+label #cancel{
+    float: right;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
 
+#check{
+    display: none;
+}
 
 .nav-list ul li{
     padding-top: 1%;
@@ -327,12 +340,17 @@ i.far{
     justify-content: center;
     margin-left: 80%;
 }
+.quote{
+    padding-left: 20%;
+}
 
 .sales{
     padding-bottom: 40px;
 }
 
 @media (max-width: 1000px){
+    
+
     .others-say{
         display: flex;
         flex-wrap: wrap;
@@ -354,7 +372,41 @@ i.far{
      .email-div{
          left: 50%;
      }
+     .quote{
+         visibility: hidden;
+     }
      .nav-list2 ul{
          left: 30%;
      }
+     .nav-list{
+         position: relative;
+     }
+
+    .nav-list ul li a{
+         font-size: 15px;
+     }
+   /* 
+     label #btn{
+         display: block;
+     }
+     ul{
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         background: #000000;
+         top: 80px;
+         left: 0;
+         text-align: center;
+         transition: all .5s;
+     }
+     .nav-list ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+
+     }
+     #check:checked ~ ul{
+         left: 0;
+     }*/
+
 }
