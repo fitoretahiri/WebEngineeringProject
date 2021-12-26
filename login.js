@@ -6,6 +6,10 @@ let nameInput=document.getElementById('name');
 let surnameInput=document.getElementById('surname');
 let ageInput=document.getElementById('age');
 let birthdayInput=document.getElementById('birthday');
+let isEmail=false;
+let isPass=false;
+let isCheckbox=false;
+
 //Validimi i faqes log in
 function validateLogIn(){
     if(emailInput.value.trim()===''){
@@ -16,6 +20,7 @@ function validateLogIn(){
             onError(emailInput,"Email is not valid");
         }else{
             onSuccess(emailInput);
+            isEmail=true;
         }
     }
     if(passwordInput.value.trim()===''){
@@ -30,6 +35,7 @@ function validateLogIn(){
         }
         else{
             onSuccess(passwordInput);
+            isPass=true;
         }
     }
     if(checkboxInput.checked ==false){
@@ -37,6 +43,12 @@ function validateLogIn(){
     }
     else{
         onSuccess(checkboxInput);
+        isCheckbox=true;
+    }
+    if(isEmail && isPass && isCheckbox){
+        var mess = document.getElementById('show');
+        mess.style.visibility='visible';
+        
     }
 }
 //Nese permbushen kerkesat

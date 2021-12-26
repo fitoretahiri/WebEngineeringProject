@@ -6,8 +6,14 @@ let emailInput=document.getElementById('email');
 let passwordInput=document.getElementById('password');
 let password2Input=document.getElementById('password2');
 let checkboxInput=document.getElementById('checkbox');
-
-
+let isEmail=false;
+let isPass=false;
+let isCheckbox=false;
+let isName=false;
+let isSurname=false;
+let isDate=true;
+let isAge=false;
+let isPass2=false;
 
 
 function validateRegister(){
@@ -19,6 +25,7 @@ function validateRegister(){
         }
         else{
             onSuccess(nameInput);
+            isName=true;
         }
     }
 
@@ -31,6 +38,7 @@ function validateRegister(){
         }
         else{
             onSuccess(surnameInput);
+            isSurname=true;
         }
     }
 
@@ -45,6 +53,7 @@ function validateRegister(){
         }
         else{
             onSuccess(ageInput);
+            isAge=true;
         }
     }
 
@@ -56,6 +65,7 @@ function validateRegister(){
         }
         else{
             onSuccess(birthdayInput);
+            isDate=true;
         }
     }
 
@@ -67,6 +77,7 @@ function validateRegister(){
             onError(emailInput,"Email is not valid");
         }else{
             onSuccess(emailInput);
+            isEmail=true;
         }
     }
     if(passwordInput.value.trim()===''){
@@ -81,17 +92,19 @@ function validateRegister(){
         }
         else{
             onSuccess(passwordInput);
+            isPass=true;
         }
     }
 
     if(password2Input.value.trim()===''){
         onError(password2Input,"Password cannot be empty!")
     }else{
-        if(password2Input.value.trim()!==password2Input.value.trim()){
+        if(passwordInput.value.trim()!==password2Input.value.trim()){
             onError(password2Input,"Password & confirm password are not matching!");
          }
          else{
              onSuccess(password2Input);
+             isPass2=true;
          }
     }
     if(checkboxInput.checked ==false){
@@ -99,6 +112,13 @@ function validateRegister(){
     }
     else{
         onSuccess(checkboxInput);
+        isCheckbox=true;
+    }
+    if(isName && isSurname && isAge &&isDate&&isPass2&&isPass2&&isCheckbox&&isEmail){
+        var div = document.getElementById('main-content');
+        
+        document.getElementById('main-content').innerHTML = "";
+        div.innerHTML += 'You are now registered! Continue shopping!';
     }
 }
 
