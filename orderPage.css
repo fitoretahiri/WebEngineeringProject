@@ -9,31 +9,29 @@ body{
 
 .header-div{
     height: 280px;
+    padding-bottom: 20px;
 }
 
 .cartWishlist-div  li a i{
-    color: rgba(170, 167, 167, 0.959);
+    color: white;
 }
 
 .cartWishlist-div{
     padding-left: 70%;
 }
 
-.nav-list2 ul li a{
-    color: rgba(170, 167, 167, 0.959);
-}
-
 .footer-div input{
     border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
-.logoNavlist-div{
-    background-image: url('HomePics/mandala.jpg');
-    border: 5px solid rgba(170, 167, 167, 0.959);
+.welcome-div{
+ background-color: black;
+ color: white;
 }
 
-.logoNavlist-div ul li{
-       color: rgba(170, 167, 167, 0.959);
+.logoNavlist-div{
+    background-color: black;
+    height: 110px;
 }
 
 .body-div a{
@@ -60,7 +58,7 @@ body{
    margin-left: 70px;
    text-decoration: none;
    font-size: 25px;
-   color: rgba(170, 167, 167, 0.959);
+   color: white;
 }
 ul li a:hover{
     text-decoration: underline red;
@@ -86,8 +84,8 @@ ul li a:hover{
     border-radius: 40px;
     text-align: center;
      height: 40px;
-     background-image: url('HomePics/mandalaa.jpg');
-   color: rgba(170, 167, 167, 0.959);
+     background-color: white;
+   color: black;
      border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
@@ -111,8 +109,8 @@ ul li a:hover{
    height: 30px;
    width: 50px;
    border-radius: 30%;
-   background-image: url('HomePics/mandalaa.jpg');
-   color: rgba(170, 167, 167, 0.959);
+   background-color: white;
+   color: black;
      border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
@@ -122,15 +120,15 @@ ul li a:hover{
 }
 
 .saleBrands-div select{
-    background-image: url('HomePics/mandalaa.jpg');
-    color: rgba(170, 167, 167, 0.959);
+    background-color: white;
+   color: black;
       border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .filter-div select {
     height: 30px;
-    background-image: url('HomePics/mandalaa.jpg');
-    color: rgba(170, 167, 167, 0.959);
+    background-color: white;
+    color: black;
       border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
@@ -179,10 +177,8 @@ ul li a:hover{
 }
 
 .footer-div{
-    color: white;
     height: 250px; 
-    background-image: url('HomePics/mandala.jpg');
-    color: rgba(170, 167, 167, 0.959);
+    background-color: black;
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -210,10 +206,11 @@ ul li a:hover{
 }
 
 .nav-list2 li a{
-    color: black
+    color: white;
 }
 
 .email-div{
+    color: white;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -225,7 +222,14 @@ ul li a:hover{
     border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
+.menuIcon-div{
+    cursor: pointer;
+    margin-left: 90%;
+    display: none;
+}
+
 #quote{
+    color: white;
     font-size: 1.5vw;
     position: absolute;
 }
@@ -284,28 +288,150 @@ button:hover{
 }
 
 
- /*   @media only screen and (min-width:375px){
-        .logoNavlist-div{
-           height: 200px;
-        }
-        .nav-list ul{
-            width: 100%;
-            position: absolute;
-            top: 75px;
-            right: 0;
-            z-index: 2;
-             
-        }
-        .nav-list ul li{
-            display:block;
-            
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .nav-list ul li a{
-         
-        }
+  /* @media only screen and (min-width:375px){
+      .nav-list ul {
+          width: 100%;
+          position: absolute;
+          top: 100px;
+          right: 0;
+          z-index: 2;
+          display: block;
+          background-color: #000000;
+      }
+      
+      .nav-list ul li{
+          display: block;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        margin-left: 760px;
+      }
 
+      .nav-list ul li a{
+          color: white;
+           text-size-adjust: 200%;
+      }
+
+      .nav-list ul li a i{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        display: block;
+        left: 400px;
+        padding-top:170px ;
+      }
+
+      .cartWishlist-div li a  i{
+         padding-right: 20px;
+      }
+      .menuIcon-div{
+          display: block;          
+      }
+
+      #menuList{
+          overflow: hidden;
+          transition: 0.5s;
+      }
+
+      .fa-bars{
+          color: white;
+      }
+
+      .produktet1-2-3-div {
+          flex-direction: column-reverse;
+          margin: 50px 0;
+      }
+
+      .produktet4-5-6-div {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .produktet7-8-9-div {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .body-div img{
+        height: 550px;
+        width: 700px;
+    }
+
+    .body-div {
+        text-size-adjust: 200%;
+    }
+
+    .search-div input{
+       width: 400pt;
+       height: 70px;
+       text-size-adjust: 350%;
+       background-color: white;
+    }
+
+    .filter-div select{
+        width: 180px;
+       height: 70px;
+       margin-right: 20px;
+       text-size-adjust: 330%;
+    }
+
+    .saleBrands-div button, select{
+        width: 180px;
+       height: 70px;
+       margin-right: 20px;
+       text-size-adjust: 330%;
+    }
+    
+    .saleBrands-div{
+        flex-direction: column;
+        margin:50px 0;
+    }
+
+    .saleBrands-div button{
+        margin-bottom: 20%;
+    }
+
+    .filter-div{
+        flex-direction: column;
+        margin:50px 0;
+    }
+
+    .produktet1-2-3-div{
+        margin-top: 180px;
+    }
+
+    .body-div{
+        height: 3000px;
+    }
+
+    .footer-div{
+      margin-top: 3500px;
+      height: 700px;
+    }
+
+    .footer-div p {
+        text-size-adjust: 330%;
+        color: white;
+        display: block;
+    }
+
+    .footer-div a{
+        text-size-adjust: 330%;
+        color: white;
+        display: block;
+       
+    }
+
+   .email-div {
+      float: right;
+   }
+
+   .icons{
+       padding-top:50% ;
+    
+   }
+      
         
 
     

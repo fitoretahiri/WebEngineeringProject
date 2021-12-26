@@ -7,6 +7,9 @@
 </head>
 
 <body>
+    <div class="welcome-div">
+        <p>Welcome!</p>
+    </div>
     <div class="div-1">
         <div class="header-div">
            <div class="logoNavlist-div">
@@ -14,12 +17,18 @@
             <img src="HomePics/" alt="logo" width="100" height="80">
             </div>
 
+            <div class="menuIcon-div"style="font-size: 70px;">
+                <i class="fas fa-bars" onclick="togglemenu()"></i>
+            </div>
             <div class="nav-list">
-                <ul>
+                <ul id="menuList">
+               
                     <li> <a href="index.html">Home</a></li> 
                     <li><a href="order.html">Order</a></li>
-                    <li><a href="contactPage.html">Contact</a></li>
-                    <li><a href="logIn.html">Log in</a></li>
+                    <li> <a href="contactPage.html">Contact</a></li> 
+                    <li><a href="logIn.html">Log In</a></li>
+                    
+                
                     <div class="cartWishlist-div">
                     <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
                     <li><a href=""><i class="far fa-heart"></i></a></li>
@@ -160,7 +169,20 @@
     </div>
 
     
+<script>
+    var menuList=document.getElementById("menuList");
+    menuList.style.maxHeight="0px";
 
+    function togglemenu(){
+        if(menuList.style.maxHeight=="0px"){
+            menuList.style.maxHeight="290px"
+        }
+        else{
+            menuList.style.maxHeight="0px" ;
+        }
+
+    }
+</script>
     
 
 
