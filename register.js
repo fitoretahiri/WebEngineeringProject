@@ -60,15 +60,10 @@ function validateRegister(){
     if(birthdayInput.value.trim()===''){
         onError(birthdayInput,"Birthday cannot be empty!");
     }else{
-        if(!validoDaten(birthdayInput.value)){
-            onError(birthdayInput,"Date is not valid!");
-        }
-        else{
-            onSuccess(birthdayInput);
-            isDate=true;
-        }
+        onSuccess(birthdayInput);
+        isDate=true;
     }
-
+    
     if(emailInput.value.trim()===''){
         onError(emailInput,"Email cannot be empty!");
     }
@@ -119,6 +114,12 @@ function validateRegister(){
         
         document.getElementById('main-content').innerHTML = "";
         div.innerHTML += 'You are now registered! Continue shopping!';
+
+        console.log("Emri: ",nameInput.value);
+        console.log("Mbiemri: ",surnameInput.value);
+        console.log("Mosha: ",ageInput.value);
+        console.log("Data e lindjes: ",birthdayInput.value);
+        console.log("Email: ",emailInput.value);
     }
 }
 

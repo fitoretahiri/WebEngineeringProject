@@ -83,6 +83,9 @@ ul li a:hover{
     position: absolute;
     left: 80%;
 }
+button{
+    cursor: pointer;
+}
 
 /*.carousel{
     background: url('HomePics/funiture.jpg');
@@ -328,11 +331,13 @@ i.fab{
     display: inline-block;
     border-radius: 60px;
     padding: 0.5em 0.6em;
+    cursor: pointer;
 }
 i.far{
     display: inline-block;
     border-radius: 60px;
     padding: 0.5em 0.6em;
+    cursor: pointer;
 }
 
 .icons{
@@ -368,6 +373,7 @@ i.far{
      }
      .icons{
          margin-left: 0%;
+         margin-top: 15%;
      }
      .email-div{
          left: 50%;

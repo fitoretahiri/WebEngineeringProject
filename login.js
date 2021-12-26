@@ -48,6 +48,8 @@ function validateLogIn(){
     if(isEmail && isPass && isCheckbox){
         var mess = document.getElementById('show');
         mess.style.visibility='visible';
+
+        console.log("Email: ",emailInput.value);
         
     }
 }
