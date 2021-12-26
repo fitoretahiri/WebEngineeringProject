@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+	height: 100%;
+	font-family: "Nunito Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+    background-image: url('../HomePics/silvery.jpg');
+}
+#header{
+    padding-top: 1%;
+    color: white;
+    padding-left: 3%;
+}
+.logo-div{
+    position: absolute;
+    padding-left: 3%;
+}
+
+#logo{
+    text-decoration: underline;
+    font-family: fantasy;
+    color: white;
+}
+
+label #btn,
+label #cancel{
+    float: right;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.nav-list ul li{
+    padding-top: 1%;
+}
+
+#heart{
+    margin-left: 70px;
+}
+
+
+#heart a i:hover{
+    color: red;
+}
+.nav-bar{
+    padding-top: 1%;
+    padding-bottom: 2%;
+     background-color: black;
+}
+.nav-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+.nav-list ul li a{
+   margin-left: 70px;
+   text-decoration: none;
+   font-size: 25px;
+   color: white;
+}
+ul li a:hover{
+    text-decoration: underline red;
+    color: gray;
+}
+
+.nav-list button{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 80%;
+}
+button{
+    cursor: pointer;
+}
+
+/*.carousel{
+    background: url('HomePics/funiture.jpg');
+    background-size: 100% 500px;   
+}*/
+
+.inside-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: black;
+}
+.butoni{
+    background-color: black;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: none;
+}
+.link-style{
+    color: white;
+    text-decoration: none;
+}
+.white-text{
+    color: white;
+}
+
+.red-text{
+    color: red;
+    margin-bottom: 3%;
+}
+.slider-text{
+    padding-left: 5%;
+    margin-top: 20%;
+}
+
+#first{
+    background: url('../HomePics/funiture.jpg');
+    background-size: 100% 700px; 
+}
+#second{
+    background: url('../HomePics/hLamp.jpg'); 
+    background-size: 100% 700px; 
+}
+#third{
+    background: url('../HomePics/table.jpg');
+    background-size: 100% 700px; 
+}
+
+.show-content{
+    display: block;
+    height: 400px;
+    max-block-size: fit-content;
+}
+.hidden-content{
+    display: none;
+}
+
+.foto{
+    width: 350px;
+    height: 350px;
+}
+
+.produktet{
+    padding-left: 9%;
+    padding-right: 9%;
+}
+.order{
+    background-color: black;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    border: none;
+    margin-left: 40%;
+}
+.order:hover{
+    color: red;
+}
+
+.paragrafi{
+       
+    text-align: center;
+    padding-left: 7%;
+    padding-top: 148px;
+    padding-bottom: 50px;
+}
+
+.others-say{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.div-holder{
+    max-width: 100%;
+}
+
+.div-most-liked{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 10%;
+}
+
+.Fotot-rreth{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;  
+}
+
+.div-circle{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#paragrafi-iPari{
+    max-width: 300px;
+    position: absolute;
+    left: 45%;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#paragrafi-iDyti{
+    max-width: 300px;
+    position: absolute;
+    right: 53%;
+    margin-top: -18%;
+}
+
+#paragrafi-iTreti{
+    max-width: 300px;
+    position: absolute;
+    left: 45%;
+    margin-top: 5%;
+}
+
+.emri{
+    padding-bottom: 30px;
+    color: crimson;
+}
+#iPari{
+   padding-left: 70%;
+}
+
+#iDyti{
+    padding-left: 3%;
+}
+#iTreti{
+    padding-left: 70%;
+}
+
+.last-div{
+    justify-content: center;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+#kliko{
+    padding-left: 80%;
+    color: black;
+    
+}
+#kliko:hover{
+    color: red;
+}
+
+
+.footer-div{
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-div2 img{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    word-wrap: break-word;
+}
+
+.logo-div2 p{
+    position: absolute;
+    left:10%;
+}
+
+.nav-list2 ul{
+    position: absolute;
+    left: 45%;
+}
+
+.nav-list2 li{
+    list-style: none;
+}
+
+.nav-list2 li a{
+    color: white;
+}
+
+.email-div{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 80%;
+} 
+
+
+
+.fab:hover {
+    color: blue;
+}
+.far:hover {
+    color: blue;
+}
+.fa-facebook-f {
+    color: white;
+    background-color: #000000;
+}
+.fa-twitter{
+    color: white;
+    background-color: #000000;
+}
+.fa-envelope{
+    color: white;
+    background-color: #000000;
+}
+.fa-linkedin-in{
+    color: white;
+    background-color: #000000;
+}
+i.fab{
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+    cursor: pointer;
+}
+i.far{
+    display: inline-block;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 4%;
+    justify-content: center;
+    margin-left: 80%;
+}
+.quote{
+    padding-left: 20%;
+}
+
+.sales{
+    padding-bottom: 40px;
+}
+
+@media (max-width: 1000px){
+    
+
+    .others-say{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #iPari{
+        padding-left: 0%;
+     }
+     
+     #iDyti{
+         padding-left: 0%;
+     }
+     #iTreti{
+         padding-left: 0%;
+     }
+     .icons{
+         margin-left: 0%;
+         margin-top: 15%;
+     }
+     .email-div{
+         left: 50%;
+     }
+     .quote{
+         visibility: hidden;
+     }
+     .nav-list2 ul{
+         left: 30%;
+     }
+     .nav-list{
+         position: relative;
+     }
+
+    .nav-list ul li a{
+         font-size: 15px;
+     }
+   /* 
+     label #btn{
+         display: block;
+     }
+     ul{
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         background: #000000;
+         top: 80px;
+         left: 0;
+         text-align: center;
+         transition: all .5s;
+     }
+     .nav-list ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+
+     }
+     #check:checked ~ ul{
+         left: 0;
+     }*/
+
+}
