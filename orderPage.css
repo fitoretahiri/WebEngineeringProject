@@ -117,7 +117,7 @@ ul li a:hover{
    border-radius: 30%;
    background-color: white;
    color: black;
-     border: 3px solid rgba(170, 167, 167, 0.959);
+   border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .filter-div{
@@ -127,15 +127,15 @@ ul li a:hover{
 
 .saleBrands-div select{
     background-color: white;
-   color: black;
-      border: 3px solid rgba(170, 167, 167, 0.959);
+    color: black;
+    border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .filter-div select {
     height: 30px;
     background-color: white;
     color: black;
-      border: 3px solid rgba(170, 167, 167, 0.959);
+    border: 3px solid rgba(170, 167, 167, 0.959);
 }
 
 .body-div img{
@@ -180,6 +180,17 @@ ul li a:hover{
 .produktet7-8-9-div div{
     padding-left: 50px;
     padding-top: 15px;
+}
+
+.numrat-div{
+    padding-left: 40%;
+    padding-bottom: 8%;
+}
+
+.numrat{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
 
 .footer-div{
@@ -283,7 +294,7 @@ i.far{
 button{
     background-color: rgba(223, 211, 211, 0.658);
     border: 1px solid rgba(0, 0, 0, 0.616);
-transition: all 1s;
+    transition: all 1s;
     cursor: pointer;
 }
 
