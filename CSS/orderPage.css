@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url('HomePics/silvery.jpg');
+    background-image: url('../HomePics/silvery.jpg');
 }
 
 .header-div{
@@ -31,13 +31,7 @@ body{
 
 .logoNavlist-div{
     background-color: black;
-    height: 125px;
-}
-
-.body-div  a:hover{
-    color: blue;
-    text-decoration: underline;
-
+    height: 115px;
 }
 
 #logo{
