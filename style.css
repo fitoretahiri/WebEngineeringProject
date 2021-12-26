@@ -25,7 +25,18 @@ body {
     color: white;
 }
 
-.heart a i:hover{
+
+
+.nav-list ul li{
+    padding-top: 1%;
+}
+
+#heart{
+    margin-left: 70px;
+}
+
+
+#heart a i:hover{
     color: red;
 }
 .nav-bar{
@@ -39,7 +50,7 @@ body {
     list-style: none;
     text-align: center;
     justify-content: center;
-    padding-top: 1%;
+   
 }
 
 .nav-list ul li a{
@@ -173,13 +184,14 @@ ul li a:hover{
 .Fotot-rreth{
     border-radius: 50%;
     width: 300px;
-    height: 300px;    
+    height: 300px;  
 }
 
 .div-circle{
     display: flex;
     flex-wrap: wrap;
 }
+
 
 #paragrafi-iPari{
     max-width: 300px;
@@ -318,4 +330,31 @@ i.far{
 
 .sales{
     padding-bottom: 40px;
+}
+
+@media (max-width: 1000px){
+    .others-say{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #iPari{
+        padding-left: 0%;
+     }
+     
+     #iDyti{
+         padding-left: 0%;
+     }
+     #iTreti{
+         padding-left: 0%;
+     }
+     .icons{
+         margin-left: 0%;
+     }
+     .email-div{
+         left: 50%;
+     }
+     .nav-list2 ul{
+         left: 30%;
+     }
 }
