@@ -7,9 +7,7 @@ body{
     background-image: url('HomePics/silvery.jpg');
 }
 
-.header-div{
-    height: 100px;
-}
+
 
 .menuIcon-div{
     cursor: pointer;
@@ -44,7 +42,7 @@ body{
 
 .logoNavlist-div{
     background-color: black;
-    height: 115px;
+    height: 125px;
 }
 #logo{
     text-decoration: underline;
@@ -123,7 +121,7 @@ hr{
 .submitButton-div button{
     padding: 7px;
     font-size: 15px;
-    background-color: rgba(7, 73, 7, 0.849);
+    background-color: rgb(199, 198, 198);
     border: 5px solid rgb(124, 121, 121);
     color: whitesmoke;
     border-radius: 10px;
@@ -152,7 +150,7 @@ button:hover{
     height: 360px;
     width: 400px;
     margin: auto;
-    background-color:rgba(6, 90, 6, 0.349);
+    background-color:rgb(199, 198, 198);
     border: 3px solid rgba(170, 167, 167, 0.959);
     text-align: center;
     margin-bottom: 8%;
@@ -304,6 +302,58 @@ i.far{
     max-width: 100%;
 }
 
+/*pjesa e produktit te pare*/
+
+.body-div{
+    height: 600px;
+    }
+    
+    .body-div img{
+        border: 5px solid rgba(170, 167, 167, 0.959);
+        margin-top: 5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       width: 50%;
+       height: 50%;
+    }
+    
+    .body-div h2{
+        margin-top: 5%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .body-div p, a{
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stars-div{
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stars-div i:hover{
+        color: orange;
+        
+    }
+
+    .body-div a{
+        color: black;
+    }
+
+    .body-div a:hover{
+        color: blue;
+    }
 
 /*@media  only screen and (min-width:375px){
       .nav-list ul {
