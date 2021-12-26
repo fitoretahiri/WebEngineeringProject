@@ -11,9 +11,10 @@ body{
     height: 100px;
 }
 
-.logoNavlist-div{
-    background-image: url('HomePics/mandalaa.jpg');
-    border: 5px solid rgba(170, 167, 167, 0.959);
+.menuIcon-div{
+    cursor: pointer;
+    margin-left: 90%;
+    display: none;
 }
 
 .cartWishlist-div{
@@ -21,12 +22,9 @@ body{
 }
 
 .cartWishlist-div  li a i{
-    color: rgba(170, 167, 167, 0.959);
+    color: white;
 }
 
-.logoNavlist-div ul li{
-    color: rgba(170, 167, 167, 0.959);
-}
 
 .fa-heart:hover{
     color: red;
@@ -44,11 +42,21 @@ body{
     padding-top: 1%;
 }
 
+.logoNavlist-div{
+    background-color: black;
+    height: 115px;
+}
+#logo{
+    text-decoration: underline;
+    font-family: fantasy;
+    color: white;
+}
+
 .nav-list ul li a{
    margin-left: 70px;
    text-decoration: none;
    font-size: 25px;
-   color: rgba(170, 167, 167, 0.959);
+   color: white;
 }
 ul li a:hover{
     text-decoration: underline red;
@@ -204,8 +212,7 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     margin-top: 10%;
-    background-image: url('HomePics/mandala.jpg');
-    color: rgba(170, 167, 167, 0.959);
+    color: white;
 }
 
 .logo-div2 img{
@@ -213,6 +220,15 @@ button:hover{
     flex-wrap: wrap;
     position: absolute;
     word-wrap: break-word;
+}
+
+.welcome-div{
+    background-color: black;
+   
+}
+
+.welcome-div p{
+     color: white;
 }
 
 .logo-div2 p{
@@ -230,7 +246,7 @@ button:hover{
 }
 
 .nav-list2 li a{
-    color: rgba(170, 167, 167, 0.959);
+    color: white
 }
 
 .email-div{
@@ -289,45 +305,148 @@ i.far{
 }
 
 
-/*@media only screen and (min-width:375px){
-    .nav-list{
-        display: flex;
-        flex-direction: column;
-        font-size: 20pt;
-     
-    }
+/*@media  only screen and (min-width:375px){
+      .nav-list ul {
+          width: 100%;
+          position: absolute;
+          top: 100px;
+          right: 0;
+          z-index: 2;
+          display: block;
+          background-color: #000000;
+      }
+      
+      .nav-list ul li{
+          display: block;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        margin-left: 760px;
+      }
 
-    .header-div img {
-        display: flex;
-        
-    }
+      .nav-list ul li a{
+          color: white;
+           text-size-adjust: 200%;
+      }
 
-    .usersAndOurInfo-div{
-        margin-left:20% ;
-        margin-right:20% ;
-    }
-    .usersNameEmail-div{
-        display: flex;
-        flex-direction: column;
-        font-size: 20pt;
-    }
+      .nav-list ul li a i{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        display: block;
+        left: 400px;
+        padding-top:170px ;
+      }
 
+      .cartWishlist-div li a  i{
+         padding-right: 20px;
+      }
+      .menuIcon-div{
+          display: block; 
+          height: 100px;        
+      }
 
-    
-    
-    .ourInfo-div {
+      #menuList{
+          overflow: hidden;
+          transition: 0.5s;
+      }
+
+      .fa-bars{
+          color: white;
+      }
+
+      .welcome-div{
+          height: 30px;
+        text-size-adjust: 350%;
+      }
+
+      .logo-div{
+          margin-top: 50px;
+      }
+
+      .reachUs-div{
+        text-size-adjust: 350%;
+        margin-bottom: 10%;
+      }
+
+      .usersInfo-div p{
+        text-size-adjust: 300%;
+      }
+
+      .usersInfo-div input{
+          height: 100px;
+          width: 600px;
+      }
+
+      .usersInfo-div textarea{
         height: 400px;
-        width: 200px;
-        margin: auto;
-        background-color: rgba(212, 223, 211, 0.658);
-        
-    }
-}
+        width: 600px;
+        text-size-adjust: 300%;
+      }
 
-    /*te gjithe "femijet" e div-1 kan me e marr kete veti*/
-    /*.div-1 > *{
-        flex-basis: 100%;
-    }
+      .contactBody-div{
+          height: 300px;
+      }
+
+      .usersInfo-div button{
+          height: 90px;
+          width: 250px;
+          text-size-adjust: 300%;
+      }
+
+      .ourInfo-div {
+          height: 600px;
+          width: 800px;
+          text-size-adjust: 350%;
+      }
+
+      .contactIcons-div img {
+          height: 70px;
+      }
+      .googleMap {
+          height: 900px;
+          width: 800px;
+      }
+
+      .footer-div{
+        margin-top: 3500px;
+        height: 900px;
+      }
+  
+      .footer-div p {
+          text-size-adjust: 330%;
+          color: white;
+          display: block;
+      }
+  
+      .footer-div a{
+          text-size-adjust: 330%;
+          color: white;
+          display: block;
+         
+      }
+  
+      .email-div{
+          margin-top: 50%;
+          left: 10%;
+      }
+  
+      .nav-list2 ul{
+          margin-top: 20%;
+          left: 10%;
+      }
+      
+  
+     .icons{
+         padding-top:70% ;
+         left: 10%;
+     }
+        
+        
+     .welcome-div{
+    text-size-adjust: 350%;
+    height: 30px;
+  }
+
     }*/
-    
-    

@@ -31,7 +31,13 @@ body{
 
 .logoNavlist-div{
     background-color: black;
-    height: 110px;
+    height: 115px;
+}
+
+#logo{
+    text-decoration: underline;
+    font-family: fantasy;
+    color: white;
 }
 
 .body-div a{
@@ -288,7 +294,7 @@ button:hover{
 }
 
 
-  /* @media only screen and (min-width:375px){
+ /*  @media only screen and (min-width:375px){
       .nav-list ul {
           width: 100%;
           position: absolute;
@@ -337,6 +343,9 @@ button:hover{
       .fa-bars{
           color: white;
       }
+      .logo-div{
+        margin-top: 50px;
+    }
 
       .produktet1-2-3-div {
           flex-direction: column-reverse;
@@ -398,7 +407,7 @@ button:hover{
     }
 
     .produktet1-2-3-div{
-        margin-top: 180px;
+        margin-top: 190px;
     }
 
     .body-div{
@@ -407,7 +416,7 @@ button:hover{
 
     .footer-div{
       margin-top: 3500px;
-      height: 700px;
+      height: 900px;
     }
 
     .footer-div p {
@@ -423,18 +432,24 @@ button:hover{
        
     }
 
-   .email-div {
-      float: right;
-   }
+    .email-div{
+        margin-top: 50%;
+        left: 10%;
+    }
+
+    .nav-list2 ul{
+        margin-top: 20%;
+        left: 10%;
+    }
+    
 
    .icons{
-       padding-top:50% ;
-    
+       padding-top:70% ;
+       left: 10%;
    }
       
-        
-
-    
-
-
-    }
+   .welcome-div{
+  text-size-adjust: 350%;
+  height: 30px;
+}
+ }*/
