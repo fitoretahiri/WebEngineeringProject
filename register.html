@@ -27,34 +27,58 @@
     </div>  
     </div>
 
-    <div class="main-div">
+    <div class="main-div" id="main-content">
         <h2>WELLCOME! Register to our site:</h2>
-        <label for="">Enter your name:</label>
-            <input type="text" placeholder="Name" class="inputs">
-        <br>
-        <label for="">Enter your surname:</label>
-            <input type="text" placeholder="surname" class="inputs">
-        <br>
-        <label for="">Enter your age:</label>
-            <input type="number" placeholder="age" class="inputs">
-        <br>
-        <label for="">Enter your birthdate:</label>
-            <input type="date" placeholder="date of birth" class="inputs">
-        <br>
+        <div class="form-control">
+            <label for="">Enter your name:</label>
+            <input type="text" placeholder="Name" class="inputs" id="name">
+            <small>Error message</small>
+        </div>    
+        
+        <div class="form-control">
+            <label for="">Enter your surname:</label>
+            <input type="text" placeholder="surname" class="inputs" id="surname">
+            <small>Error message</small>
+        </div>    
+
+        <div class="form-control">
+            <label for="">Enter your age:</label>
+            <input type="number" placeholder="age" class="inputs" id="age">
+            <small>Error message</small>
+        </div>    
+        
+        <div class="form-control">
+            <label for="">Enter your birthdate:</label>
+            <input type="date" placeholder="date of birth" class="inputs" id="birthday">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
         <label for="">Enter email:</label>
-            <input type="email" placeholder="email" class="inputs">
-        <br>
-        <label for="">Enter password:</label>
-            <input type="password" placeholder="password" class="inputs">
-        <br>
-        <label for="">Re-enter password:</label>
-            <input type="password" placeholder="re enter password" class="inputs">
-        <br>
+            <input type="email" placeholder="email" class="inputs" id="email">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="">Enter password:</label>
+            <input type="password" placeholder="password" class="inputs" id="password">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="">Re-enter password:</label>
+            <input type="password" placeholder="re enter password" class="inputs" id="password2">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
         <input type="checkbox" id="checkbox">
         <label for="">I agree with the terms</label>
-        <!--input type="checkbox" id="checkbox">I agree with the terms!-->
         <br>
-        <button>Register</button>
+        <small>Error message</small>
+        </div>
+
+        <button class="butoni2">Register</button>
         <br>
         <button>Register with Facebook</button>
         <br>
@@ -66,7 +90,6 @@
 
     <div class="footer-div">
         <div class="logo-div2"> 
-            <img src="logo.png" alt="logo" width="100" height="80">
             <p>Furniture must have a personality <br>as well as be beautiful</p> 
         </div>
  
@@ -93,5 +116,6 @@
             <i class="far fa-envelope"></i>
         </div>
     </div>
+    <script src="register.js"></script>
 </body>
 </html>
