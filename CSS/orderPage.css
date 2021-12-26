@@ -31,7 +31,13 @@ body{
 
 .logoNavlist-div{
     background-color: black;
-    height: 115px;
+    height: 125px;
+}
+
+.body-div  a:hover{
+    color: blue;
+    text-decoration: underline;
+
 }
 
 #logo{
