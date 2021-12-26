@@ -108,6 +108,7 @@ button{
     padding-bottom: 1%;
     border: none;
 }
+
 .link-style{
     color: white;
     text-decoration: none;
@@ -126,7 +127,7 @@ button{
 }
 
 #first{
-    background: url('../HomePics/funiture.jpg');
+    background: url('../HomePics/lamp.jpeg');
     background-size: 100% 700px; 
 }
 #second{
@@ -134,7 +135,7 @@ button{
     background-size: 100% 700px; 
 }
 #third{
-    background: url('../HomePics/table.jpg');
+    background: url('../HomePics/funiture.jpg');
     background-size: 100% 700px; 
 }
 
