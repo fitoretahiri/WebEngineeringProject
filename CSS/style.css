@@ -401,7 +401,7 @@ i.far{
      }
 }     
 
- @media only screen and (max-width: 320px){
+ @media only screen and (max-width: 360px){
     .nav-list ul li a{
         font-size: 5px;
      }
