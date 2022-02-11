@@ -7,7 +7,9 @@ body{
     background-image: url('../HomePics/silvery.jpg');
 }
 
-
+.cartWishlist-div{
+    padding-bottom: 20px;
+}
 
 .menuIcon-div{
     cursor: pointer;
@@ -42,7 +44,7 @@ body{
 
 .logoNavlist-div{
     background-color: black;
-    height: 125px;
+    height: 155px;
 }
 #logo{
     text-decoration: underline;
@@ -355,7 +357,7 @@ i.far{
         color: blue;
     }
 
-/*@media  only screen and (min-width:375px){
+    @media  screen and (max-width:1000px){
       .nav-list ul {
           width: 100%;
           position: absolute;
@@ -499,4 +501,4 @@ i.far{
     height: 30px;
   }
 
-    }*/
+    }

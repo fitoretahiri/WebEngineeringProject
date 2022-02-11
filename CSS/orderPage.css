@@ -314,7 +314,7 @@ button:hover{
 }
 
 
- /*  @media only screen and (min-width:375px){
+   @media  screen and (max-width:1000px){
       .nav-list ul {
           width: 100%;
           position: absolute;
@@ -472,4 +472,4 @@ button:hover{
   text-size-adjust: 350%;
   height: 30px;
 }
- }*/
+ }
