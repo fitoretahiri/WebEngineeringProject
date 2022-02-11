@@ -25,17 +25,6 @@ body {
     color: white;
 }
 
-label #btn,
-label #cancel{
-    float: right;
-    color: white;
-    font-size: 30px;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
 #check{
     display: none;
 }
@@ -91,11 +80,6 @@ ul li a:hover{
 button{
     cursor: pointer;
 }
-
-/*.carousel{
-    background: url('HomePics/funiture.jpg');
-    background-size: 100% 500px;   
-}*/
 
 .inside-carousel{
     display: flex;
@@ -178,20 +162,10 @@ button{
 }
 
 .paragrafi{
-       
     text-align: center;
     padding-left: 7%;
     padding-top: 148px;
     padding-bottom: 50px;
-}
-
-.others-say{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-}
-.div-holder{
-    max-width: 100%;
 }
 
 .div-most-liked{
@@ -207,50 +181,24 @@ button{
     border-radius: 50%;
     width: 300px;
     height: 300px;  
+    margin-bottom: 3%;
 }
 
-.div-circle{
+.others-say{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 16%;
 }
 
-
-#paragrafi-iPari{
-    max-width: 300px;
+.paragrafi-div{
     position: absolute;
-    left: 45%;
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#paragrafi-iDyti{
-    max-width: 300px;
-    position: absolute;
-    right: 53%;
-    margin-top: -18%;
-}
-
-#paragrafi-iTreti{
-    max-width: 300px;
-    position: absolute;
-    left: 45%;
-    margin-top: 5%;
+    margin-left: 35%;
+    margin-top: -210px;
 }
 
 .emri{
     padding-bottom: 30px;
     color: crimson;
-}
-#iPari{
-   padding-left: 70%;
-}
-
-#iDyti{
-    padding-left: 3%;
-}
-#iTreti{
-    padding-left: 70%;
 }
 
 .last-div{
@@ -309,8 +257,6 @@ button{
     left: 80%;
 } 
 
-
-
 .fab:hover {
     color: blue;
 }
@@ -359,27 +305,23 @@ i.far{
     padding-bottom: 40px;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 855px){
     .nav-bar{
         padding-top: 2%;
         padding-bottom: 4%;
     }
 
     .others-say{
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-direction: column;
     }
-    #iPari{
-        padding-left: 0%;
-     }
-     
-     #iDyti{
-         padding-left: 0%;
-     }
-     #iTreti{
-         padding-left: 0%;
-     }
+    .div-holder{
+        margin-bottom: 27%;
+    }
+    .paragrafi-div{
+        margin-top: 0%;
+        margin-left: -2%;
+    }
      .icons{
          margin-left: 0%;
          margin-top: 15%;
@@ -407,9 +349,6 @@ i.far{
         font-size: 5px;
      }
     
-    .others-say{
-        flex-direction: column;
-    }
     .div-holder{
         display: flex;
         flex-direction: column;
