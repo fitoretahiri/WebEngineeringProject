@@ -1,4 +1,6 @@
 window.onscroll = sliderFunction();
+//window.onload==sliderFunction();
+
 
 function sliderFunction(){
     var sliderList = document.getElementsByClassName('inside-carousel');
