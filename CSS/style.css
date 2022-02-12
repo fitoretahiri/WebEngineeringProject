@@ -342,6 +342,12 @@ i.far{
      .nav-list2 ul li{
         visibility: hidden;
     }
+    .inside-carousel{
+        height: 139px;
+    }
+    #second{
+        background-size: 100% 500px;
+    }
 }     
 
  @media screen and (max-width: 320px){
