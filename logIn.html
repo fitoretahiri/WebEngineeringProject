@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,17 +28,17 @@
     </div>
 
 
-    <form class="main-div">
+    <form class="main-div" method="post" action="loginValidate.php" >
         <h2>Log in to continue!</h2>
         <div class="form-control">
             <label for="">Enter email:</label>
-            <input type="email" placeholder="email" id="email" class="inputs">
+            <input type="email" placeholder="email" id="email" class="inputs" name="email">
             <small>Error message</small>
         </div>
         <br>
         <div class="form-control">
             <label for="" >Enter password:</label>
-            <input type="password" placeholder="password" id="password" class="inputs">
+            <input type="password" placeholder="password" id="password" class="inputs" name="password">
             <small>Error message</small>
         </div>
 
@@ -51,7 +52,7 @@
         <br>
         <a href="">Forgot your password?</a>
         <br>
-        <button class="butoni1">Log in</button>
+        <button class="butoni1" name="loginBtn" value="Login">Log in</button>
         <br>
         <button><a href="www.facebook.com" style="color: white; text-decoration: none;">Register with Facebook</a></button>
         <br>
