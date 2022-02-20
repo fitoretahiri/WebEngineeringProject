@@ -28,7 +28,7 @@
     </div>
 
 
-    <form class="main-div" action="logIn.html"  method="post" >
+    <form class="main-div" action="logIn.php" method="post" >
         <h2>Log in to continue!</h2>
         <div class="form-control">
             <label for="">Enter email:</label>
@@ -63,7 +63,7 @@
         <h3 id="show">You are now logged in! <a href="order.html">Continue!</a></h2>
     </form>
     <?php
-    include "loginValidate.php";
+    require_once 'loginValidate.php';
    ?>
 
     <div class="footer-div">
@@ -96,6 +96,6 @@
             <i class="far fa-envelope"></i>
         </div>
     </div>
-   <!---<script src="JS/login.js"></script>--> 
+  <!---<script src="JS/login.js"></script>--->
 </body>
 </html>

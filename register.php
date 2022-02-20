@@ -1,13 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
-    <link rel="stylesheet" href="CSS/logIn.css">
+    <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/logIn.css">
     <script src="https://kit.fontawesome.com/96651c389e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,44 +26,66 @@
     </div>  
     </div>
 
-
-    <form class="main-div" action="logIn.html"  method="post" >
-        <h2>Log in to continue!</h2>
+    <div class="main-div" id="main-content">
+        <h2>WELLCOME! Register to our site:</h2>
         <div class="form-control">
-            <label for="">Enter email:</label>
-            <input type="email" placeholder="email" id="email" class="inputs" name="email">
+            <label for="">Enter your name:</label>
+            <input type="text" placeholder="Name" class="inputs" id="name">
+            <small>Error message</small>
+        </div>    
+        
+        <div class="form-control">
+            <label for="">Enter your surname:</label>
+            <input type="text" placeholder="surname" class="inputs" id="surname">
+            <small>Error message</small>
+        </div>    
+
+        <div class="form-control">
+            <label for="">Enter your age:</label>
+            <input type="number" placeholder="age" class="inputs" id="age">
+            <small>Error message</small>
+        </div>    
+        
+        <div class="form-control">
+            <label for="">Enter your birthdate:</label>
+            <input type="date" placeholder="date of birth" class="inputs" id="birthday">
             <small>Error message</small>
         </div>
-        <br>
+
         <div class="form-control">
-            <label for="" >Enter password:</label>
-            <input type="password" placeholder="password" id="password" class="inputs" name="password">
+        <label for="">Enter email:</label>
+            <input type="email" placeholder="email" class="inputs" id="email">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
-            <input type="checkbox" id="checkbox">
-            <label for="">I agree with the terms</label>
-            <br>
+            <label for="">Enter password:</label>
+            <input type="password" placeholder="password" class="inputs" id="password">
             <small>Error message</small>
         </div>
 
+        <div class="form-control">
+            <label for="">Re-enter password:</label>
+            <input type="password" placeholder="re enter password" class="inputs" id="password2">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+        <input type="checkbox" id="checkbox">
+        <label for="">I agree with the terms</label>
         <br>
-        <a href="">Forgot your password?</a>
-        <br>
-        <button class="butoni1" name="loginBtn" value="Login">Log in</button>
+        <small>Error message</small>
+        </div>
+
+        <button class="butoni2">Register</button>
         <br>
         <button><a href="www.facebook.com" style="color: white; text-decoration: none;">Register with Facebook</a></button>
         <br>
-        <button><a href="www.gmail.com" style="color: white; text-decoration: none;">Register with Google</a></button>
+        <button><a href="www.gmail.com"  style="color: white; text-decoration: none;">Register with Google</a></button>
         <br>
-        <p>If your're not registered, <a href="register.html">register!</a></p>
+        <p>Already have an account, <a href="logIn.html">log in!</a></p>
+    </div>
 
-        <h3 id="show">You are now logged in! <a href="order.html">Continue!</a></h2>
-    </form>
-    <?php
-    include "loginValidate.php";
-   ?>
 
     <div class="footer-div">
         <div class="logo-div2"> 
@@ -96,6 +117,6 @@
             <i class="far fa-envelope"></i>
         </div>
     </div>
-   <!---<script src="JS/login.js"></script>--> 
+    <script src="JS/register.js"></script>
 </body>
 </html>
