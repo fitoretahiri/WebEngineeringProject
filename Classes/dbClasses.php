@@ -1,11 +1,15 @@
 <?php
 
 class Dbh{
-    private function connect() {
+    protected function connect() {
         try{
-
-        }catch(){
-
+            $username="root";
+            $password="";
+            $dbh=new PDO('mysql:host=localhost;dbname=ooplogin',$email,$password);
+            return $dbh;
+        }catch(PDOException $e){
+            print "Error!: ".$e->getMessage()."<br/>";
+            die();
         }
     }
 }
