@@ -1,5 +1,5 @@
 <?php
-    include_once '../database/databaseConnection.php';
+    include_once './database/databaseConnection.php';
 
     class UserRepository{
         private $connection;
@@ -55,8 +55,21 @@
             return $user;
         }
 
+        //save button ne edit
+        function updateUser($id,$name,$surname,$age,$birthday,$email,$psw,$psw2){
+            $conn=$this->connection;
+
+            $sql="UPDATE  users SET name=?,surname=?, age=?,birthday=?,email=?, psw=?,psw2=? WHERE id=?";
+            $statement = $conn->prepare($sql);
+
+            //te pikepytjet vendosen kto te dhena
+            $statement->execute([$name,$surname,$age,$birthday,$email,$psw,$psw2,$id]);
+
+        }
+
         
     }
+
 
 
 ?>

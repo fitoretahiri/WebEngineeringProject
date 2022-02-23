@@ -29,4 +29,23 @@ $user=$userRepository->getUserById($userId);
     <input type="submit"  name="saveBtn" value="save"><br><br>
 </form>
 </body>
+
+<?php
+
+if(isset($_POST["saveBtn"])){
+//id e marrim direkt prej userit ne databaze e cila nuk mund te ndryshohet
+$id=$user['id'];
+
+$name=$_POST['name'];
+$surname=$_POST['surname'];
+$age=$_POST['age'];
+$birthday=$_POST['birthday'];
+$email=$_POST['email'];
+$psw=$_POST['psw'];
+$psw2=$_POST['psw2'];
+
+$userRepository->updateUser($id,$name,$surname,$age,$birthday,$email,$psw,$psw2);
+header("location:dashboard.php");
+}
+?>
 </html>

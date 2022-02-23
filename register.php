@@ -14,11 +14,11 @@
         <!--h1 id="logo"><em>Furniture</em></h1-->
         
             <ul id="lista-e-pare">
-                <li> <a href="index.html">Home</a></li> 
-                <li><a href="order.html">Order</a></li>
-                <li><a href="contactPage.html">Contact</a></li>
-                <li><a href="logIn.html">Log in</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li> <a href="index.php">Home</a></li> 
+                <li><a href="order.php">Order</a></li>
+                <li><a href="contactPage.php">Contact</a></li>
+                <li><a href="logIn.php">Log in</a></li>
+                <li><a href="register.php">Register</a></li>
             </ul>
         
     </div>  
@@ -29,43 +29,43 @@
         <form action ="register.php" method="POST">
         <div class="form-control">
             <label for="">Enter your name:</label>
-            <input type="text" placeholder="Name" class="inputs"  name="name">
+            <input type="text" placeholder="Name" class="inputs"  name="name" id="name">
             <small>Error message</small>
         </div>    
         
         <div class="form-control">
             <label for="">Enter your surname:</label>
-            <input type="text" placeholder="surname" class="inputs" name="surname">
+            <input type="text" placeholder="surname" class="inputs" name="surname" id="surname">
             <small>Error message</small>
         </div>    
 
         <div class="form-control">
             <label for="">Enter your age:</label>
-            <input type="number" placeholder="age" class="inputs" name="age">
+            <input type="number" placeholder="age" class="inputs" name="age" id="age">
             <small>Error message</small>
         </div>    
         
         <div class="form-control">
             <label for="">Enter your birthdate:</label>
-            <input type="date" placeholder="date of birth" class="inputs" name="birthday">
+            <input type="date" placeholder="date of birth" class="inputs" name="birthday" id="birthday">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
         <label for="">Enter email:</label>
-            <input type="email" placeholder="email" class="inputs" name="email">
+            <input type="email" placeholder="email" class="inputs" name="email" id="email">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
             <label for="">Enter password:</label>
-            <input type="password" placeholder="password" class="inputs"  name="psw">
+            <input type="password" placeholder="password" class="inputs"  name="psw" id="password">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
             <label for="">Re-enter password:</label>
-            <input type="password" placeholder="re enter password" class="inputs" name="psw2">
+            <input type="password" placeholder="re enter password" class="inputs" name="psw2" id="password2">
             <small>Error message</small>
         </div>
 
@@ -76,13 +76,13 @@
         <small>Error message</small>
         </div>
 
-        <input type="submit" class="butoni2" name="submit">
+        <input id="butoni" type="submit" class="butoni2" name="submit">
         <br>
         <button><a href="www.facebook.com" style="color: white; text-decoration: none;">Register with Facebook</a></button>
         <br>
         <button><a href="www.gmail.com"  style="color: white; text-decoration: none;">Register with Google</a></button>
         <br>
-        <p>Already have an account, <a href="logIn.html">log in!</a></p>
+        <p>Already have an account, <a href="logIn.php">log in!</a></p>
     </div>
 </form>
   
