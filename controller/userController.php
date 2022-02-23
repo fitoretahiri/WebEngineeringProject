@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 include_once './repository/userRepository.php';
 include_once './Classes/signupClasses.php';
 
@@ -22,7 +22,10 @@ include_once './Classes/signupClasses.php';
 
             $userRepository->insertUser($user);
         }
+        
     }
+
+    
 
 
 ?>

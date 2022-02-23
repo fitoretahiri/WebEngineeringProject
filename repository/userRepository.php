@@ -1,5 +1,5 @@
 <?php
-    include_once './database/databaseConnection.php';
+    include_once '../database/databaseConnection.php';
 
     class UserRepository{
         private $connection;
@@ -29,6 +29,33 @@
             
             //echo "<script> alert('user is added'); </script>";
         }
+
+        function getAllUsers(){
+            $conn=$this->connection;
+
+            $sql="SELECT * FROM users";
+
+            //me marr te dhena e perdorim funksionin query
+            $statement=$conn->query($sql);
+            //pasi kemi me marr shume rreshta e perdorim fetchAll()
+            $users=$statement->fetchAll();
+
+            return $users;
+        }
+
+        function getUserById($id){
+            $conn=$this->connection;
+
+            $sql="SELECT * FROM users WHERE id='$id'";
+
+            $statement=$conn->query($sql);
+         
+            $user=$statement->fetch();
+
+            return $user;
+        }
+
+        
     }
 
 
