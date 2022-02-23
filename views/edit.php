@@ -1,11 +1,11 @@
 <?php
 
-include_once '../repository/userRepository.php';
-// e marrim id e perdorusit permes get
-$userId=$_GET['id'];
+    include_once '../repository/userRepository.php';
+    // e marrim id e perdorusit permes get
+    $userId=$_GET['id'];
 
-$userRepository=new UserRepository();
-$user=$userRepository->getUserById($userId);
+    $userRepository=new UserRepository();
+    $user=$userRepository->getUserById($userId);
 ?>
 
 <!DOCTYPE html>
@@ -32,20 +32,20 @@ $user=$userRepository->getUserById($userId);
 
 <?php
 
-if(isset($_POST["saveBtn"])){
-//id e marrim direkt prej userit ne databaze e cila nuk mund te ndryshohet
-$id=$user['id'];
+    if(isset($_POST["saveBtn"])){
+    //id e marrim direkt prej userit ne databaze e cila nuk mund te ndryshohet
+    $id=$user['id'];
 
-$name=$_POST['name'];
-$surname=$_POST['surname'];
-$age=$_POST['age'];
-$birthday=$_POST['birthday'];
-$email=$_POST['email'];
-$psw=$_POST['psw'];
-$psw2=$_POST['psw2'];
+    $name=$_POST['name'];
+    $surname=$_POST['surname'];
+    $age=$_POST['age'];
+    $birthday=$_POST['birthday'];
+    $email=$_POST['email'];
+    $psw=$_POST['psw'];
+    $psw2=$_POST['psw2'];
 
-$userRepository->updateUser($id,$name,$surname,$age,$birthday,$email,$psw,$psw2);
-header("location:dashboard.php");
+    $userRepository->updateUser($id,$name,$surname,$age,$birthday,$email,$psw,$psw2);
+    header("location:dashboard.php");
 }
 ?>
 </html>

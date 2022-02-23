@@ -1,5 +1,5 @@
 <?php
-    include_once './database/databaseConnection.php';
+    include_once '../database/databaseConnection.php';
 
     class UserRepository{
         private $connection;
@@ -67,6 +67,17 @@
 
         }
 
+
+        function deleteUser($id){
+            $conn=$this->connection;
+
+            $sql="DELETE FROM users WHERE id=?";
+            $statement = $conn->prepare($sql);
+
+            //te pikepytjet vendosen kto te dhena
+            $statement->execute([$id]);
+
+        }
         
     }
 

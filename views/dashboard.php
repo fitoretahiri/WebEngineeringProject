@@ -39,7 +39,7 @@
             <td>$user[psw]</td>
             <td>$user[psw2]</td>
             <td><a href='edit.php?id=$user[id]'>Edit</a></td>
-            <td><a href='edit.php'>Delete</a></td>
+            <td><a href='delete.php?id=$user[id]'>Delete</a></td>
             </tr>
             ";
         }
