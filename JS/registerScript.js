@@ -1,3 +1,5 @@
+
+
 let nameInput=document.getElementById('name');
 let surnameInput=document.getElementById('surname');
 let ageInput=document.getElementById('age');
@@ -14,7 +16,6 @@ let isSurname=false;
 let isDate=true;
 let isAge=false;
 let isPass2=false;
-
 
 function validateRegister(){
     if(nameInput.value.trim()===''){
@@ -123,7 +124,14 @@ function validateRegister(){
     }
 }
 
-document.querySelector("button")
+/*
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    validateRegister();
+});
+*/
+
+document.querySelector("input[name='submit']")
 .addEventListener("click",(event)=>{
     event.preventDefault();
     validateRegister();
@@ -172,6 +180,7 @@ function emailValidation(emailInput){
 function testLength(passwordInput){
      return /^.{8,}$/.test(passwordInput);
  }
+ 
 /*
  const signup = document.querySelector('input[type="submit"]');
  var status

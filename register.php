@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +16,11 @@
         <!--h1 id="logo"><em>Furniture</em></h1-->
         
             <ul id="lista-e-pare">
-                <li> <a href="index.html">Home</a></li> 
+                <li> <a href="index.php">Home</a></li> 
                 <li><a href="order.html">Order</a></li>
                 <li><a href="contactPage.html">Contact</a></li>
                 <li><a href="logIn.html">Log in</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="register.php">Register</a></li>
             </ul>
         
     </div>  
@@ -26,46 +28,47 @@
 
     <div class="main-div" id="main-content">
         <h2>WELLCOME! Register to our site:</h2>
-        <form action ="register.php" method="POST">
+
+    <form  action ="register.php" method="POST">
         <div class="form-control">
             <label for="">Enter your name:</label>
-            <input type="text" placeholder="Name" class="inputs"  name="name">
+            <input type="text" placeholder="Name" class="inputs"  name="name" id="name"">
             <small>Error message</small>
         </div>    
         
         <div class="form-control">
             <label for="">Enter your surname:</label>
-            <input type="text" placeholder="surname" class="inputs" name="surname">
+            <input type="text" placeholder="surname" class="inputs" name="surname" id="surname">
             <small>Error message</small>
         </div>    
 
         <div class="form-control">
             <label for="">Enter your age:</label>
-            <input type="number" placeholder="age" class="inputs" name="age">
+            <input type="number" placeholder="age" class="inputs" name="age" id="age">
             <small>Error message</small>
         </div>    
         
         <div class="form-control">
             <label for="">Enter your birthdate:</label>
-            <input type="date" placeholder="date of birth" class="inputs" name="birthday">
+            <input type="date" placeholder="date of birth" class="inputs" name="birthday" id="birthday">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
         <label for="">Enter email:</label>
-            <input type="email" placeholder="email" class="inputs" name="email">
+            <input type="email" placeholder="email" class="inputs" name="email" id="email">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
             <label for="">Enter password:</label>
-            <input type="password" placeholder="password" class="inputs"  name="psw">
+            <input type="password" placeholder="password" class="inputs"  name="psw" id="password">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
             <label for="">Re-enter password:</label>
-            <input type="password" placeholder="re enter password" class="inputs" name="psw2">
+            <input type="password" placeholder="re enter password" class="inputs" name="psw2" id="password2">
             <small>Error message</small>
         </div>
 
@@ -76,7 +79,7 @@
         <small>Error message</small>
         </div>
 
-        <input type="submit" class="butoni2" name="submit">
+        <input name="submit" type="submit" class="butoni2" >
         <br>
         <button><a href="www.facebook.com" style="color: white; text-decoration: none;">Register with Facebook</a></button>
         <br>
@@ -86,6 +89,9 @@
     </div>
 </form>
   
+<?php
+    include_once('controller/userController.php');
+    ?> 
     <div class="footer-div">
         <div class="logo-div2"> 
             <div class="logo-div"><h1 id="logo"><em>Furniture</em></h1></div>
@@ -116,8 +122,6 @@
             <i class="far fa-envelope"></i>
         </div>
     </div>
-   <script src="JS/register.js"></script>
-   <?php
-    include_once('controller/userController.php');
-    ?>  
+   <script src="JS/registerScript.js"></script>
 </body>
+</html>
