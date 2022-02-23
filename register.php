@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,46 +26,46 @@
 
     <div class="main-div" id="main-content">
         <h2>WELLCOME! Register to our site:</h2>
-        <form action ="register.php" method="post">
+        <form action ="register.php" method="POST">
         <div class="form-control">
             <label for="">Enter your name:</label>
-            <input type="text" placeholder="Name" class="inputs" id="name" name="name">
+            <input type="text" placeholder="Name" class="inputs"  name="name">
             <small>Error message</small>
         </div>    
         
         <div class="form-control">
             <label for="">Enter your surname:</label>
-            <input type="text" placeholder="surname" class="inputs" id="surname" name="surname">
+            <input type="text" placeholder="surname" class="inputs" name="surname">
             <small>Error message</small>
         </div>    
 
         <div class="form-control">
             <label for="">Enter your age:</label>
-            <input type="number" placeholder="age" class="inputs" id="age" name="age">
+            <input type="number" placeholder="age" class="inputs" name="age">
             <small>Error message</small>
         </div>    
         
         <div class="form-control">
             <label for="">Enter your birthdate:</label>
-            <input type="date" placeholder="date of birth" class="inputs" id="birthday" name="birthday">
+            <input type="date" placeholder="date of birth" class="inputs" name="birthday">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
         <label for="">Enter email:</label>
-            <input type="email" placeholder="email" class="inputs" id="email" name="email">
+            <input type="email" placeholder="email" class="inputs" name="email">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
             <label for="">Enter password:</label>
-            <input type="password" placeholder="password" class="inputs" id="password" name="password">
+            <input type="password" placeholder="password" class="inputs"  name="psw">
             <small>Error message</small>
         </div>
 
         <div class="form-control">
             <label for="">Re-enter password:</label>
-            <input type="password" placeholder="re enter password" class="inputs" id="password2" name="password2">
+            <input type="password" placeholder="re enter password" class="inputs" name="psw2">
             <small>Error message</small>
         </div>
 
@@ -78,7 +76,7 @@
         <small>Error message</small>
         </div>
 
-        <button class="butoni2" name="butoni2">Register</button>
+        <input type="submit" class="butoni2" name="submit">
         <br>
         <button><a href="www.facebook.com" style="color: white; text-decoration: none;">Register with Facebook</a></button>
         <br>
@@ -87,10 +85,7 @@
         <p>Already have an account, <a href="logIn.html">log in!</a></p>
     </div>
 </form>
-<?php
-    require_once 'signupValidation.php';
-   ?>
-
+  
     <div class="footer-div">
         <div class="logo-div2"> 
             <div class="logo-div"><h1 id="logo"><em>Furniture</em></h1></div>
@@ -121,6 +116,8 @@
             <i class="far fa-envelope"></i>
         </div>
     </div>
-   <!--- <script src="JS/register.js"></script>--->
+   <script src="JS/register.js"></script>
+   <?php
+    include_once('controller/userController.php');
+    ?>  
 </body>
-</html>

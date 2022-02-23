@@ -27,8 +27,8 @@
                     <li> <a href="index.html">Home</a></li> 
                     <li><a href="order.html">Order</a></li>
                     <li><a href="contactPage.html">Contact</a></li>
-                    <li><a href="logIn.html">Log in</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="logIn.php">Log in</a></li>
+                    <li><a href="register.php">Register</a></li>
                     <!--li class="corner"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
                     <li id="heart"><a href=""><i class="far fa-heart"></i></a></li-->
                 </ul>

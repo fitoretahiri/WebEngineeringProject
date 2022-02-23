@@ -1,44 +1,99 @@
-  <?php
+<?php
+    class User{
+        private $id;
+        private $name;
+        private $surname;
+        private $age;
+        private $birthday;
+        private $email;
+        private $psw;
+        private $psw2;
 
-  class Signup extends Dbh{
+        public function __construct($id,$name,$surname,$age,$birthday,$email,$psw,$psw2){
+            $this->id=$id;
+            $this->name=$name;
+            $this->surname=$surname;
+            $this->age=$age;
+            $this->birthday=$birthday;
+            $this->email=$email;
+            $this->psw=$psw;
+            $this->psw2=$psw2;            
+        }
 
-    protected function setUser($name,$surname,$birthday,$email, $password){
-        //kqyrim a eshte nje email qe e shkrun useri e ne databaze dmth qe u shkrujt m'a heret
-         $statement=$this->connect()->prepare(' INSERT INTO users(users_name,users_surname,users_birthday,users_email,users_password)VALUES (?,?,?,?,?);');
+        function getId(){
+            return $this->id;
+        }
 
-         //me databaze e shfaqim passwordin hashed
-         $hashedPassword=password_hash($password,PASSWORD_DEFAULT);
-         //nese statement execution fails
-         if!($statement->execute(array($name,$surname,$birthday,$email, $hashedPassword))){
-             $statement=null;
-             header("location: ../index.php?error=statementfailed");
-             exit();
-         }
+        public function getName(){
+            return $this->name;
+        }
 
-         $statement=null;
-     }
+        public function getSurname(){
+            return $this->surname;
+        }
 
-      protected function checkUser($email){
-         //kqyrim a eshte nje email qe e shkrun useri e ne databaze dmth qe u shkrujt m'a heret
-          $statement=$this->connect()->prepare('SELECT users_email FROM users WHERE users_email=? ;');
+        public function getAge(){
+            return $this->age;
+        }
 
-          //nese statement execution fails
-          if!($statement->execute($email)){
-              $statement=null;
-              header("location: ../index.php?error=statementfailed");
-              exit();
-          }
+        public function getBirthday(){
+            return $this->birthday;
+        }
 
-          //nese useri vec ekziston ne databaze me qat email, nuk e leojojme regjistrimin, nese ndodh e kunderta e lejojme
-          $resultCheck;
-          if($statement->rowCount()>0){
-              $resultCheck=false;
-          }
-          else{
-              $resultCheck=true;
-          }
-          return $resultCheck;
-      }
+        public function getEmail(){
+            return $this->email;
+        }
 
-      
-  }
+        public function getPsw(){
+            return $this->psw;
+        }
+
+        public function getPsw2(){
+            return $this->psw2;
+        }
+
+       // abstract function getRole();
+    }
+/*
+    class Admin extends User implements Behaviors{
+        private $permision;
+
+        public function __construct($name,$surname,$age,$birthday,$email,$psw,$psw2,$permision){
+            parent::__construct($name,$surname,$age,$birthday,$email,$psw,$psw2);
+            $this->permision=$permision;
+        }
+
+        public function getPermision(){
+            return $permision;
+        }
+
+        public function getRole(){
+
+        }
+
+        function login($username,$password){
+
+        }
+        function logout(){
+
+        }
+    }
+
+    class SimpleUser extends User implements Behaviors{
+        public function getRole(){
+
+        }
+
+        function login($username,$password){
+
+        }
+        function logout(){
+
+        }
+    }
+
+    interface Behaviors{
+        function login($username,$password);
+        function logout();
+    }*/
+?>

@@ -172,3 +172,20 @@ function emailValidation(emailInput){
 function testLength(passwordInput){
      return /^.{8,}$/.test(passwordInput);
  }
+/*
+ const signup = document.querySelector('input[type="submit"]');
+ var status
+ signup.addEventListener('click',()=>{
+     const formData = new FormData(document.querySelector('form'))
+     fetch('http://localhost:8080/userController.php',{
+         method: 'POST',
+         body: formData
+     })
+     .then(res => {
+         //status = res.status;
+         return res.text();
+     })
+     .then(data=>{
+         alert(data);
+     })
+ })*/
