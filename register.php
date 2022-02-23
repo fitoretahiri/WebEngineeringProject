@@ -17,9 +17,15 @@
         
             <ul id="lista-e-pare">
                 <li> <a href="index.php">Home</a></li> 
+<<<<<<< HEAD
                 <li><a href="order.html">Order</a></li>
                 <li><a href="contactPage.html">Contact</a></li>
                 <li><a href="logIn.html">Log in</a></li>
+=======
+                <li><a href="order.php">Order</a></li>
+                <li><a href="contactPage.php">Contact</a></li>
+                <li><a href="logIn.php">Log in</a></li>
+>>>>>>> 826daa207fca53f01e64d33c7df019be482f6002
                 <li><a href="register.php">Register</a></li>
             </ul>
         
@@ -32,7 +38,11 @@
     <form  action ="register.php" method="POST">
         <div class="form-control">
             <label for="">Enter your name:</label>
+<<<<<<< HEAD
             <input type="text" placeholder="Name" class="inputs"  name="name" id="name"">
+=======
+            <input type="text" placeholder="Name" class="inputs"  name="name" id="name">
+>>>>>>> 826daa207fca53f01e64d33c7df019be482f6002
             <small>Error message</small>
         </div>    
         
@@ -79,13 +89,17 @@
         <small>Error message</small>
         </div>
 
+<<<<<<< HEAD
         <input name="submit" type="submit" class="butoni2" >
+=======
+        <input id="butoni" type="submit" class="butoni2" name="submit">
+>>>>>>> 826daa207fca53f01e64d33c7df019be482f6002
         <br>
         <button><a href="www.facebook.com" style="color: white; text-decoration: none;">Register with Facebook</a></button>
         <br>
         <button><a href="www.gmail.com"  style="color: white; text-decoration: none;">Register with Google</a></button>
         <br>
-        <p>Already have an account, <a href="logIn.html">log in!</a></p>
+        <p>Already have an account, <a href="logIn.php">log in!</a></p>
     </div>
 </form>
   
