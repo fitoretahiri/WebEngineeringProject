@@ -1,10 +1,6 @@
 <?php
-<<<<<<< HEAD
 
 
-=======
-//session_start();
->>>>>>> 826daa207fca53f01e64d33c7df019be482f6002
 include_once './repository/userRepository.php';
 include_once './Classes/signupClasses.php';
 
