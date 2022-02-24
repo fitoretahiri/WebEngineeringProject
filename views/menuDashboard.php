@@ -68,7 +68,7 @@ require_once '../controller/productController.php';
             <td><?php echo $menu['menu_title']; ?></td>
             <td><?php echo $menu['menu_body']; ?></td>
             <td><a href="edit-product.php?id=<?php echo $menu['Id']; ?>">Edit</a></td>
-            <td><a href="delete-product.php?id=<?php echo $menu['Id'];?>">Delete</a></td>
+            <td><a href="delete-products.php?id=<?php echo $menu['Id'];?>">Delete</a></td>
           </tr>
           <?php endforeach; ?>
         </tbody>

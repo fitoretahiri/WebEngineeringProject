@@ -16,7 +16,7 @@ class ProductController{
     public function readData(){
 
         //metoda query()mundeson shenimin e sintakses se databazes
-        $query=$this->db->pdo->query('SELECT * FROM menu');
+        $query=$this->db->database->query('SELECT * FROM menu');
 
         return $query->fetchAll();
     }
@@ -25,7 +25,7 @@ class ProductController{
         //e kemi vene si parameter $request qe me e pas me te lehte me i marr te dhenat masi i bejme submit permes $_GET os post
 
         //metoda prepare() mundeson fshirjen,update-imin e fushave
-        $query=$this->db->pdo->prepare('INSERT INTO menu(menu_image,menu_title,menu_body)
+        $query=$this->db->database->prepare('INSERT INTO menu(menu_image,menu_title,menu_body)
         VALUES (:menu_image, :menu_title, :menu_body)');
 
         //tash duhet me i tregu :menu_image cka eshte e perdorim bindParam()
@@ -40,7 +40,7 @@ class ProductController{
     public function edit($id){
 
         //se pari klikojme rreshtin qe dojme me editu
-        $query=$this->db->pdo->prepare('SELECT * FROM menu WHERE id=:id');
+        $query=$this->db->database->prepare('SELECT * FROM menu WHERE id=:id');
         $query->bindParam(':id',$id);
         $query->execute();
 
@@ -62,7 +62,7 @@ class ProductController{
     }
 
     public function delete($id){
-        $query = $this->db->pdo->prepare('DELETE from menu WHERE id=:id');
+        $query = $this->db->database->prepare('DELETE from menu WHERE id=:id');
         $query->bindParam(':id', $id);
         $query->execute();
 

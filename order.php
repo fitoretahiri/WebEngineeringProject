@@ -1,9 +1,9 @@
 <?php
-session_start();
+/*session_start();
 if(!isset($_SESSION['email'])){
     header("location:logIn.php");
 }else{
-
+*/
 
 ?>
 
@@ -18,8 +18,8 @@ if(!isset($_SESSION['email'])){
 <body>
     <div class="welcome-div">
         <p>Welcome!</p>
-        <?php
-        echo "Username: ".$_SESSION['email'];
+        <?php/*
+        echo "Username: ".$_SESSION['email'];*/
         ?>
     </div>
     <div class="div-1">
@@ -33,10 +33,10 @@ if(!isset($_SESSION['email'])){
             <div class="nav-list">
                 <ul id="menuList">
                
-                    <li> <a href="index.html">Home</a></li> 
-                    <li><a href="order.html">Order</a></li>
-                    <li> <a href="contactPage.html">Contact</a></li> 
-                    <li><a href="logIn.html">Log In</a></li>
+                    <li> <a href="index.php">Home</a></li> 
+                    <li><a href="order.php">Order</a></li>
+                    <li> <a href="contactPage.php">Contact</a></li> 
+                    <li><a href="logIn.php">Log In</a></li>
                     
                 
                     <div class="cartWishlist-div">
@@ -209,5 +209,5 @@ if(!isset($_SESSION['email'])){
 
 </html>
 <?php
-}
+
 ?>

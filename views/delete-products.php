@@ -1,5 +1,5 @@
 <?php
-require_once "./controller/productController.php";
+require_once "../controller/productController.php";
 
 if(isset($_GET['id'])){
     $menuId=$_GET['id'];
