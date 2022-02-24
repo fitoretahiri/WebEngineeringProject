@@ -61,6 +61,13 @@ class ProductController{
 
     }
 
+    public function delete($id){
+        $query = $this->db->pdo->prepare('DELETE from menu WHERE id=:id');
+        $query->bindParam(':id', $id);
+        $query->execute();
+
+        return header("Location:../views/menuDashboard.php");
+    }
 
 }
 

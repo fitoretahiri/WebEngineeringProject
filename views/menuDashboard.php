@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php
+require_once '../controller/productController.php';
+?>
+
+
     <style>
 *{
   font-family: sans-serif; 
@@ -51,8 +49,6 @@
     text-decoration: none;
 }
 </style>
-</head>
-<body>
 <div>
     <table class="content-table">
         <thead>
@@ -62,7 +58,20 @@
               <th>Menu body</th>
             </tr>
         </thead>
+        <tbody>
+          <?php
+          $m= new ProductController;
+          $allMenu = $m->readData();
+          foreach($allMenu as $menu): ?>
+          <tr>
+            <td><?php echo $menu['menu_image']; ?></td>
+            <td><?php echo $menu['menu_title']; ?></td>
+            <td><?php echo $menu['menu_body']; ?></td>
+            <td><a href="edit-product.php?id=<?php echo $menu['Id']; ?>">Edit</a></td>
+            <td><a href="delete-product.php?id=<?php echo $menu['Id'];?>">Delete</a></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody>
+
     </table>
 </div>
-</body>
-</html>

@@ -8,8 +8,8 @@ class ProductsDatabase{
             session_start();
 
             //connection strings: stringje qe mundesojne lidhjen me databaze (brenda ())
-            $lidhja=new PDO('mysqli:host=localhost; dbname=produktet','root','');
-            $this->pdo=$lidhja;
+            $link=new PDO('mysqli:host=localhost; dbname=produktet','root','');
+            $this->pdo= $link;
         }catch(PDOException $e){
             die($e->getMessage());
         }
