@@ -3,7 +3,7 @@ require_once '../controller/productController.php';
 if(isset($_GET['id'])){
     $menuId=$_GET['id'];
 }
-
+//$menuId=$_GET['id'];
 $menu = new ProductController;
 $currentMenu= $menu->edit($menuId);
 
@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
 
 ?>
 
-<form method="post">
+<form method="POST">
     Image:
     <input type="file" name="image" value="<?php echo $currentMenu['menu_image']; ?>">
     <br>

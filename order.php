@@ -1,37 +1,57 @@
-<<<<<<< HEAD
-<!--?php
-session_start();
-=======
 <?php
-/*session_start();
->>>>>>> 805a10214c43a230764556b87e3ef6fef3c1bd07
-if(!isset($_SESSION['email'])){
-    header("location:logIn.php");
-}else{
-*/
+include('includes/header.php'); 
+?>
 
-?-->
+<?php
+require_once 'controller/productController.php';
+?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+  <div class="productsss-div">
+    <?php
+    $products=new ProductController();
+    $all=$products->readData();
+    for($i=0;$i<count($all);$i++){
+        echo '<div>
+        <div>
+        <img src ="'.$all[$i]['menu_image'].'"width="300" height="250">
+        </div>
+
+        <div>
+        <h5>'.$all[$i]['menu_title'].'</h5>
+        <p>'.$all[$i]['menu_body'].'</p>
+        </div>';
+    }
+    ?>
+    </div>  
+</body>
+ 
+</html>
+     <?php 
+ include 'includes/footer.php';
+ ?> 
+<!---
 <!DOCTYPE html>
 <html>
 <head>
     <title>Order Page</title>
-    <link rel="stylesheet" type="text/css" href="CSS/orderPage.css">
+    
     <script src="https://kit.fontawesome.com/96651c389e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="welcome-div">
         <p>Welcome!</p>
-<<<<<<< HEAD
-        <!--?php
-        echo "Username: ".$_SESSION['email'];
-        ?-->
-=======
-        <?php/*
-        echo "Username: ".$_SESSION['email'];*/
-        ?>
->>>>>>> 805a10214c43a230764556b87e3ef6fef3c1bd07
+
     </div>
     <div class="div-1">
         <div class="header-div">
@@ -219,12 +239,3 @@ if(!isset($_SESSION['email'])){
 </body>
 
 </html>
-<<<<<<< HEAD
-<!--?php
-}
-?-->
-=======
-<?php
-
-?>
->>>>>>> 805a10214c43a230764556b87e3ef6fef3c1bd07

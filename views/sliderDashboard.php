@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/productController.php';
+require_once '../controller/sliderController.php';
 ?>
 
 
@@ -53,27 +53,23 @@ require_once '../controller/productController.php';
     <table class="content-table">
         <thead>
             <tr>
-              <th>Menu image</th>
-              <th>Menu title</th>
-              <th>Menu body</th>
+              <th>Slider pictures</th>
             </tr>
         </thead>
         <tbody>
         <?php
         
-        $m= new ProductController();
+        $m= new SliderController();
 
-        $allMenu = $m->readData();
+        $allPics = $m->readData();
 
-        foreach($allMenu as $menu){
+        foreach($allPics as $pic){
             echo "
             <tr> 
-            <td>$menu[menu_image]</td>
-            <td>$menu[menu_title]</td>
-            <td>$menu[menu_body]</td>
+            <td>$pic[slider_image]</td>
             
-            <td><a href='edit-product.php?id=$menu[id]'>Edit</a></td>
-            <td><a href='delete-products.php?id=$menu[id]'>Delete</a></td>
+            <td><a href='edit-slider.php?id=$pic[id]'>Edit</a></td>
+            <td><a href='delete-slider.php?id=$pic[id]'>Delete</a></td>
             </tr>
             ";
         }

@@ -49,7 +49,7 @@
              
             <div class="usersAndOurInfo-div">
                 
-                <form name="contact-form">
+                <form name="contact-form" action="" method="post">
                
                 <div class="usersInfo-div">
                 <p><b>Send us a message</b></p>
@@ -71,7 +71,7 @@
                     <div class="usersPhoneOrganization-div">
                     <div class="usersPhone-div">
                     <p>Telephone:</p>
-                    <input id ="tel" name="telephone" size="15" maxlength="20"/>
+                    <input id ="telephone" name="telephone" size="15" maxlength="20"/>
                     <div class="error-hint hidden ">Your tel. is required.</div>
                     </div>
 
@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="comment-div">
-                    <textarea id="comments"name="comments" placeholder="Your Message" cols="54" rows="10"></textarea>
+                    <textarea id="message"name="comments" placeholder="Your Message" cols="54" rows="10"></textarea>
                     <div class="error-hint hidden ">Your message is required.</div>
                     </div>
 
@@ -157,8 +157,13 @@
     
     
     </div>
+    <?php
+    
+    include_once('controller/contactController.php');
+    ?> 
 
-    <script src="JS/contactPage.js"></script>
+
+    
     <script>
         var menuList=document.getElementById("menuList");
         menuList.style.maxHeight="0px";
