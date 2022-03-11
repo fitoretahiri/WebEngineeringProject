@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 <!--?php
 session_start();
+=======
+<?php
+/*session_start();
+>>>>>>> 805a10214c43a230764556b87e3ef6fef3c1bd07
 if(!isset($_SESSION['email'])){
     header("location:logIn.php");
 }else{
-
+*/
 
 ?-->
 
@@ -18,9 +23,15 @@ if(!isset($_SESSION['email'])){
 <body>
     <div class="welcome-div">
         <p>Welcome!</p>
+<<<<<<< HEAD
         <!--?php
         echo "Username: ".$_SESSION['email'];
         ?-->
+=======
+        <?php/*
+        echo "Username: ".$_SESSION['email'];*/
+        ?>
+>>>>>>> 805a10214c43a230764556b87e3ef6fef3c1bd07
     </div>
     <div class="div-1">
         <div class="header-div">
@@ -33,10 +44,10 @@ if(!isset($_SESSION['email'])){
             <div class="nav-list">
                 <ul id="menuList">
                
-                    <li> <a href="index.html">Home</a></li> 
-                    <li><a href="order.html">Order</a></li>
-                    <li> <a href="contactPage.html">Contact</a></li> 
-                    <li><a href="logIn.html">Log In</a></li>
+                    <li> <a href="index.php">Home</a></li> 
+                    <li><a href="order.php">Order</a></li>
+                    <li> <a href="contactPage.php">Contact</a></li> 
+                    <li><a href="logIn.php">Log In</a></li>
                     
                 
                     <div class="cartWishlist-div">
@@ -208,6 +219,12 @@ if(!isset($_SESSION['email'])){
 </body>
 
 </html>
+<<<<<<< HEAD
 <!--?php
 }
 ?-->
+=======
+<?php
+
+?>
+>>>>>>> 805a10214c43a230764556b87e3ef6fef3c1bd07
