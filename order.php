@@ -1,6 +1,14 @@
 <?php
+<<<<<<< HEAD
 include('includes/header.php'); 
 ?>
+=======
+/*session_start();
+if(!isset($_SESSION['email'])){
+    header("location:logIn.php");
+}else{
+*/
+>>>>>>> 9bfaa47d96e53ef0b6769c0fef63a2bfa370f1f2
 
 <?php
 require_once 'controller/productController.php';
@@ -51,7 +59,13 @@ require_once 'controller/productController.php';
 <body>
     <div class="welcome-div">
         <p>Welcome!</p>
+<<<<<<< HEAD
 
+=======
+        <?php/*
+        echo "Username: ".$_SESSION['email'];*/
+        ?>
+>>>>>>> 9bfaa47d96e53ef0b6769c0fef63a2bfa370f1f2
     </div>
     <div class="div-1">
         <div class="header-div">
@@ -238,4 +252,11 @@ require_once 'controller/productController.php';
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+<?php
+
+?>
+>>>>>>> 9bfaa47d96e53ef0b6769c0fef63a2bfa370f1f2

@@ -12,4 +12,8 @@ class ProductsDatabase{
         }
     }
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 9bfaa47d96e53ef0b6769c0fef63a2bfa370f1f2
