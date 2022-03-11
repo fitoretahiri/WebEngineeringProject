@@ -44,17 +44,17 @@ class ProductController{
         $query->bindParam(':id',$id);
         $query->execute();
 
-        $query->fetch();
+        return $query->fetch();
     }
 
     public function update($request,$id){
-        $query=$this->db->pdo->prepare('UPDATE menu SET menu_image=:menu_image,
+        $query=$this->db->database->prepare('UPDATE menu SET menu_image=:menu_image,
          menu_title=:menu_title,menu_body=:menu_body WHERE $id=:id');
          $query->bindParam(':menu_image',$request['image']);
          $query->bindParam(':menu_title',$request['title']);
          $query->bindParam(':menu_body',$request['body']);
          $query->bindParam(':id',$id);
-         $query->execute();
+        // $query->execute();
 
          return header ('Location:../views/menuDashboard.php');
         
