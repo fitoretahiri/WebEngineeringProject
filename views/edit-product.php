@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
 
 ?>
 
-<form method="post">
+<form method="POST">
     Image:
     <input type="file" name="image" value="<?php echo $currentMenu['menu_image']; ?>">
     <br>

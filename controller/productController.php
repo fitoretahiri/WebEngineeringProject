@@ -23,7 +23,7 @@ class ProductController{
 
     public function insert($request){
         //e kemi vene si parameter $request qe me e pas me te lehte me i marr te dhenat masi i bejme submit permes $_GET os post
-
+        $request['image']= '../HomePics/'.$request['image'];
         //metoda prepare() mundeson fshirjen,update-imin e fushave
         $query=$this->db->database->prepare('INSERT INTO menu(menu_image,menu_title,menu_body)
         VALUES (:menu_image, :menu_title, :menu_body)');
@@ -49,12 +49,12 @@ class ProductController{
 
     public function update($request,$id){
         $query=$this->db->database->prepare('UPDATE menu SET menu_image=:menu_image,
-         menu_title=:menu_title,menu_body=:menu_body WHERE $id=:id');
-         $query->bindParam(':menu_image',$request['image']);
-         $query->bindParam(':menu_title',$request['title']);
-         $query->bindParam(':menu_body',$request['body']);
-         $query->bindParam(':id',$id);
-        // $query->execute();
+         menu_title=:menu_title,menu_body=:menu_body WHERE id = :id');
+         $query->bindParam(":menu_image",$request["image"]);
+         $query->bindParam(":menu_title",$request["title"]);
+         $query->bindParam(":menu_body",$request["body"]);
+         $query->bindParam(":id",$id);
+         $query->execute();
 
          return header ('Location:../views/menuDashboard.php');
         
