@@ -1,11 +1,11 @@
-<?php
+<!--?php
 session_start();
 if(!isset($_SESSION['email'])){
     header("location:logIn.php");
 }else{
 
 
-?>
+?-->
 
 <!DOCTYPE html>
 <html>
@@ -18,9 +18,9 @@ if(!isset($_SESSION['email'])){
 <body>
     <div class="welcome-div">
         <p>Welcome!</p>
-        <?php
+        <!--?php
         echo "Username: ".$_SESSION['email'];
-        ?>
+        ?-->
     </div>
     <div class="div-1">
         <div class="header-div">
@@ -208,6 +208,6 @@ if(!isset($_SESSION['email'])){
 </body>
 
 </html>
-<?php
+<!--?php
 }
-?>
+?-->

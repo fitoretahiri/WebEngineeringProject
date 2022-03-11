@@ -3,7 +3,7 @@
     <div class="main-div" id="main-content">
         <h2 class="together">WELLCOME! Register to our site:</h2>
 
-    <form  action ="register.php" method="POST">
+    <form action="register.php"  method="POST">
         <div class="form-control">
             <label for="">Enter your name:</label>
             <input type="text" placeholder="Name" class="inputs"  name="name" id="name"">
@@ -53,7 +53,7 @@
         <small>Error message</small>
         </div>
 
-        <input name="submit" type="submit" class="btn" >
+        <input name="submit" type="submit" class="btn">
         <br>
         <button class="btn"><a href="www.facebook.com" style="color: white; text-decoration: none;">Register with Facebook</a></button>
         <br>
@@ -62,7 +62,7 @@
         <p>Already have an account, <a href="logIn.php">log in!</a></p>
     </div>
 </form>
-  <script src="JS/registerScript.js"></script>
+    <script src="JS/registerScript.js"></script>
 <?php
     include('includes/footer.php');
     include_once('controller/userController.php');

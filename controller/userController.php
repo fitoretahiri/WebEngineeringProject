@@ -5,10 +5,11 @@ include_once './repository/userRepository.php';
 include_once './Classes/signupClasses.php';
 
     if(isset($_POST['submit'])){
-        if(empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['age']) || empty($_POST['birthday'])||
+      /*  if(empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['age']) || empty($_POST['birthday'])||
         empty($_POST['email'])||empty($_POST['psw'])||empty($_POST['psw2'])){
             echo "Fill all fields";
-        }else{
+        }else{*/
+            // echo '<script type="text/javascript" src="JS/registerScript.js"></script>';
             $name= $_POST['name'];
             $surname= $_POST['surname'];
             $age= $_POST['age'];
@@ -22,11 +23,8 @@ include_once './Classes/signupClasses.php';
             $userRepository=new UserRepository();
 
             $userRepository->insertUser($user);
-        }
+        //}
         
     }
-
-    
-
 
 ?>

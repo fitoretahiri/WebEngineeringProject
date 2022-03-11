@@ -1,5 +1,5 @@
 <?php
-    include_once '../repository/userRepository.php';
+    include_once './repository/userRepository.php';
     // e marrim id e perdorusit permes get
     $userId=$_GET['id'];
     
