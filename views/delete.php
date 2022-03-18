@@ -1,10 +1,10 @@
 <?php
-require_once "../controller/productController.php";
+require_once "../repository/userRepository.php";
 
 if(isset($_GET['id'])){
     $menuId=$_GET['id'];
 
 }
-$menu = new ProductController;
-$menu->delete($menuId);
+$menu = new UserRepository;
+$menu->deleteUser($menuId);
 ?>

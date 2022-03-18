@@ -1,6 +1,6 @@
 <?php
 
-require '../database/sliderDatabase.php';
+require './database/sliderDatabase.php';
 
 class SliderController{
     public $db;

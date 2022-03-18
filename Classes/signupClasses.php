@@ -1,4 +1,6 @@
 <?php
+include_once './repository/userRepository.php';
+
     class User{
         private $id;
         private $name;
@@ -96,4 +98,16 @@
         function login($username,$password);
         function logout();
     }*/
+
+    function emailTakenCheck(){
+           
+        $result;
+         if(!$this->checkUser($this->email)){
+             $result=false;
+         }
+         else{
+             $result=true;
+         }
+         return $result; 
+     }
 ?>

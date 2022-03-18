@@ -1,7 +1,7 @@
 <?php
-
-include_once './repository/userRepository.php';
 include_once './Classes/signupClasses.php';
+include_once './repository/userRepository.php';
+
 
     if(isset($_POST['submit'])){
       /*  if(empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['age']) || empty($_POST['birthday'])||

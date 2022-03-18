@@ -23,11 +23,8 @@ class ProductController{
 
     public function insert($request){
         //e kemi vene si parameter $request qe me e pas me te lehte me i marr te dhenat masi i bejme submit permes $_GET os post
-<<<<<<< HEAD
-        $request['image']= './HomePics/'.$request['image'];
-=======
         $request['image']= '../HomePics/'.$request['image'];
->>>>>>> 9bfaa47d96e53ef0b6769c0fef63a2bfa370f1f2
+
         //metoda prepare() mundeson fshirjen,update-imin e fushave
         $query=$this->db->database->prepare('INSERT INTO menu(menu_image,menu_title,menu_body)
         VALUES (:menu_image, :menu_title, :menu_body)');

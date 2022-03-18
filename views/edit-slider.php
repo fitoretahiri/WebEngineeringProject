@@ -8,7 +8,7 @@ $slider = new SliderController();
 $currentSlider= $slider->edit($sliderId);
 
 if(isset($_POST['submit'])){
-    $menu->update($_POST,$sliderId);
+    $slider->update($_POST,$sliderId);
 }
 
 ?>
