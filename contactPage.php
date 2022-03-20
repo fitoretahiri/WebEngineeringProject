@@ -1,3 +1,14 @@
+<?php
+require_once './controller/contactController.php';
+
+$menu = new ContactController;
+if(isset($_POST['submit'])){
+    $menu->insert($_POST);
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang ="en">
 <head>
@@ -49,7 +60,11 @@
              
             <div class="usersAndOurInfo-div">
                 
+<<<<<<< Updated upstream
                 <form name="contact-form" action="" method="post">
+=======
+                <form method="POST">
+>>>>>>> Stashed changes
                
                 <div class="usersInfo-div">
                 <p><b>Send us a message</b></p>
@@ -87,9 +102,10 @@
                     </div>
 
                      <hr>
-                    <div class="submitButton-div">
+                     <input id="myButton" type="submit" name="submit" value="Save">
+                    <!--div class="submitButton-div">
                     <button id="myButton">SUBMIT</button>
-                    </div>
+                    </div-->
                     </form>
                 </div>
 

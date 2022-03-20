@@ -1,5 +1,5 @@
 <?php
-    include_once '../database/databaseConnection.php';
+    require_once './database/databaseConnection.php';
 
     class UserRepository{
         private $connection;
