@@ -1,5 +1,5 @@
 <?php
-include_once './repository/userRepository.php';
+include_once '../repository/userRepository.php';
 
     class User{
         private $id;
@@ -99,15 +99,5 @@ include_once './repository/userRepository.php';
         function logout();
     }*/
 
-    function emailTakenCheck(){
-           
-        $result;
-         if(!$this->checkUser($this->email)){
-             $result=false;
-         }
-         else{
-             $result=true;
-         }
-         return $result; 
-     }
+    
 ?>
