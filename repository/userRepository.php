@@ -1,5 +1,5 @@
 <?php
-    require_once './database/databaseConnection.php';
+    include_once './database/databaseConnection.php';
 
     class UserRepository{
         private $connection;
@@ -10,11 +10,11 @@
         }
 
         function insertUser($user){
-            if($this->emailTakenCheck()==false){
+           /* if($this->emailTakenCheck()==false){
                 header("location:../index.php?error=emailTaken");
             }
             
-            else{
+            else{*/
             $conn =$this->connection;
 
             $id=$user->getId();
@@ -31,7 +31,7 @@
             $statement = $conn->prepare($sql);
 
             $statement->execute([$id,$name,$surname,$age,$birthday,$email,$psw,$psw2]);
-            }
+          //  }
             //echo "<script> alert('user is added'); </script>";
         }
 
@@ -84,7 +84,7 @@
 
         }
 
-         function checkUser($email){
+        /* function checkUser($email){
             //kqyrim a eshte nje email qe e shkrun useri e ne databaze dmth qe u shkrujt m'a heret
              $statement=$this->startConnection()->prepare('SELECT email FROM users WHERE email=? ;');
    
@@ -104,7 +104,7 @@
                  $resultCheck=true;
              }
              return $resultCheck;
-         }
+         }*/
 
          
         

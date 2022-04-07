@@ -60,11 +60,7 @@ if(isset($_POST['submit'])){
              
             <div class="usersAndOurInfo-div">
                 
-<<<<<<< Updated upstream
                 <form name="contact-form" action="" method="post">
-=======
-                <form method="POST">
->>>>>>> Stashed changes
                
                 <div class="usersInfo-div">
                 <p><b>Send us a message</b></p>

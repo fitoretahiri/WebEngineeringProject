@@ -27,7 +27,7 @@
                 <i class="fab fa-linkedin-in"></i>
                 <i class="far fa-envelope"></i>
             </div>
-        </div>
-     
+        </div>   
+        <script src="JS/registerScript.js"></script>  
 </body>
 </html>

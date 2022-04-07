@@ -62,8 +62,8 @@
         <p>Already have an account, <a href="logIn.php">log in!</a></p>
     </div>
 </form>
-    <script src="JS/registerScript.js"></script>
+
 <?php
+    require_once('controller/userController.php');
     include('includes/footer.php');
-    include_once('controller/userController.php');
     ?> 
