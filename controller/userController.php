@@ -1,7 +1,7 @@
 <?php
 
-include_once '../repository/userRepository.php';
-include_once '../Classes/signupClasses.php';
+include_once './repository/userRepository.php';
+include_once './Classes/signupClasses.php';
 
     if(isset($_POST['submit'])){
             $name= $_POST['name'];

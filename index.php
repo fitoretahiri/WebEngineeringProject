@@ -2,20 +2,7 @@
     include('includes/header.php');
 ?>
 
-<?php
-//require_once 'controller/sliderController.php';
-?>
 
-<?php
-  /* $pics=new SliderController;
-    $all=$pics->readData();
-    for($i=0;$i<count($all);$i++){
-        echo '<div class="carousel">
-        <div class="inside-carousel">
-        <img src ="'.$all[$i]['slider_image'].'">
-        </div>';
-    }*/
-    ?>
 
 
        <div class="carousel">

@@ -1,18 +1,7 @@
 <?php
-<<<<<<< HEAD
     include_once './database/databaseConnection.php';
-=======
-<<<<<<< HEAD
-    include_once '../database/databaseConnection.php';
-    //use DatabaseConnection as dbh;
-  
-    class UserRepository {
-=======
-    require_once './database/databaseConnection.php';
->>>>>>> a93f67ba72e03a9955e60e32506ef04c59776a9c
 
     class UserRepository{
->>>>>>> 81c2227a58ea3d53a6186dd866073e282d02ca8e
         private $connection;
 
         function __construct(){
@@ -25,10 +14,6 @@
                 header("location:../index.php?error=emailTaken");
             }*/
             
-<<<<<<< HEAD
-            else{*/
-=======
->>>>>>> a93f67ba72e03a9955e60e32506ef04c59776a9c
             $conn =$this->connection;
 
             $id=$user->getId();
@@ -45,14 +30,8 @@
             $statement = $conn->prepare($sql);
 
             $statement->execute([$id,$name,$surname,$age,$birthday,$email,$psw,$psw2]);
-<<<<<<< HEAD
-          //  }
-            //echo "<script> alert('user is added'); </script>";
-        }
-=======
         
     }
->>>>>>> a93f67ba72e03a9955e60e32506ef04c59776a9c
 
         function getAllUsers(){
             $conn=$this->connection;
@@ -104,32 +83,7 @@
 
         }
 
-<<<<<<< HEAD
-        /* function checkUser($email){
-            //kqyrim a eshte nje email qe e shkrun useri e ne databaze dmth qe u shkrujt m'a heret
-             $statement=$this->startConnection()->prepare('SELECT email FROM users WHERE email=? ;');
-   
-             //nese statement execution fails
-             if(!$statement->execute($email)){
-                 $statement=null;
-                 header("location: ../index.php?error=statementfailed");
-                 exit();
-             }
-   
-             //nese useri vec ekziston ne databaze me qat email, nuk e leojojme regjistrimin, nese ndodh e kunderta e lejojme
-             $resultCheck;
-             if($statement->rowCount()>0){
-                 $resultCheck=false;
-             }
-             else{
-                 $resultCheck=true;
-             }
-             return $resultCheck;
-         }*/
-
-=======
         
->>>>>>> a93f67ba72e03a9955e60e32506ef04c59776a9c
          
         
     }
