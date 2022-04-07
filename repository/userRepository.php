@@ -1,11 +1,11 @@
 <?php
-    include_once './database/databaseConnection.php';
+    include_once './database/Database.php';
 
     class UserRepository{
         private $connection;
 
         function __construct(){
-            $conn =new DatabaseConnection();
+            $conn =new Database();
             $this->connection=$conn->startConnection();
         }
 

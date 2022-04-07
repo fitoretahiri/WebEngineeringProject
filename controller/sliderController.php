@@ -1,12 +1,12 @@
 <?php
 
-require './database/sliderDatabase.php';
+require './database/Database.php';
 
 class SliderController{
     public $db;
 
     public function __construct(){
-        $this->db=new SliderDatabase;
+        $this->db=new Database;
     }
 
     public function readData(){
