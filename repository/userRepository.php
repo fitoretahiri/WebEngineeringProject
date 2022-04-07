@@ -1,14 +1,11 @@
 <?php
-<<<<<<< HEAD
+
     include_once '../database/databaseConnection.php';
     //use DatabaseConnection as dbh;
   
     class UserRepository {
-=======
-    require_once './database/databaseConnection.php';
 
-    class UserRepository{
->>>>>>> 81c2227a58ea3d53a6186dd866073e282d02ca8e
+    
         private $connection;
 
         function __construct(){
@@ -17,9 +14,7 @@
         }
 
         function insertUser($user){
-           /* if($this->emailTakenCheck()==false){
-                header("location:../index.php?error=emailTaken");
-            }*/
+           
             
             $conn =$this->connection;
 
@@ -31,6 +26,8 @@
             $email=$user->getEmail();
             $psw=$user->getPsw();
             $psw2=$user->getPsw2();
+
+            
 
             $sql="INSERT INTO users (id,name,surname,age,birthday,email,psw,psw2)VALUES (?,?,?,?,?,?,?,?)";
 

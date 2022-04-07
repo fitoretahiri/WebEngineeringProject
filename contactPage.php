@@ -1,54 +1,215 @@
 <?php
-require_once './controller/contactController.php';
+include('includes/header.php'); 
+?>
+
+<?php
+/*require_once './controller/contactController.php';
 
 $menu = new ContactController;
 if(isset($_POST['submit'])){
     $menu->insert($_POST);
 }
 
-
+*/
 ?>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.reachUs-div{
+    padding-top: 120px;
+    text-align: center;
+}
+
+.contactBody-div{
+   margin:auto;
+   margin-left: 20%;
+   margin-right: 20%;
+   height:1300px;
+}
+
+.contactBody-div input{
+    border: 3px solid rgba(170, 167, 167, 0.959);
+}
+
+.contactBody-div textarea{
+    border: 3px solid rgba(170, 167, 167, 0.959);
+}
+
+.usersAndOurInfo-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.usersInfo-div{
+    margin-bottom: 8%;
+}
+
+input.invalid{
+    border: 1px solid red;
+}
+
+.error-hint{
+    color: red;
+    font-size: 13px;
+}
+
+.thankU-div{
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+hr{
+  height: 1px;
+  background-color:rgb(184, 182, 182);
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.submitButton-div button{
+    padding: 7px;
+    font-size: 15px;
+    background-color: rgb(199, 198, 198);
+   
+    color: whitesmoke;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+button{
+    transition: all 1s;
+    cursor: pointer;
+    background-color: rgba(235, 225, 180, 0.726);
+}
+
+button:hover{
+    background-color:rgba(92, 209, 203, 0.377);
+    border: rgba(0, 0, 0, 0.342);
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.ourInfo-div{
+    height: 360px;
+    width: 400px;
+    margin: auto;
+    background-color:rgb(199, 198, 198);
+    border: 3px solid rgba(170, 167, 167, 0.959);
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.ourInfo-div div{
+    padding-left: 15px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.locationIcon-div{
+    display: flex;
+}
+
+.emailIcon-div{
+    display: flex;
+}
+
+.phoneIcon-div{
+    display: flex;
+}
+
+.usersNameEmail-div{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.usersNameEmail-div div{
+    padding-right: 20px;
+}
+
+.usersPhoneOrganization-div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.usersPhoneOrganization-div div{
+    padding-right: 20px;
+}
+
+.comment-div{
+    padding-top: 20px;
+    padding-bottom:20px ;
+}
+
+.googleMap{
+    max-width: 100%;
+}
+
+  /*  @media screen and (max-width:855px){
+
+      .reachUs-div{
+        text-size-adjust: 350%;
+        margin-bottom: 10%;
+      }
+
+      .usersInfo-div p{
+        text-size-adjust: 300%;
+      }
+
+      .usersInfo-div input{
+          height: 100px;
+          width: 600px;
+      }
+
+      .usersInfo-div textarea{
+        height: 400px;
+        width: 600px;
+        text-size-adjust: 300%;
+      }
+
+      .contactBody-div{
+          height: 300px;
+      }
+
+      .usersInfo-div button{
+          height: 90px;
+          width: 250px;
+          text-size-adjust: 300%;
+      }
+
+      .ourInfo-div {
+          height: 600px;
+          width: 800px;
+          text-size-adjust: 350%;
+      }
+
+      .contactIcons-div img {
+          height: 70px;
+      }
+      .googleMap {
+          height: 900px;
+          width: 800px;
+      }
+    } */
+    </style>
 
 <!DOCTYPE html>
 <html lang ="en">
 <head>
     <meta charset="UTF-8"/>
     <title>Contact Page</title>
-    <link rel="stylesheet" type="text/css" href="CSS/contactPage.css">
     <script src="https://kit.fontawesome.com/96651c389e.js" crossorigin="anonymous"></script>    
 </head>
-
-<body>
-    <div class="welcome-div">
-        <p>Welcome!</p>
-    </div>
-    <div class="div-1">
-        <div class="header-div">
-            <div class="logoNavlist-div">
-     
-                    <div class="logo-div"><h1 id="logo"><em>Furniture</em></h1></div>
-                
-    
-                <div class="menuIcon-div"style="font-size: 70px;">
-                    <i class="fas fa-bars" onclick="togglemenu()"></i>
-                </div>
-                <div class="nav-list">
-                    <ul id="menuList">
-                   
-                        <li> <a href="index.html">Home</a></li> 
-                        <li><a href="order.html">Order</a></li>
-                        <li> <a href="contactPage.html">Contact</a></li> 
-                        <li><a href="logIn.html">Log In</a></li>
-                        
-                    
-                        <!--div class="cartWishlist-div">
-                        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-                        <li><a href=""><i class="far fa-heart"></i></a></li>
-                        </div-->
-                    </ul>   
-                </div>
-                </div>
-            </div>
 
             <div class="reachUs-div">
             <h4>Reach Our Team</h4> <br> 
@@ -60,12 +221,9 @@ if(isset($_POST['submit'])){
              
             <div class="usersAndOurInfo-div">
                 
-<<<<<<< Updated upstream
+
                 <form name="contact-form" action="" method="post">
-=======
-                <form method="POST">
->>>>>>> Stashed changes
-               
+
                 <div class="usersInfo-div">
                 <p><b>Send us a message</b></p>
                 <p>Send us a message and we'll respond within 24 hours</p>
@@ -103,9 +261,6 @@ if(isset($_POST['submit'])){
 
                      <hr>
                      <input id="myButton" type="submit" name="submit" value="Save">
-                    <!--div class="submitButton-div">
-                    <button id="myButton">SUBMIT</button>
-                    </div-->
                     </form>
                 </div>
 
@@ -141,45 +296,17 @@ if(isset($_POST['submit'])){
              </div>
         </div>
     
-        <div class="footer-div">
-            <div class="logo-div2"> 
-                <img src="HomePics/logo2.png" alt="logo" width="100" height="80">
-                <p>Furniture must have a personality <br>as well as be beautiful</p> 
-            </div>
-     
-            <div class="nav-list2">
-                <ul>
-                    <li><a href="index.html">Back to start</a></li>
-                    <li><a href="contactPage.html">Contact</a></li>
-                    <li><a href="logIn.html">Log In</a></li>
-                    <li><a href="order.html">Order</a></li>
-                </ul>
-             </div>
-
-             <div class="email-div">
-                 <p>Be the first to be informed about our offers!</p>
-                 <p>Email:
-                     <input type="text" name="email" size="15" maxlength="30"/>
-                 </p>
-             </div>
-
-             <div class="icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="far fa-envelope"></i>
-            </div>
-        </div>
-    
-    
+        <?php
+           include('includes/footer.php'); 
+        ?>
     </div>
-    <?php
     
+    <?php
     include_once('controller/contactController.php');
     ?> 
 
 
-    
+<!---    
     <script>
         var menuList=document.getElementById("menuList");
         menuList.style.maxHeight="0px";
@@ -193,6 +320,6 @@ if(isset($_POST['submit'])){
             }
     
         }
-    </script>
+    </script>--->
 </body>
     

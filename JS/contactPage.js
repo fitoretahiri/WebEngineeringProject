@@ -18,13 +18,6 @@
       
      const inputs=[nameInput,emailInput,telInput,messageInput];
      
-     /*document.querySelector('#email').value = "";
-     function emailat(){
-        for(let i = 0; i<emailInput.length; i++){
-            console.log(emailInput[i].email);
-        }
-    }*/
-  
 
       let isFormValid=false;
       let isValidationOn=false;
