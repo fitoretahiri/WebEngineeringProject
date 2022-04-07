@@ -1,8 +1,13 @@
 <?php
 
+<<<<<<< HEAD
 include_once '../database/databaseConnection.php';
 include_once '../repository/userRepository.php';
 include_once '../Classes/signupClasses.php';
+=======
+include_once './repository/userRepository.php';
+include_once './Classes/signupClasses.php';
+>>>>>>> af712f60484057ef0264a561da14d046c072fa27
 
     if(isset($_POST['submit'])){
             $name= $_POST['name'];

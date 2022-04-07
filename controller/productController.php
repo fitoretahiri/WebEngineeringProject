@@ -2,13 +2,17 @@
 //kontrollerat i marrin te dhenat i update-ojne ato...
 
 //me e preferushme eshte me u perdor require once qe me i shmang warnings
+<<<<<<< HEAD
 require './database/ProductsDatabase.php';
+=======
+require '../database/Database.php';
+>>>>>>> af712f60484057ef0264a561da14d046c072fa27
 
 class ProductController{
     public $db;// e deklarojme ni variabel $db qe me pas ma te lehte me iu cas databazes p.sh ne metoda etj
 
     public function __construct(){
-        $this->db=new ProductsDatabase;
+        $this->db=new Database;
     }
 
     //CRUD

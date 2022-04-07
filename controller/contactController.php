@@ -1,11 +1,11 @@
 <?php
-    require_once "./database/ContactDatabase.php";
+    require_once "./database/Database.php";
 
     class ContactController{
         public $db;
 
         public function __construct(){
-            $this->db=new ContactDatabase;
+            $this->db=new Database;
         }
 
 
