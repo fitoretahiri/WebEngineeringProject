@@ -27,9 +27,9 @@ SET time_zone = "+00:00";
 -- Table structure for table `contact`
 --
 
-CREATE TABLE `contact` (
+CREATE TABLE `contactmenu` (
   `id` int(11) NOT NULL,
-  `name` varchar(225) NOT NULL,
+  `fullName` varchar(225) NOT NULL,
   `email` varchar(225) NOT NULL,
   `telephone` varchar(225) NOT NULL,
   `organization` varchar(225) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE `contact` (
 -- Dumping data for table `contact`
 --
 
-INSERT INTO `contact` (`id`, `name`, `email`, `telephone`, `organization`, `message`) VALUES
+INSERT INTO `contact` (`id`, `fullName`, `email`, `telephone`, `organization`, `message`) VALUES
 (1, '', '', '', '', ''),
 (2, '', '', '', '', ''),
 (3, '', '', '', '', ''),

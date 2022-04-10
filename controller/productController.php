@@ -2,17 +2,13 @@
 //kontrollerat i marrin te dhenat i update-ojne ato...
 
 //me e preferushme eshte me u perdor require once qe me i shmang warnings
-<<<<<<< HEAD
-require './database/ProductsDatabase.php';
-=======
-require '../database/Database.php';
->>>>>>> af712f60484057ef0264a561da14d046c072fa27
+require '../database/ProductsDatabase.php';
 
 class ProductController{
     public $db;// e deklarojme ni variabel $db qe me pas ma te lehte me iu cas databazes p.sh ne metoda etj
 
     public function __construct(){
-        $this->db=new Database;
+        $this->db=new ProductsDatabase;
     }
 
     //CRUD
@@ -77,3 +73,131 @@ class ProductController{
 }
 
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+/*include_once './database/DataBase.php';
+
+class ProductController  {
+  public $db;
+  public $menu_title;
+  public $menu_body;
+  public $menu_image;
+  public $id;
+
+  public function __construct($id='', $menu_title='',
+  $menu_body='', $menu_image='')
+  {
+  $this->id=$id;
+  $this->menu_title=$menu_title;
+  $this->menu_body=$menu_body;
+  $this->menu_image=$menu_image;
+  $this->db=new DataBase();
+  }
+
+
+public function getID(){
+  return $this->id;
+}
+public function getMenuTitle(){
+  return $this->menu_title;
+}
+public function getMenuBody(){
+  return  $this->menu_body;
+}
+public function getMenuImage(){
+  return  $this->menu_image;
+}
+public function setID($id){
+  $this->id=$id;
+}
+public function setMenuTitle($menu_title){
+  $this->menu_title=$menu_title;
+}
+public function setMenuBody($menu_body){
+  $this->menu_body=$menu_body;
+}
+public function setMenuImage($menu_image){
+  $this->menu_image=$menu_image;
+}
+
+  public function readData(){
+    $query = $this->db->pdo->query('SELECT menu_title,menu_body,menu_image,id from menu');
+
+    return $query->fetchAll();
+  }
+
+  public function insert($request){
+   $request['menu_image'] ='./img/' .$request['menu_image'];
+     $query=$this->db->pdo->prepare('INSERT INTO produktet(menu_title,menu_body,menu_image)
+     values(:menu_title, :menu_body, :menu_image)');
+
+     $query->execute([
+       ':menu_title' => $request['menu_title'] ,
+       ':menu_body' => $request['menu_body'], 
+       ':menu_image' => $request['menu_image']
+    ]);
+      header('Location : Dashboard.php');
+  }
+  public function edit($id){
+    $query = $this->db->pdo->prepare('SELECT menu_title,menu_body,menu_image from menu WHERE id = :id');
+    $query->bindParam(':id', $id);
+    $query->execute();
+
+    return $query->fetch();
+}
+
+public function update($request, $id){
+  $request['menu_image'] ='../HomePics/' .$request['menu_image'];
+
+    $query = $this->db->pdo->prepare('UPDATE menu SET menu_title = :menu_title,
+    menu_body = :menu_body, menu_image = :menu_image WHERE id = :id');
+    $query->bindParam(':menu_title', $request['menu_title']);
+    $query->bindParam(':menu_body', $request['menu_body']);
+    $query->bindParam(':menu_image', $request['menu_image']);
+    $query->bindParam(':id', $id);
+    $query->execute();
+    return header('Location: menuDashboard.php');
+}
+
+public function  delete($id){
+  $query=$this->db->pdo->prepare('DELETE  from menu where id=:id');
+  $query->bindParam(':id', $id);
+  $query->execute();
+
+  return header('Location : index.php');
+
+}
+
+
+
+}
+
+?>
+--->

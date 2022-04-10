@@ -1,17 +1,9 @@
 <?php
-<<<<<<< HEAD
-
-    include_once '../database/databaseConnection.php';
-    //use DatabaseConnection as dbh;
-  
     class UserRepository {
 
-    
-=======
     include_once './database/Database.php';
 
     class UserRepository{
->>>>>>> af712f60484057ef0264a561da14d046c072fa27
         private $connection;
 
         function __construct(){
