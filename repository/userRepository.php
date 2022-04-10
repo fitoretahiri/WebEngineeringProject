@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
     require_once '../database/Database.php';
+=======
+    require_once './database/Database.php';
+>>>>>>> a0d5dc007db53243496de25f8d911b9e556bcdd0
 
     class UserRepository{
         private $connection;

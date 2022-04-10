@@ -25,11 +25,19 @@
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
                 $_SESSION['roli']=$row['roli'];
+<<<<<<< HEAD
                 header("location:./pages/index.php");
             }
             else if($row["roli"]=="User"){
                 $_SESSION['roli']=$row['roli'];
                 header("location:./pages/index.php");
+=======
+                header("location:index.php");
+            }
+            else if($row["roli"]=="User"){
+                $_SESSION['roli']=$row['roli'];
+                header("location:index.php");
+>>>>>>> a0d5dc007db53243496de25f8d911b9e556bcdd0
             }
         }
         

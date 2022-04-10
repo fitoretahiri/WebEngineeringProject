@@ -68,7 +68,11 @@ include_once '../Classes/signupClasses.php';
                 if($row['email']===$data['email']){
                     echo ("<script LANGUAGE='JavaScript'>
                 window.alert('Try another email address. This email adress is already registered!');
+<<<<<<< HEAD
                window.location.href='../pages/register.php';  </script>");
+=======
+               window.location.href='register.php';  </script>");
+>>>>>>> a0d5dc007db53243496de25f8d911b9e556bcdd0
                return false;
                 }
             }

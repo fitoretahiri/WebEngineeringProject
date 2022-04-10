@@ -2,8 +2,12 @@
 //kontrollerat i marrin te dhenat i update-ojne ato...
 
 //me e preferushme eshte me u perdor require once qe me i shmang warnings
+<<<<<<< HEAD
 
 require '../database/ProductsDatabase.php';
+=======
+require './database/ProductsDatabase.php';
+>>>>>>> a0d5dc007db53243496de25f8d911b9e556bcdd0
 
 class ProductController{
     public $db;// e deklarojme ni variabel $db qe me pas ma te lehte me iu cas databazes p.sh ne metoda etj

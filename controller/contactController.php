@@ -23,8 +23,8 @@ background-color:white;
 </style>
 
 <?php
-include_once '../repository/contactUsRepository.php';
-include_once '../Classes/contactClasses.php';
+include_once './repository/contactUsRepository.php';
+include_once './Classes/contactClasses.php';
 
 
  function emptyInput(){ 
