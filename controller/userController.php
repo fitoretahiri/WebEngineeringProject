@@ -40,18 +40,21 @@ include_once './Classes/signupClasses.php';
             echo ("<script LANGUAGE='JavaScript'>
                          window.alert('Please fill all fields');
                         window.location.href='register.php';  </script>");
+                        return false;
         }
     
         if(strlen($data['psw'])<8){
             echo ("<script LANGUAGE='JavaScript'>
                          window.alert('Password should be at least 8 characters!');
                         window.location.href='register.php';  </script>");
+                        return false;
         }
     
         if($data['psw']!==$data['psw2']){
             echo ("<script LANGUAGE='JavaScript'>
                          window.alert('Password and Confirm Password does not match!');
                         window.location.href='register.php';  </script>");
+                        return false;
         }
     
         if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -66,6 +69,7 @@ include_once './Classes/signupClasses.php';
                     echo ("<script LANGUAGE='JavaScript'>
                 window.alert('Try another email address. This email adress is already registered!');
                window.location.href='register.php';  </script>");
+               return false;
                 }
             }
             else return true;
