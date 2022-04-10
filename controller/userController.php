@@ -19,7 +19,7 @@ include_once './Classes/signupClasses.php';
             $userRepository=new UserRepository();
 
             if(checkUser()){
-                $userRepository->insertUser($user);
+                $userRepository->insertUser($user);            
             }
     }
 

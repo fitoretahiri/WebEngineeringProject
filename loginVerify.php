@@ -1,4 +1,8 @@
 <?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
     $host="localhost";
     $user="root";
@@ -20,9 +24,11 @@
         $row=mysqli_fetch_array($result);
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
+                $_SESSION['roli']=$row['roli'];
                 header("location:index.php");
             }
             else if($row["roli"]=="User"){
+                $_SESSION['roli']=$row['roli'];
                 header("location:index.php");
             }
         }

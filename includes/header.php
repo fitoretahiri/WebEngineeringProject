@@ -26,25 +26,44 @@
             <div class="logo-div"><h1 id="logo"><em>Furniture</em></h1></div>
             <div class="nav-list">
             <!--h1 id="logo"><em>Furniture</em></h1-->
+            <?php
+                $style = "";
+                if(isset($_SESSION['roli'])){
+                    $style = "style='visibility:hidden; '";
+                }?>
             
                 <ul id="lista-e-pare">
                     <li> <a href="index.php">Home</a></li> 
                     <li><a href="order.php">Order</a></li>
                     <li><a href="contactPage.php">Contact</a></li>
-                    <li><a href="logIn.php">Log in</a></li>
-                    <li><a href="register.php">Register</a></li>
+                    <li> <a <?php echo $style;?> href="logIn.php">Log in</a></li>
+                    <li><a <?php echo $style;?> href="register.php">Register</a></li>
                     <?php
                         if (isset($_SESSION["roli"]) && $_SESSION["roli"] == 'Admin') {
                     ?>
-            
-                    <a href="./views/dashboard.php">
-                        <li>Dashboard</li>
-                    </a>
+                     <li>
+                        <a href="./views/dashboard.php">
+                            Dashboard
+                        </a>
+                    </li>
                     <?php
                         }
                     ?>
-                    <!--li class="corner"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-                    <li id="heart"><a href=""><i class="far fa-heart"></i></a></li-->
+                    <?php
+                        if (isset($_SESSION["roli"])) {
+                    ?>
+                     <li>
+                        <a href="logout.php">
+                            Log Out
+                        </a>
+                    </li>
+                    <li>
+                        <?php>echo $_SESSION['role']; <?>
+                    </li>
+                    <?php
+                        }
+                    ?>
+
                 </ul>
             
         </div>  
