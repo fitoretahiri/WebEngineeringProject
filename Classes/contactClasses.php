@@ -1,5 +1,5 @@
 <?php
-include_once '../repository/contactUsRepository.php';
+include_once './repository/contactUsRepository.php';
 
     class Message{
         private $id;

@@ -20,7 +20,7 @@
         $row=mysqli_fetch_array($result);
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
-                header("location:views/dashboard.php");
+                header("location:index.php");
             }
             else if($row["roli"]=="User"){
                 header("location:index.php");

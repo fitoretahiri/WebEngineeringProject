@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +33,16 @@
                     <li><a href="contactPage.php">Contact</a></li>
                     <li><a href="logIn.php">Log in</a></li>
                     <li><a href="register.php">Register</a></li>
+                    <?php
+                        if (isset($_SESSION["roli"]) && $_SESSION["roli"] == 'Admin') {
+                    ?>
+            
+                    <a href="./views/dashboard.php">
+                        <li>Dashboard</li>
+                    </a>
+                    <?php
+                        }
+                    ?>
                     <!--li class="corner"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
                     <li id="heart"><a href=""><i class="far fa-heart"></i></a></li-->
                 </ul>

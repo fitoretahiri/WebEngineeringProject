@@ -4,7 +4,7 @@
 ?>
 
 
-    <form class="main-div" action="login.php"  method="post" >
+    <form class="main-div" action="loginVerify.php"  method="post" >
         <h2 class="together">Log in to continue!</h2>
         <div class="form-control">
             <label for="">Enter email:</label>
@@ -41,6 +41,6 @@
 
 <!--thirrja e footer-it-->
 <?php
+    include 'loginVerify.php';  
     include('includes/footer.php');
-    include 'loginVerify.php';
     ?> 
