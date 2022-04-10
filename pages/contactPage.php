@@ -60,25 +60,21 @@ hr{
   margin-top: 20px;
 }
 
-.submitButton-div button{
+#myButton {
     padding: 7px;
     font-size: 15px;
-    background-color: rgb(199, 198, 198);
-   
-    color: whitesmoke;
+    background-color:red;
+    color: black;
     border-radius: 10px;
     transition: all 1s;
     cursor: pointer;
-}
-
-button{
     transition: all 1s;
     cursor: pointer;
-    background-color: rgba(235, 225, 180, 0.726);
+    background-color:rgb(172, 171, 171);
 }
 
-button:hover{
-    background-color:rgba(92, 209, 203, 0.377);
+#myButton:hover{
+    background-color:green;
     border: rgba(0, 0, 0, 0.342);
     color: white;
 }

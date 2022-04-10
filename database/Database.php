@@ -17,12 +17,6 @@ class Database{
             echo "Database Connection Failed".$e->getMessage();
             return null;
         }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 848ea6b05b4ee38dc2df9aed2bf34dc3fec61d7b
     }
 }
-
 ?>

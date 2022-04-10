@@ -1,4 +1,8 @@
 <?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 
     $host="localhost";
     $user="root";
@@ -20,23 +24,25 @@
         $row=mysqli_fetch_array($result);
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
-                header("location:views/dashboard.php");
+                $_SESSION['roli']=$row['roli'];
+                header("location:./pages/index.php");
             }
             else if($row["roli"]=="User"){
-                header("location:index.php");
+                $_SESSION['roli']=$row['roli'];
+                header("location:./pages/index.php");
             }
         }
         
         if(empty($variable['email']) || empty($variable['password'])){
             echo ("<script LANGUAGE='JavaScript'>
             window.alert('Please fill all fields');
-           window.location.href='login.php';  </script>");
+           window.location.href='./pages/login.php';  </script>");
         }
 
         else {
             echo ("<script LANGUAGE='JavaScript'>
                     window.alert('Email or password incorrect');
-                    window.location.href='login.php';  </script>");
+                    window.location.href='./pages/login.php';  </script>");
         }
 
     }

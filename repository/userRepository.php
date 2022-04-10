@@ -1,11 +1,5 @@
 <?php
-<<<<<<< HEAD
-    require_once './database/Database.php';
-=======
-    class UserRepository {
-
-    include_once './database/Database.php';
->>>>>>> 848ea6b05b4ee38dc2df9aed2bf34dc3fec61d7b
+    require_once '../database/Database.php';
 
     class UserRepository{
         private $connection;
