@@ -7,10 +7,10 @@
         </div>
             <div class="nav-list2">
                 <ul>
-                    <li><a href="index.html">Back to start</a></li>
-                    <li><a href="contactPage.html">Contact</a></li>
-                    <li><a href="logIn.html">Log In</a></li>
-                    <li><a href="order.html">Order</a></li>
+                    <li><a href="index.php">Back to start</a></li>
+                    <li><a href="contactPage.php">Contact</a></li>
+                    <li><a href="logIn.php">Log In</a></li>
+                    <li><a href="order.php">Order</a></li>
                 </ul>
              </div>
 
@@ -28,6 +28,6 @@
                 <i class="far fa-envelope"></i>
             </div>
         </div>   
-        <script src="JS/registerScript.js"></script>  
+        <!--script src="JS/registerScript.js"></script-->  
 </body>
 </html>

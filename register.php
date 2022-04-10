@@ -6,7 +6,7 @@
     <form action="register.php"  method="POST">
         <div class="form-control">
             <label for="">Enter your name:</label>
-            <input type="text" placeholder="Name" class="inputs"  name="name" id="name"">
+            <input type="text" placeholder="Name" class="inputs"  name="name" id="name">
             <small>Error message</small>
         </div>    
         
@@ -46,8 +46,10 @@
             <small>Error message</small>
         </div>
 
+        <input type="hidden" name="roli">
+
         <div class="form-control">
-        <input type="checkbox" id="checkbox">
+        <input type="checkbox" id="checkbox" name="checkbox">
         <label for="">I agree with the terms</label>
         <br>
         <small>Error message</small>

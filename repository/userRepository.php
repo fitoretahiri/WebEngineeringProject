@@ -1,17 +1,7 @@
 <?php
-<<<<<<< HEAD
-
-    include_once '../database/databaseConnection.php';
-    //use DatabaseConnection as dbh;
-  
-    class UserRepository {
-
-    
-=======
-    include_once './database/Database.php';
+    require_once './database/Database.php';
 
     class UserRepository{
->>>>>>> af712f60484057ef0264a561da14d046c072fa27
         private $connection;
 
         function __construct(){
@@ -32,14 +22,15 @@
             $email=$user->getEmail();
             $psw=$user->getPsw();
             $psw2=$user->getPsw2();
+            $roli=$user->getRole();
 
             
 
-            $sql="INSERT INTO users (id,name,surname,age,birthday,email,psw,psw2)VALUES (?,?,?,?,?,?,?,?)";
+            $sql="INSERT INTO users (id,name,surname,age,birthday,email,psw,psw2,roli)VALUES (?,?,?,?,?,?,?,?,?)";
 
             $statement = $conn->prepare($sql);
 
-            $statement->execute([$id,$name,$surname,$age,$birthday,$email,$psw,$psw2]);
+            $statement->execute([$id,$name,$surname,$age,$birthday,$email,$psw,$psw2,"User"]);
         
     }
 
@@ -90,14 +81,6 @@
             //te pikepytjet vendosen kto te dhena
             $statement->execute([$id]);
             return header("Location:../views/dashboard.php");
-
-        }
-
-        
-         
-        
+        } 
     }
-
-
-
 ?>

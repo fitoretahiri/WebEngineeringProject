@@ -1,13 +1,8 @@
 <?php
 
-<<<<<<< HEAD
-include_once '../database/databaseConnection.php';
-include_once '../repository/userRepository.php';
-include_once '../Classes/signupClasses.php';
-=======
+include_once './database/Database.php';
 include_once './repository/userRepository.php';
 include_once './Classes/signupClasses.php';
->>>>>>> af712f60484057ef0264a561da14d046c072fa27
 
     if(isset($_POST['submit'])){
             $name= $_POST['name'];
@@ -23,49 +18,57 @@ include_once './Classes/signupClasses.php';
             $user= new User($id,$name,$surname,$age,$birthday,$email,$psw,$psw2);
             $userRepository=new UserRepository();
 
-          
-            
-          if($this->emailTakenCheck()==false){
-                header("location:../index.php?error=emailTaken");
+            if(checkUser()){
+                $userRepository->insertUser($user);
             }
-            $userRepository->insertUser($user);
-        //}
-        
     }
 
+    function checkUser(){
+        $host="localhost";
+        $user="root";
+        $password="";
+        $db="onlineshop";
     
-    function checkUser($email){
-        //kqyrim a eshte nje email qe e shkrun useri e ne databaze dmth qe u shkrujt m'a heret
-         $statement=$this->startConnection()->prepare('SELECT email FROM users WHERE email=? ;');
-
-         //nese statement execution fails
-        /* if(!$statement->execute($email)){
-             $statement=null;
-             header("location: ../index.php?error=statementfailed");
-             exit();
-         }*/
-
-         //nese useri vec ekziston ne databaze me qat email, nuk e leojojme regjistrimin, nese ndodh e kunderta e lejojme
-         $resultCheck;
-         if($statement->rowCount()>0){
-             $resultCheck=false;
-         }
-         else{
-             $resultCheck=true;
-         }
-         return $resultCheck;
-     }
-
-     function emailTakenCheck(){
-       
-        $result;
-         if(!$this->checkUser($this->email)){
-             $result=false;
-         }
-         else{
-             $result=true;
-         }
-         return $result; 
-     }
-
+        $res=mysqli_connect($host,$user,$password,$db);
+        if($res===false){
+            die("connection failed");
+        }
+    
+        $data=$_POST;
+        if(empty($data['email']) || empty($data['name']) || empty($data['surname']) || empty($data['age'])
+        || empty($data['birthday']) || empty($data['psw']) || empty($data['psw2']) || empty($data['checkbox'])){
+            echo ("<script LANGUAGE='JavaScript'>
+                         window.alert('Please fill all fields');
+                        window.location.href='register.php';  </script>");
+        }
+    
+        if(strlen($data['psw'])<8){
+            echo ("<script LANGUAGE='JavaScript'>
+                         window.alert('Password should be at least 8 characters!');
+                        window.location.href='register.php';  </script>");
+        }
+    
+        if($data['psw']!==$data['psw2']){
+            echo ("<script LANGUAGE='JavaScript'>
+                         window.alert('Password and Confirm Password does not match!');
+                        window.location.href='register.php';  </script>");
+        }
+    
+        if($_SERVER["REQUEST_METHOD"]=="POST"){
+            $email=$_POST["email"];
+    
+            $sql="SELECT * FROM users WHERE email='$email'";
+            $result=mysqli_query($res,$sql);
+            $row=mysqli_fetch_array($result);
+            
+            if(isset($row['email'])){
+                if($row['email']===$data['email']){
+                    echo ("<script LANGUAGE='JavaScript'>
+                window.alert('Try another email address. This email adress is already registered!');
+               window.location.href='register.php';  </script>");
+                }
+            }
+            else return true;
+        }
+    }
 ?>

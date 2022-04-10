@@ -221,14 +221,8 @@ button:hover{
              
             <div class="usersAndOurInfo-div">
                 
-<<<<<<< HEAD
-
-                <form name="contact-form" action="" method="post">
-
-=======
                 <form name="contact-form" action="" method="post">
                
->>>>>>> af712f60484057ef0264a561da14d046c072fa27
                 <div class="usersInfo-div">
                 <p><b>Send us a message</b></p>
                 <p>Send us a message and we'll respond within 24 hours</p>

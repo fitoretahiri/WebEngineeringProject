@@ -10,6 +10,7 @@ include_once './repository/userRepository.php';
         private $email;
         private $psw;
         private $psw2;
+        private $roli;
 
         public function __construct($id,$name,$surname,$age,$birthday,$email,$psw,$psw2){
             $this->id=$id;
@@ -19,7 +20,7 @@ include_once './repository/userRepository.php';
             $this->birthday=$birthday;
             $this->email=$email;
             $this->psw=$psw;
-            $this->psw2=$psw2;            
+            $this->psw2=$psw2;         
         }
 
         function getId(){
@@ -54,50 +55,8 @@ include_once './repository/userRepository.php';
             return $this->psw2;
         }
 
-       // abstract function getRole();
-    }
-/*
-    class Admin extends User implements Behaviors{
-        private $permision;
-
-        public function __construct($name,$surname,$age,$birthday,$email,$psw,$psw2,$permision){
-            parent::__construct($name,$surname,$age,$birthday,$email,$psw,$psw2);
-            $this->permision=$permision;
-        }
-
-        public function getPermision(){
-            return $permision;
-        }
-
         public function getRole(){
-
-        }
-
-        function login($username,$password){
-
-        }
-        function logout(){
-
+            return $this->roli;
         }
     }
-
-    class SimpleUser extends User implements Behaviors{
-        public function getRole(){
-
-        }
-
-        function login($username,$password){
-
-        }
-        function logout(){
-
-        }
-    }
-
-    interface Behaviors{
-        function login($username,$password);
-        function logout();
-    }*/
-
-    
 ?>

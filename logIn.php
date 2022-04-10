@@ -1,9 +1,10 @@
 
 <!--thirrja e header-it-->
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header.php';
+?>
 
 
-    <form class="main-div" action="logIn.html"  method="post" >
+    <form class="main-div" action="login.php"  method="post" >
         <h2 class="together">Log in to continue!</h2>
         <div class="form-control">
             <label for="">Enter email:</label>
@@ -33,15 +34,13 @@
         <br>
         <button class="btn"><a href="www.gmail.com" style="color: white; text-decoration: none;">Register with Google</a></button>
         <br>
-        <p>If your're not registered, <a href="register.html">register!</a></p>
+        <p>If your're not registered, <a href="register.php">register!</a></p>
 
-        <h3 id="show" class="con">You are now logged in! <a href="order.html">Continue!</a></h2>
-    </form>
-
-    <script src="JS/login.js"></script> 
+        <h3 id="show" class="con">You are now logged in! <a href="order.php">Continue!</a></h2>
+    </form> 
 
 <!--thirrja e footer-it-->
 <?php
     include('includes/footer.php');
-    include_once('controller/userController.php');
+    include 'loginVerify.php';
     ?> 

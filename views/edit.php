@@ -43,6 +43,7 @@
     $email=$_POST['email'];
     $psw=$_POST['psw'];
     $psw2=$_POST['psw2'];
+    //$roli=$_POST['roli'];
 
     $userRepository->updateUser($id,$name,$surname,$age,$birthday,$email,$psw,$psw2);
     header("location:dashboard.php");

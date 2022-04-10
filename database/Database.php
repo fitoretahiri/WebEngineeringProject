@@ -1,22 +1,22 @@
 <?php
 
-class DataBase{
-    public $pdo;
-    public static $instance=null;
+class Database{
+    private $server="localhost";
+    private $username="root";
+    private $password="";
+    private $database = "onlineshop";
 
-    public function __construct()
-    {
-        try {
-            if(!isset($_SESSION)) 
-            { 
-                session_start(); 
-            } 
-            $link = new PDO("mysql:host=localhost;dbname=onlineshop", 'root', '');
-            $this->pdo = $link;
-        } catch (PDOException $e) {
-            die($e->getMessage());
+
+    function startConnection(){
+
+        try{
+            $conn = new PDO("mysql:host=$this->server;dbname=$this->database",$this->username,$this->password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $conn;
+        }catch(PDOException $e){
+            echo "Database Connection Failed".$e->getMessage();
+            return null;
         }
     }
-
 }
 ?>

@@ -17,6 +17,7 @@
             <th>Email</th>
             <th>Password</th>
             <th>Repeat Password</th>
+            <th>Roli</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -38,6 +39,7 @@
             <td>$user[email]</td>
             <td>$user[psw]</td>
             <td>$user[psw2]</td>
+            <td>$user[roli]</td>
             <td><a href='edit.php?id=$user[id]'>Edit</a></td>
             <td><a href='delete.php?id=$user[id]'>Delete</a></td>
             </tr>
