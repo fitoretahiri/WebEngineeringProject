@@ -1,34 +1,134 @@
+<style>
+.invalidInput{
+position: absolute;
+top: 25%;
+left: 18%;
+margin-left:25%;
+transform: translate(-15%, -50%);
+color:red;  
+border: 3px solid red;
+background-color:white;
+}
+
+.validInput{
+position: absolute;
+top: 25%;
+left: 18%;
+margin-left:25%;
+transform: translate(-15%, -50%);
+color:green;  
+border: 3px solid green;
+background-color:white;
+}
+</style>
+
 <?php
-    require_once "./database/Database.php";
+include_once '../repository/contactUsRepository.php';
+include_once '../Classes/contactClasses.php';
 
-    class ContactController{
-        public $db;
 
-        public function __construct(){
-            $this->db=new Database;
+ function emptyInput(){ 
+    $result;
+   if(empty($_POST['fullName'])||empty($_POST['email'])||empty($_POST['telephone'])||
+   empty($_POST['organization'])||empty($_POST['message'])){
+       $result=false;
+   }
+   else{
+       $result=true;
+   }
+   return $result;
+}
+
+ function onlyDigits(){ 
+    $result;
+   if(!is_numeric($_POST['telephone'])){
+       $result=false;
+   }
+   else{
+       $result=true;
+   }
+   return $result;
+}
+
+ function nineDigitsMobile(){ 
+    $result;
+    $telLength=strlen ($_POST ["telephone"]);
+   if( $telLength!=9){
+       $result=false;
+   }
+   else{
+       $result=true;
+   }
+   return $result;
+}
+
+ function validEmail(){ 
+    $result;
+    $validEmail = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^";  
+   if(!preg_match ($validEmail, $_POST['email']) ){
+       $result=false;
+   }
+   else{
+       $result=true;
+   }
+   return $result;
+}
+
+ function validName(){ 
+    $result;
+   if(!preg_match('/^[\p{L} ]+$/u',$_POST['fullName'])  ){
+       $result=false;
+   }
+   else{
+       $result=true;
+   }
+   return $result;
+}
+
+
+    if(isset($_POST['submit'])){
+        if (emptyInput()==false) {
+            echo "<p class='invalidInput'>Fill all fields!</p>";
         }
 
+        else{
 
-        public function readData(){
-            $query=$this->db->database->query('SELECT * FROM contact');
-            return $query->fetchAll();
+        if (onlyDigits()==false) {
+            echo "<p class='invalidInput'>Mobile must contain only numbers.</p>";
+        }
+         
+        if (nineDigitsMobile()==false) {
+            echo "<p class='invalidInput'>Mobile must have 9 digits.</p>";
         }
 
-        public function insert($request){
-
-            $query=$this->db->database->prepare('INSERT INTO contact(name,email,telephone,organization,message)
-            VALUES (:name, :email, :telephone,:organization,:message)');
-
-            //tash duhet me i tregu :menu_image cka eshte e perdorim bindParam()
-            $query->bindParam(':name',$request['name']);//['image'] e kena lon se n formen e krijume inputi n fjale e ka emrin image
-            $query->bindParam(':email',$request['email']);
-            $query->bindParam(':telephone',$request['telephone']);
-            $query->bindParam(':organization',$request['user']);
-            $query->bindParam(':message',$request['comments']);
-            $query->execute();
-
-            return header('Location:../views/menuDashboard.php');
+        if (validName()==false)  { 
+            echo "<p class='invalidInput'>Only alphabets and whitespaces are allowed.</p>";  
         }
+
+        if (validEmail()==false){ 
+            echo "<p class='invalidInput'>Invalid email address.</p>"; 
+        }
+
     }
 
+        if(emptyInput()&& onlyDigits()&&nineDigitsMobile()&&validName()&&validEmail()){
+            $fullName= $_POST['fullName'];
+            $email= $_POST['email'];
+            $telephone= $_POST['telephone'];
+            $organization= $_POST['organization'];
+            $message= $_POST['message'];
+            $id=$fullName.rand(100,999);
+
+            $contact= new Message($id,$fullName,$email,$telephone,$organization,$message);
+            $contactUsRepository=new ContactUsRepository();
+        
+            $contactUsRepository->insertMessage($contact);
+
+            echo "<p class='validInput'>Message sent successfully.</p>"; 
+            return header('Location : ../index.php');
+        }
+        
+    }
+
+   
 ?>

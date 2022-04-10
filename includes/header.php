@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/logIn.css">
+=======
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/logIn.css">
+>>>>>>> 848ea6b05b4ee38dc2df9aed2bf34dc3fec61d7b
     <script src="https://kit.fontawesome.com/96651c389e.js" crossorigin="anonymous"></script>
     <title>Shop</title>
 </head>
