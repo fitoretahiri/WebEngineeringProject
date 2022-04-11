@@ -18,6 +18,7 @@
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         $email=$_POST["email"];
         $password=$_POST["password"];
+        
 
         $sql="SELECT * FROM users WHERE email='$email' AND psw='$password'";
         $result=mysqli_query($data,$sql);
@@ -25,12 +26,31 @@
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
                 $_SESSION['roli']=$row['roli'];
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+>>>>>>> 0bbfe224b715cd117a1858885c15c4b8ef99f4e6
                 header("location:./pages/index.php");
             }
             else if($row["roli"]=="User"){
                 $_SESSION['roli']=$row['roli'];
                 header("location:./pages/index.php");
+<<<<<<< HEAD
 
+=======
+=======
+=======
+                $_SESSION['name']=$row['name'];
+>>>>>>> Stashed changes
+                header("location:index.php");
+            }
+            else if($row["roli"]=="User"){
+                $_SESSION['roli']=$row['roli'];
+                $_SESSION['name']=$row['name'];
+                header("location:index.php");
+>>>>>>> a0d5dc007db53243496de25f8d911b9e556bcdd0
+>>>>>>> 0bbfe224b715cd117a1858885c15c4b8ef99f4e6
             }
         }
         

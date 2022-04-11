@@ -1,8 +1,14 @@
 <?php
+<<<<<<< Updated upstream
 
 include_once '../database/Database.php';
 include_once '../repository/userRepository.php';
 include_once '../Classes/signupClasses.php';
+=======
+include_once './database/Database.php';
+include_once './repository/userRepository.php';
+include_once './Classes/signupClasses.php';
+>>>>>>> Stashed changes
 
     if(isset($_POST['submit'])){
             $name= $_POST['name'];
