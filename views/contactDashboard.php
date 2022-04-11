@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/dashboard.css" >
+    
 </head>
 <body>
 <br><br>
-<a href='dashboard.php' style="color:green">Click here for the Users Dashboard</a><br><br>
-<a href='menuDashboard.php'style="color:green">Click here for the Products Dashboard</a>
+<a href='dashboard.php'>Click here for the Users Dashboard</a><br><br>
+<a href='menuDashboard.php'>Click here for the Products Dashboard</a><br><br>
+<a href='../pages/index.php'><-- Back to the Home Page</a><br><br>
     <table class="content-table" border="1">
     <thead>
         <tr>

@@ -8,6 +8,36 @@
     $user=$userRepository->getUserById($userId);
 ?>
 
+<style>
+    body {
+	height: 130%;
+	font-family: "Nunito Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+    background-image: url('../HomePics/silvery.jpg');
+}
+.edit-form{
+    margin: 0;
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.edit-form input{
+    height:29px;
+    font-size:15pt;
+    border:3px solid grey;
+}
+
+.edit-form p{
+    font-size:15pt;
+    display:flex;
+    flex-wrap:wrap;
+
+}
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,16 +47,24 @@
     <title>Document</title>
 </head>
 <body>
-<form action ="" method="POST">
-    <input type="text" name="id" value="<?=$user['id'] ?>" readonly><br><br>
-    <input type="text"  name="name" value="<?=$user['name'] ?>"><br><br>
-    <input type="text" name="surname" value="<?=$user['surname'] ?>"><br><br>
-    <input type="number" name="age"value="<?=$user['age'] ?>"><br><br>
-    <input type="date" name="birthday"value="<?=$user['birthday'] ?>"><br><br>
-    <input type="email"  name="email"value="<?=$user['email'] ?>"><br><br>
-    <input type="password"  name="psw"value="<?=$user['psw'] ?>"><br><br>
+<h1 style="text-align:center;padding-top:20px;">Edit User:</h1>
+<form class="edit-form"action ="" method="POST">
+    <p>ID:</p>
+    <input type="text" name="id" value="<?=$user['id'] ?>" readonly><br>
+    <p>Name:</p>
+    <input type="text"  name="name" value="<?=$user['name'] ?>"><br>
+    <p>Surname:</p>
+    <input type="text" name="surname" value="<?=$user['surname'] ?>"><br>
+    <p>Age:</p>
+    <input type="number" name="age"value="<?=$user['age'] ?>"><br>
+    <p>Birthdate:</p>
+    <input type="date" name="birthday"value="<?=$user['birthday'] ?>"><br>
+    <p>Email:</p>
+    <input type="email"  name="email"value="<?=$user['email'] ?>"><br>
+    <p>Pass:</p>
+    <input type="password"  name="psw"value="<?=$user['psw'] ?>"><br>
     <input type="password"  name="psw2"value="<?=$user['psw2'] ?>"><br><br>
-    <input type="submit"  name="saveBtn" value="save"><br><br>
+    <input type="submit"  name="saveBtn" value="Save"><br>
 </form>
 </body>
 

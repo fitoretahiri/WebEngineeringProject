@@ -2,6 +2,14 @@
     *{
       font-family: sans-serif; 
     }
+
+    html,
+body {
+	height: 100%;
+	font-family: "Nunito Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+    background-image: url('../HomePics/silvery.jpg');
+}
     
     .content-table {
       border-collapse: collapse;
@@ -14,7 +22,7 @@
     }
     
     .content-table thead tr {
-      background-color: #009879;
+      background-color: black;
       color: #ffffff;
       text-align: left;
       font-weight: bold;

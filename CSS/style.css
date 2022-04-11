@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 html,
 body {
 	height: 100%;
@@ -304,6 +305,7 @@ i.far{
 .sales{
     padding-bottom: 40px;
 }
+
 
 @media screen and (max-width: 855px){
     .nav-bar{

@@ -5,9 +5,10 @@ require_once '../controller/productController.php';
 <link rel="stylesheet" href="../CSS/dashboard.css" >
 <div>
 <br><br>
-<a href='dashboard.php'style="color:green">Click here for the Users Dashboard</a><br><br>
-<a href='contactDashboard.php'style="color:green">Click here for the Messages Dashboard</a>
-    <table class="content-table">
+<a href='dashboard.php'>Click here for the Users Dashboard</a><br><br>
+<a href='contactDashboard.php'>Click here for the Messages Dashboard</a><br><br>   
+<a href='../pages/index.php'><-- Back to the Home Page</a><br><br>   
+<table class="content-table">
         <thead>
             <tr>
               <th>Menu image</th>

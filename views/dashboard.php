@@ -8,9 +8,10 @@
 </head>
 <body>
 <br><br>
-<a href='menuDashboard.php'style="color:green">Click here for the Products Dashboard</a><br><br>
-<a href='contactDashboard.php'style="color:green">Click here for the Messages Dashboard</a>
-    <table class="content-table" border="1">
+<a href='menuDashboard.php'>Click here for the Products Dashboard</a><br><br>
+<a href='contactDashboard.php'>Click here for the Messages Dashboard</a><br><br> 
+<a href='../pages/index.php'><-- Back to the Home Page</a><br><br> 
+<table class="content-table" border="1">
     <thead>
         <tr>
             <th>ID</th>

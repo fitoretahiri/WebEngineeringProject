@@ -1,5 +1,5 @@
 <?php
-    require './database/Database.php';
+    require '../database/Database.php';
 
     class ContactUsRepository{
         private $connection;
