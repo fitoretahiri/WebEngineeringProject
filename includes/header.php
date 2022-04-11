@@ -30,15 +30,19 @@
 
             <div class="logo-div"><h1 id="logo"><em>Furniture</em></h1></div>
             <div class="nav-list">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 
 =======
             <!--h1 id="logo"><em>Furniture</em></h1-->
 >>>>>>> a0d5dc007db53243496de25f8d911b9e556bcdd0
+=======
+
+>>>>>>> Stashed changes
             <?php
                 $style = "";
                 if(isset($_SESSION['roli'])){
-                    $style = "style='visibility:hidden; '";
+                    $style = "style='visibility:hidden;'";
                 }?>
             
                 <ul id="lista-e-pare">
@@ -79,14 +83,9 @@
                             Log Out
                         </a>
                     </li>
-                    <li>
-                        <?php>echo $_SESSION['role']; <?>
-                    </li>
                     <?php
                         }
                     ?>
-
                 </ul>
-            
         </div>  
     </nav>
