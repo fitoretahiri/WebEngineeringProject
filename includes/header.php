@@ -18,12 +18,6 @@
             <p id="header"><i>Welcome in our page!</i></p>
         </div>
         <nav class="nav-bar">
-            <!-- <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fas fa-bars" id="btn"></i>
-                <i class="fas fa-times" id="cancel"></i>
-            </label> -->
-
             <div class="logo-div"><h1 id="logo"><em>Furniture</em></h1></div>
             <div class="nav-list">
 
