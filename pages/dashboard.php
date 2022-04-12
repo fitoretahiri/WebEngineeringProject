@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/dashboard.css" >
-</head>
+<?php
+include '../includes/header.php';
+?>
 <body>
-<br><br>
-<a href='menuDashboard.php'style="color:green">Click here for the Products Dashboard</a><br><br>
-<a href='contactDashboard.php'style="color:green">Click here for the Messages Dashboard</a>
+
+<div style="background-color:black;">
+<ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
+    <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="menuDashboard.php">Products</a></li>
+    <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="contactDashboard.php">Messages</a></li>
+</ul>
+</div>
+
+<div style="overflow-x:auto; margin-bottom:20%;">
     <table class="content-table" border="1">
     <thead>
         <tr>
@@ -26,6 +27,7 @@
             <th>Delete</th>
         </tr>
 </thead>
+
 
         <?php
         include_once '../repository/userRepository.php';
@@ -53,5 +55,7 @@
 
         ?>
     </table>
-</body>
-</html>
+    </div>    
+<?php
+include '../includes/footer.php';
+?>
