@@ -3,7 +3,7 @@ include '../includes/header.php';
 ?>
 <body>
 
-<div style="background-color:black;">
+<div style="background-color:black; padding-bottom:1%;">
 <ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
     <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="menuDashboard.php">Products</a></li>
     <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="contactDashboard.php">Messages</a></li>

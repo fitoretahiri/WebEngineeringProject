@@ -5,13 +5,13 @@ require_once '../controller/productController.php';
 
 <link rel="stylesheet" href="../CSS/dashboard.css" >
 <div>
-<div style="background-color:black;">
+<div style="background-color:black; padding-bottom:1%;">
 <ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
     <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="dashboard.php">Users</a></li>
     <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="contactDashboard.php">Messages</a></li>
 </ul>
 </div>
-
+<button style="background-color:#009879; border-radius:20%; padding:10px;margin-left:45%; margin-top:3%; margin-bottom:3%;"><a style="text-decoration:none; color:white;" href="../views/create-product.php">Create product</a></button>
 <div style="overflow-x:auto; margin-bottom:20%;">   
 <table class="content-table">
         <thead>
