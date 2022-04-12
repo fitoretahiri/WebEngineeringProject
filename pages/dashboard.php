@@ -47,8 +47,8 @@ include '../includes/header.php';
             <td>$user[psw]</td>
             <td>$user[psw2]</td>
             <td>$user[roli]</td>
-            <td><a href='edit.php?id=$user[id]'>Edit</a></td>
-            <td><a href='delete.php?id=$user[id]'>Delete</a></td>
+            <td><a href='../views/edit.php?id=$user[id]'>Edit</a></td>
+            <td><a href='../views/delete.php?id=$user[id]'>Delete</a></td>
             </tr>
             ";
         }

@@ -46,7 +46,7 @@
     //$roli=$_POST['roli'];
 
     $userRepository->updateUser($id,$name,$surname,$age,$birthday,$email,$psw,$psw2);
-    header("location:dashboard.php");
+    header("location:../pages/dashboard.php");
 }
 ?>
 </html>

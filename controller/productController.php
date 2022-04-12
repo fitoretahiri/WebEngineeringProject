@@ -2,7 +2,7 @@
 //kontrollerat i marrin te dhenat i update-ojne ato...
 
 //me e preferushme eshte me u perdor require once qe me i shmang warnings
-require './database/ProductsDatabase.php';
+require '../database/ProductsDatabase.php';
 
 class ProductController{
     public $db;// e deklarojme ni variabel $db qe me pas ma te lehte me iu cas databazes p.sh ne metoda etj
@@ -35,7 +35,7 @@ class ProductController{
         $query->bindParam(':menu_body',$request['body']);
         $query->execute();
 
-        return header('Location:../views/menuDashboard.php');
+        return header('Location:../pages/menuDashboard.php');
     }
 
     public function edit($id){
@@ -57,7 +57,7 @@ class ProductController{
          $query->bindParam(":id",$id);
          $query->execute();
 
-         return header ('Location:../views/menuDashboard.php');
+         return header ('Location:../pages/menuDashboard.php');
         
 
     }
@@ -67,7 +67,7 @@ class ProductController{
         $query->bindParam(':id', $id);
         $query->execute();
 
-        return header("Location:../views/menuDashboard.php");
+        return header("Location:../pages/menuDashboard.php");
     }
 
 }
