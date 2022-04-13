@@ -24,6 +24,7 @@
         $result=mysqli_query($data,$sql);
         $row=mysqli_fetch_array($result);
         $_SESSION['name']=$row['name'];
+        $_SESSION['surname']=$row['surname'];
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
                 $_SESSION['roli']=$row['roli'];

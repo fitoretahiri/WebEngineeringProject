@@ -64,6 +64,8 @@
                      <li>
                         <?php
                             echo $_SESSION["name"];
+                            echo '<br>';
+                            echo $_SESSION["surname"];
                         ?>
                     </li>
                     <?php
