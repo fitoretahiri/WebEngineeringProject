@@ -23,6 +23,7 @@
         $sql="SELECT * FROM users WHERE email='$email' AND psw='$password'";
         $result=mysqli_query($data,$sql);
         $row=mysqli_fetch_array($result);
+        $_SESSION['name']=$row['name'];
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
                 $_SESSION['roli']=$row['roli'];
@@ -30,11 +31,6 @@
             }
             else if($row["roli"]=="User"){
                 $_SESSION['roli']=$row['roli'];
-                header("location:./pages/index.php");
-            }
-            else if($row["roli"]=="User"){
-                $_SESSION['roli']=$row['roli'];
-                $_SESSION['name']=$row['name'];
                 header("location:./pages/index.php");
             }
         }

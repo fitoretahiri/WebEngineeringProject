@@ -57,6 +57,18 @@
                     <?php
                         }
                     ?>
+
+                <?php
+                        if (isset($_SESSION["roli"])) {
+                    ?>
+                     <li>
+                        <?php
+                            echo $_SESSION["name"];
+                        ?>
+                    </li>
+                    <?php
+                        }
+                    ?>
                 </ul>
         </div>  
     </nav>
