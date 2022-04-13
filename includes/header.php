@@ -30,6 +30,7 @@
                 <ul id="lista-e-pare">
                     <li> <a href="index.php">Home</a></li> 
                     <li><a href="order.php">Order</a></li>
+                    <li> <a href="news.php">News</a></li> 
                     <li><a href="contactPage.php">Contact</a></li>
                     <?php
                         if (isset($_SESSION["roli"]) && $_SESSION["roli"] == 'Admin') {
@@ -42,7 +43,7 @@
                     <?php
                         }
                     ?>
-                    <li> <a <?php echo $style;?> href="logIn.php">Log in</a></li>
+                    <li> <a <?php echo $style;?> href="logIn.php">LogIn</a></li>
                     <!--li><a <!?php echo $style;?> href="register.php">Register</a></li-->
 
                     <?php
@@ -50,7 +51,7 @@
                     ?>
                      <li>
                         <a href="../pages/logout.php">
-                            Log Out
+                            LogOut
                         </a>
                     </li>
                     <?php
