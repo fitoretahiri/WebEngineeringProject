@@ -63,9 +63,7 @@
                     ?>
                      <li>
                         <?php
-                            echo $_SESSION["name"];
-                            echo '<br>';
-                            echo $_SESSION["surname"];
+                            echo "<p style='color:white; margin-left:5%;'>" . $_SESSION["name"] . " " . $_SESSION["surname"] . "</p>";
                         ?>
                     </li>
                     <?php

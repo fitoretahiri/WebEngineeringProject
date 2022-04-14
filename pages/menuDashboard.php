@@ -37,9 +37,11 @@ require_once '../controller/productController.php';
             <td>$menu[menu_image]</td>
             <td>$menu[menu_title]</td>
             <td>$menu[menu_body]</td>
+
             
             <td><a href='../views/edit-product.php?id=$menu[id]'>Edit</a></td>
             <td><a href='../views/delete-products.php?id=$menu[id]'>Delete</a></td>
+            <td>$_SESSION[name] $_SESSION[surname]</td>
             </tr>
             ";
         }
