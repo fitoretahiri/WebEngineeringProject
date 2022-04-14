@@ -28,28 +28,12 @@
         if(isset($row["roli"])){
             if($row["roli"]=="Admin"){
                 $_SESSION['roli']=$row['roli'];
-<<<<<<< Updated upstream
-<<<<<<< HEAD
                 header("location:./pages/index.php");
             }
             else if($row["roli"]=="User"){
                 $_SESSION['roli']=$row['roli'];
                 header("location:./pages/index.php");
-=======
-=======
-                $_SESSION['name']=$row['name'];
->>>>>>> Stashed changes
-                header("location:index.php");
             }
-<<<<<<< HEAD
-=======
-            else if($row["roli"]=="User"){
-                $_SESSION['roli']=$row['roli'];
-                $_SESSION['name']=$row['name'];
-                header("location:index.php");
->>>>>>> a0d5dc007db53243496de25f8d911b9e556bcdd0
-            }
->>>>>>> parent of cea3811 (strukturimi i files)
         }
         
         if(empty($variable['email']) || empty($variable['password'])){
@@ -63,6 +47,5 @@
                     window.alert('Email or password incorrect');
                     window.location.href='./pages/login.php';  </script>");
         }
-
     }
 ?>
