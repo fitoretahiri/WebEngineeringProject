@@ -21,6 +21,7 @@ require_once '../controller/productController.php';
               <th>Menu body</th>
               <th>Edit</th>
               <th>Delete</th>
+              <th>Added by</th>
             </tr>
         </thead>
         <tbody>

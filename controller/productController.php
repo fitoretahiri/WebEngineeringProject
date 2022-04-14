@@ -28,6 +28,7 @@ class ProductController{
         //metoda prepare() mundeson fshirjen,update-imin e fushave
         $query=$this->db->database->prepare('INSERT INTO menu(menu_image,menu_title,menu_body)
         VALUES (:menu_image, :menu_title, :menu_body)');
+        
 
         //tash duhet me i tregu :menu_image cka eshte e perdorim bindParam()
         $query->bindParam(':menu_image',$request['image']);//['image'] e kena lon se n formen e krijume inputi n fjale e ka emrin image
@@ -69,9 +70,7 @@ class ProductController{
 
         return header("Location:../pages/menuDashboard.php");
     }
-
 }
-
 ?>
 
 
