@@ -25,6 +25,7 @@ include '../includes/header.php';
             <th>Roli</th>
             <th>Edit</th>
             <th>Delete</th>
+            <th>Make Admin </th>
         </tr>
 </thead>
 

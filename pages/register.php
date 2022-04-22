@@ -1,4 +1,6 @@
-<?php include '../includes/header.php'; ?>
+<?php include_once '../includes/header.php'; 
+require_once('../controller/userController.php');
+?>
 
     <div class="main-div" id="main-content">
         <h2 class="together">WELLCOME! Register to our site:</h2>
@@ -66,6 +68,6 @@
 </form>
 
 <?php
-    require_once('../controller/userController.php');
+    
     include('../includes/footer.php');
     ?> 
