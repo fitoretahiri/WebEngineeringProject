@@ -1,5 +1,4 @@
 <?php
-
     require_once '../database/Database.php';
 
     class UserRepository{
@@ -81,7 +80,7 @@
 
             //te pikepytjet vendosen kto te dhena
             $statement->execute([$id]);
-            return header("Location:../views/dashboard.php");
+            return header("Location:../pages/dashboard.php");
         } 
     }
 ?>

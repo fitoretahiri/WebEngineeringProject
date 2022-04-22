@@ -1,0 +1,55 @@
+.main-div{
+    margin-top: 15%;
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-bottom: 15%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: rgb(231, 231, 231);   
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.inputs{
+    
+    width: 100%;
+    color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+}
+.form-control small{
+    margin: 3px;
+    visibility: hidden;   
+    color: red;
+}
+.form-control.success input{
+    border: 2px solid rgb(0, 192, 0);
+}
+.form-control.error input{
+    border: 2px solid red;
+}
+#checkbox{
+    margin-top: 3%;
+}
+
+.together{
+    padding-bottom: 7%;
+}
+
+.con{
+    margin-top: 5%;
+    visibility: hidden;
+}
+.btn{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+    background: black;
+    margin-top: 2%;
+}
+
+ .roli{
+    visibility: hidden;
+}
+

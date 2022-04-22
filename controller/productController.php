@@ -2,6 +2,8 @@
 //kontrollerat i marrin te dhenat i update-ojne ato...
 
 //me e preferushme eshte me u perdor require once qe me i shmang warnings
+
+
 require '../database/ProductsDatabase.php';
 
 class ProductController{
@@ -28,6 +30,7 @@ class ProductController{
         //metoda prepare() mundeson fshirjen,update-imin e fushave
         $query=$this->db->database->prepare('INSERT INTO menu(menu_image,menu_title,menu_body)
         VALUES (:menu_image, :menu_title, :menu_body)');
+        
 
         //tash duhet me i tregu :menu_image cka eshte e perdorim bindParam()
         $query->bindParam(':menu_image',$request['image']);//['image'] e kena lon se n formen e krijume inputi n fjale e ka emrin image
@@ -35,7 +38,7 @@ class ProductController{
         $query->bindParam(':menu_body',$request['body']);
         $query->execute();
 
-        return header('Location:../views/menuDashboard.php');
+        return header('Location:../pages/menuDashboard.php');
     }
 
     public function edit($id){
@@ -57,7 +60,7 @@ class ProductController{
          $query->bindParam(":id",$id);
          $query->execute();
 
-         return header ('Location:../views/menuDashboard.php');
+         return header ('Location:../pages/menuDashboard.php');
         
 
     }
@@ -67,12 +70,26 @@ class ProductController{
         $query->bindParam(':id', $id);
         $query->execute();
 
-        return header("Location:../views/menuDashboard.php");
+        return header("Location:../pages/menuDashboard.php");
     }
-
 }
-
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -13,14 +13,12 @@
                     <li><a href="order.php">Order</a></li>
                 </ul>
              </div>
-
              <div class="email-div">
                  <p>Be the first to be informed about our offers!</p>
                  <p>Email:
                      <input type="text" name="email" size="15" maxlength="30"/>
                  </p>
              </div>
-
              <div class="icons">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>

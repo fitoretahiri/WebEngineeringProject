@@ -2,8 +2,11 @@
 include('../includes/header.php'); 
 ?>
 
+
 <?php
 require_once '../controller/productController.php';
+include_once '../repository/userRepository.php';
+include_once '../Classes/signupClasses.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +22,7 @@ require_once '../controller/productController.php';
 <body>
 <div class="batch-div" >
     <?php
+    
     $products=new ProductController();
     $all=$products->readData();
     for($i=0;$i<count($all);$i++){
@@ -29,7 +33,8 @@ require_once '../controller/productController.php';
         <div class="productsTitleAndBody-div">
         <h5>'.$all[$i]['menu_title'].'</h5>
         <p>'.$all[$i]['menu_body'].'</p>
-        </div>
+        
+        </div> 
         </div>';
     }
     ?>

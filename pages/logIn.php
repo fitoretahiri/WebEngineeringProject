@@ -2,7 +2,7 @@
 <?php include '../includes/header.php';
 ?>
 
-
+<link rel="stylesheet" href="../CSS/style.css" >
     <form class="main-div" action="../loginVerify.php"  method="post" >
         <h2 class="together">Log in to continue!</h2>
         <div class="form-control">

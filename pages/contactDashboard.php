@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="../CSS/dashboard.css" >
     
 </head>
-<body>
-<br><br>
-<a href='dashboard.php'>Click here for the Users Dashboard</a><br><br>
-<a href='menuDashboard.php'>Click here for the Products Dashboard</a><br><br>
-<a href='../pages/index.php'><-- Back to the Home Page</a><br><br>
+<body> -->
+    <?php
+    include '../includes/header.php';
+    ?>
+<div style="background-color:black; padding-bottom:1%;">
+<ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
+    <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="dashboard.php">Users</a></li>
+    <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="menuDashboard.php">Products</a></li>
+</ul>
+</div>
+<div style="overflow-x:auto; margin-bottom:20%;">
     <table class="content-table" border="1">
     <thead>
         <tr>
@@ -40,12 +46,16 @@
             <td>$message[telephone]</td>
             <td>$message[organization]</td>
             <td>$message[message]</td>
-            <td><a href='delete-message.php?id=$message[id]'>Delete</a></td>
+            <td><a href='../views/delete-message.php?id=$message[id]'>Delete</a></td>
             </tr>
             ";
         }
 
         ?>
     </table>
-</body>
-</html>
+    </div>
+    <?php
+    include '../includes/footer.php';
+    ?>
+<!-- </body>
+</html> -->

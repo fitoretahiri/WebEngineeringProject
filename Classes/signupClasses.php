@@ -1,5 +1,6 @@
 <?php
 include_once '../repository/userRepository.php';
+include_once '../pages/order.php';
 
     class User{
         private $id;

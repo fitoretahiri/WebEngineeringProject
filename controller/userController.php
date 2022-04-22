@@ -1,14 +1,9 @@
 <?php
-<<<<<<< Updated upstream
+
 
 include_once '../database/Database.php';
 include_once '../repository/userRepository.php';
 include_once '../Classes/signupClasses.php';
-=======
-include_once './database/Database.php';
-include_once './repository/userRepository.php';
-include_once './Classes/signupClasses.php';
->>>>>>> Stashed changes
 
     if(isset($_POST['submit'])){
             $name= $_POST['name'];
@@ -27,6 +22,9 @@ include_once './Classes/signupClasses.php';
             if(checkUser()){
                 $userRepository->insertUser($user);            
             }
+            echo ("<script LANGUAGE='JavaScript'>
+            window.alert('Data saved successfully! You can now Log In.');
+           window.location.href='../pages/logIn.php';  </script>");
     }
 
     function checkUser(){
@@ -52,14 +50,14 @@ include_once './Classes/signupClasses.php';
         if(strlen($data['psw'])<8){
             echo ("<script LANGUAGE='JavaScript'>
                          window.alert('Password should be at least 8 characters!');
-                        window.location.href='register.php';  </script>");
+                        window.location.href='../pages/register.php';  </script>");
                         return false;
         }
     
         if($data['psw']!==$data['psw2']){
             echo ("<script LANGUAGE='JavaScript'>
                          window.alert('Password and Confirm Password does not match!');
-                        window.location.href='register.php';  </script>");
+                        window.location.href='../pages/register.php';  </script>");
                         return false;
         }
     
