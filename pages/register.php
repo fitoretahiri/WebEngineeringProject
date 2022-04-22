@@ -67,5 +67,4 @@
 
 <?php
     require_once('../controller/userController.php');
-    include('../includes/footer.php');
     ?> 
