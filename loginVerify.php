@@ -47,6 +47,5 @@
                     window.alert('Email or password incorrect');
                     window.location.href='./pages/logIn.php';  </script>");
         }
-
     }
 ?>
