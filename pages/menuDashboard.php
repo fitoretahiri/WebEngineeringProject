@@ -40,7 +40,7 @@ require_once '../controller/productController.php';
             
             <td><a href='../views/edit-product.php?id=$menu[id]'>Edit</a></td>
             <td><a href='../views/delete-products.php?id=$menu[id]'>Delete</a></td>
-            <td>$_SESSION[name] $_SESSION[surname]</td>
+            <td>$menu[addedby]</td>
             </tr>
             ";
         }

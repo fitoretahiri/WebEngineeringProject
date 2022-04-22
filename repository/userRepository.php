@@ -81,6 +81,16 @@
             //te pikepytjet vendosen kto te dhena
             $statement->execute([$id]);
             return header("Location:../pages/dashboard.php");
-        } 
+        }
+        
+        function makeAdmin($id){
+            $conn=$this->connection;
+
+            $sql="UPDATE users SET roli='Admin' where id=?";
+            $statement = $conn->prepare($sql);
+
+            $statement->execute([$id]);
+            return header("Location:../pages/dashboard.php");
+        }
     }
 ?>

@@ -1,8 +1,14 @@
 <?php
+<<<<<<< HEAD
   if(!isset($_SESSION)) 
   { 
       session_start(); 
   }
+=======
+    if(!isset($_SESSION)){
+        session_start();
+    }
+>>>>>>> 92604c8ad98ac624d7126dd7ee30d3a841daa9ea
 ?>
 <!DOCTYPE html>
 <html lang="en">
