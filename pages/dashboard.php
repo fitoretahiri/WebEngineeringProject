@@ -50,6 +50,7 @@ include '../includes/header.php';
             <td>$user[roli]</td>
             <td><a href='../views/edit.php?id=$user[id]'>Edit</a></td>
             <td><a href='../views/delete.php?id=$user[id]'>Delete</a></td>
+            <td><a href='../views/make-admin.php?id=$user[id]'>Make Admin</a></td>
             </tr>
             ";
         }

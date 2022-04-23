@@ -68,10 +68,6 @@ require_once('../controller/userController.php');
 </form>
 
 <?php
-<<<<<<< HEAD
-    require_once('../controller/userController.php');
-=======
     
     include('../includes/footer.php');
->>>>>>> 92604c8ad98ac624d7126dd7ee30d3a841daa9ea
     ?> 
