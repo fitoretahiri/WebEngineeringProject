@@ -1,9 +1,5 @@
 <?php
 include_once '../repository/userRepository.php';
-<<<<<<< HEAD
-=======
-
->>>>>>> 92604c8ad98ac624d7126dd7ee30d3a841daa9ea
 
     class User{
         private $id;
