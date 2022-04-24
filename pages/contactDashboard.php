@@ -11,12 +11,15 @@
     <?php
     include '../includes/header.php';
     ?>
-<div style="background-color:black; padding-bottom:1%;">
+<!-- <div style="background-color:black; padding-bottom:1%;">
 <ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
     <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="dashboard.php">Users</a></li>
     <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="menuDashboard.php">Products</a></li>
 </ul>
-</div>
+</div> -->
+<?php
+    include "../includes/dashboardHeader.php";
+?>
 <div style="overflow-x:auto; margin-bottom:20%;">
     <table class="content-table" border="1">
     <thead>

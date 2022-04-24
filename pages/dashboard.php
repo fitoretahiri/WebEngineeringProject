@@ -2,13 +2,10 @@
 include '../includes/header.php';
 ?>
 <body>
+<?php
+    include "../includes/dashboardHeader.php";
+    ?>
 
-<div style="background-color:black; padding-bottom:1%;">
-<ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
-    <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="menuDashboard.php">Products</a></li>
-    <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="contactDashboard.php">Messages</a></li>
-</ul>
-</div>
 
 <div style="overflow-x:auto; margin-bottom:20%;">
     <table class="content-table" border="1">

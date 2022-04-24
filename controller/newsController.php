@@ -68,5 +68,5 @@ class NewsController{
         return header("Location:../pages/menuDashboard.php");
     }
 }
-}
+
 ?>
