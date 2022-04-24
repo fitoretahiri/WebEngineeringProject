@@ -41,7 +41,6 @@ class ProductController{
         $query->bindParam(':menu_body',$request['body']);
         $query->bindParam(':addedby', $name_surname);
         $query->execute();
-        session_destroy();
 
         return header('Location:../pages/menuDashboard.php');
     }
@@ -58,11 +57,10 @@ class ProductController{
 
     public function update($request,$id){
         $query=$this->db->database->prepare('UPDATE menu SET menu_image=:menu_image,
-         menu_title=:menu_title,menu_body=:menu_body,addedby=:addedby WHERE id = :id');
+         menu_title=:menu_title,menu_body=:menu_body WHERE id = :id');
          $query->bindParam(":menu_image",$request["image"]);
          $query->bindParam(":menu_title",$request["title"]);
          $query->bindParam(":menu_body",$request["body"]);
-         $query->bindParam(":addedby",$_SESSION["name"]);
          $query->bindParam(":id",$id);
          $query->execute();
 

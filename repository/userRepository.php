@@ -20,10 +20,10 @@
             $age=$user->getAge();
             $birthday=$user->getBirthday();
             $email=$user->getEmail();
-            $psw = password_hash($user->getPsw(), PASSWORD_BCRYPT);
-            $psw2 = password_hash($user->getPsw2(), PASSWORD_BCRYPT);
-            // $psw=$user->getPsw();
-            // $psw2=$user->getPsw2();
+            // $psw = password_hash($user->getPsw(), PASSWORD_BCRYPT);
+            // $psw2 = password_hash($user->getPsw2(), PASSWORD_BCRYPT);
+            $psw=$user->getPsw();
+            $psw2=$user->getPsw2();
             $roli=$user->getRole();
 
             
