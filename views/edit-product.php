@@ -4,7 +4,6 @@ require_once '../controller/productController.php';
 if(isset($_GET['id'])){
     $menuId=$_GET['id'];
 }
-//$menuId=$_GET['id'];
 $menu = new ProductController;
 $currentMenu= $menu->edit($menuId);
 
@@ -39,7 +38,6 @@ if(isset($_POST['submit'])){
 
 .edit-form p{
     font-size:20pt;
-    /*display:inline-block;*/
 }
 </style>
 

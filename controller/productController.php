@@ -56,6 +56,7 @@ class ProductController{
     }
 
     public function update($request,$id){
+        $request['image']= '../HomePics/'.$request['image'];
         $query=$this->db->database->prepare('UPDATE menu SET menu_image=:menu_image,
          menu_title=:menu_title,menu_body=:menu_body WHERE id = :id');
          $query->bindParam(":menu_image",$request["image"]);

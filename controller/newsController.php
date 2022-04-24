@@ -13,11 +13,7 @@ class NewsController{
         $this->db=new ProductsDatabase;
     }
 
-    //CRUD
-
     public function readData(){
-
-        //metoda query()mundeson shenimin e sintakses se databazes
         $query=$this->db->database->query('SELECT * FROM news');
 
         return $query->fetchAll();
@@ -49,6 +45,7 @@ class NewsController{
     }
 
     public function update($request,$id){
+        $request['image']= '../HomePics/'.$request['image'];
         $query=$this->db->database->prepare('UPDATE news SET image=:image,
          title=:title,text=:text WHERE id = :id');
          $query->bindParam(":image",$request["image"]);
