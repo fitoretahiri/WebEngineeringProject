@@ -41,8 +41,8 @@ require_once '../controller/newsController.php';
             <td>$menu[title]</td>
             <td>$menu[text]</td>
             
-            <td><a href='../views/edit-product.php?id=$menu[id]'>Edit</a></td>
-            <td><a href='../views/delete-products.php?id=$menu[id]'>Delete</a></td>
+            <td><a href='../views/edit-news.php?id=$menu[id]'>Edit</a></td>
+            <td><a href='../views/delete-news.php?id=$menu[id]'>Delete</a></td>
             <td>$menu[addedby]</td>
             </tr>
             ";

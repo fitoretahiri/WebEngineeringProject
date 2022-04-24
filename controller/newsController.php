@@ -37,7 +37,7 @@ class NewsController{
         $query->bindParam(':addedby', $name_surname);
         $query->execute();
 
-        return header('Location:../pages/menuDashboard.php');
+        return header('Location:../pages/newsDashboard.php');
     }
 
     public function edit($id){
@@ -57,7 +57,7 @@ class NewsController{
          $query->bindParam(":id",$id);
          $query->execute();
 
-         return header ('Location:../pages/menuDashboard.php');
+         return header ('Location:../pages/newsDashboard.php');
     }
 
     public function delete($id){
@@ -65,7 +65,7 @@ class NewsController{
         $query->bindParam(':id', $id);
         $query->execute();
 
-        return header("Location:../pages/menuDashboard.php");
+        return header("Location:../pages/newsDashboard.php");
     }
 }
 
