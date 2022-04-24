@@ -1,10 +1,6 @@
 <?php
     include('../includes/header.php');
 ?>
-
-
-
-
        <div class="carousel">
             <div class="inside-carousel" id="first">    
                 <div class="slider-text">
@@ -34,7 +30,6 @@
 
 
         <div class="most-liked">
-          <!--  <h1 class="paragrafi">Disa nga produktet me te pelqyera!</h1-->
             <div class="div-most-liked">
                 <div class="produktet">
                     <img src="../HomePics/kitchen.jpg" alt="" class="foto">

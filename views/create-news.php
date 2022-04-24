@@ -6,7 +6,6 @@ if(isset($_POST['submit'])){
     $news->insert($_POST);
 }
 ?>
-
 <style>
     body {
 	height: 100%;

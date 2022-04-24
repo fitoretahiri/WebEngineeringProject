@@ -5,12 +5,6 @@ require_once '../controller/productController.php';
 
 <link rel="stylesheet" href="../CSS/dashboard.css" >
 <div>
-<!-- <div style="background-color:black; padding-bottom:1%;">
-<ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
-    <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="dashboard.php">Users</a></li>
-    <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="contactDashboard.php">Messages</a></li>
-</ul>
-</div> -->
 <?php
     include "../includes/dashboardHeader.php";
 ?>

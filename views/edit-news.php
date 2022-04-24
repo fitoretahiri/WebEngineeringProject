@@ -38,7 +38,6 @@ if(isset($_POST['submit'])){
 
 .edit-form p{
     font-size:20pt;
-    /*display:inline-block;*/
 }
 </style>
 

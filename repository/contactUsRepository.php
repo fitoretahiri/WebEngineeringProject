@@ -65,14 +65,6 @@
             //te pikepytjet vendosen kto te dhena
             $statement->execute([$id]);
             return header("Location:../pages/contactDashboard.php");
-
-        }
-
-        
-         
-        
+        }   
     }
-
-
-
 ?>

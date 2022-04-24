@@ -1,23 +1,5 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/dashboard.css" >
-    
-</head>
-<body> -->
-    <?php
-    include '../includes/header.php';
-    ?>
-<!-- <div style="background-color:black; padding-bottom:1%;">
-<ul style="display: flex;   flex-wrap: wrap;list-style:none; justify-content: center;">
-    <li><a style=" font-size:25px; color:#009879; text-decoration:none;" href="dashboard.php">Users</a></li>
-    <li><a style=" font-size:25px; color:#009879; text-decoration:none; margin-left:20%;" href="menuDashboard.php">Products</a></li>
-</ul>
-</div> -->
 <?php
+    include '../includes/header.php';
     include "../includes/dashboardHeader.php";
 ?>
 <div style="overflow-x:auto; margin-bottom:20%;">
@@ -60,5 +42,3 @@
     <?php
     include '../includes/footer.php';
     ?>
-<!-- </body>
-</html> -->

@@ -26,8 +26,6 @@
             $psw2=$user->getPsw2();
             $roli=$user->getRole();
 
-            
-
             $sql="INSERT INTO users (id,name,surname,age,birthday,email,psw,psw2,roli)VALUES (?,?,?,?,?,?,?,?,?)";
 
             $statement = $conn->prepare($sql);

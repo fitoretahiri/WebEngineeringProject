@@ -47,7 +47,6 @@
                         }
                     ?>
                     <li> <a <?php echo $style;?> href="logIn.php">LogIn</a></li>
-                    <!--li><a <!?php echo $style;?> href="register.php">Register</a></li-->
 
                     <?php
                         if (isset($_SESSION["roli"])) {

@@ -125,7 +125,6 @@ include_once '../Classes/contactClasses.php';
             $contactUsRepository->insertMessage($contact);
 
             echo "<p class='validInput'>Message sent successfully.</p>"; 
-            return header('Location : ../pages/index.php');
         }
         
     }
